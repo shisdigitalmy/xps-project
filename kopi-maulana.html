@@ -1,0 +1,1325 @@
+<!DOCTYPE html>
+<html lang="ms">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Kopi Maulana - Kopi Herba Diformulasi Mengikut Perubatan</title>
+  <meta name="description" content="Kopi Maulana menggabungkan kafein biasa dengan herba terpilih. Diformulasi oleh farmasi berdaftar. Rasa familiar, khasiat tiada tandingan.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700;800;900&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <style>
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+    :root {
+      --cream: #faf6f0;
+      --cream-dark: #f0ebe3;
+      --brown: #2c1810;
+      --brown-light: #5c3a28;
+      --gold: #c8a84e;
+      --gold-light: #e8d48b;
+      --green: #2d6a4f;
+      --green-dark: #1b4332;
+      --green-light: #40916c;
+      --red: #c1121f;
+      --white: #ffffff;
+      --gray: #6b7280;
+      --gray-light: #e5e7eb;
+      --shadow: 0 4px 24px rgba(44, 24, 16, 0.08);
+      --shadow-lg: 0 8px 40px rgba(44, 24, 16, 0.12);
+      --radius: 12px;
+      --radius-lg: 20px;
+    }
+
+    html { scroll-behavior: smooth; font-size: 16px; }
+
+    body {
+      font-family: 'Inter', -apple-system, sans-serif;
+      background: var(--cream);
+      color: var(--brown);
+      line-height: 1.6;
+      overflow-x: hidden;
+      padding-bottom: 80px;
+    }
+
+    h1, h2, h3, h4 { font-family: 'Playfair Display', Georgia, serif; line-height: 1.2; }
+
+    .container { max-width: 640px; margin: 0 auto; padding: 0 20px; }
+
+    /* ====== HERO ====== */
+    .hero {
+      background: linear-gradient(180deg, #2c1810 0%, #3d2317 60%, var(--cream) 100%);
+      padding: 60px 20px 80px;
+      text-align: center;
+      position: relative;
+      overflow: hidden;
+    }
+    .hero::before {
+      content: '';
+      position: absolute;
+      top: 0; left: 0; right: 0; bottom: 0;
+      background: radial-gradient(ellipse at 50% 30%, rgba(200,168,78,0.15) 0%, transparent 70%);
+      pointer-events: none;
+    }
+    .hero-badge {
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+      background: rgba(200,168,78,0.15);
+      border: 1px solid rgba(200,168,78,0.3);
+      padding: 6px 16px;
+      border-radius: 100px;
+      font-size: 0.75rem;
+      color: var(--gold-light);
+      letter-spacing: 0.1em;
+      text-transform: uppercase;
+      margin-bottom: 24px;
+      animation: fadeInDown 0.8s ease;
+    }
+    .hero-badge::before { content: '☕'; }
+    .hero h1 {
+      font-size: clamp(1.8rem, 6vw, 2.8rem);
+      color: var(--white);
+      margin-bottom: 16px;
+      animation: fadeInUp 0.8s ease 0.2s both;
+    }
+    .hero h1 span { color: var(--gold); }
+    .hero-sub {
+      font-size: 1rem;
+      color: rgba(255,255,255,0.7);
+      max-width: 420px;
+      margin: 0 auto 32px;
+      animation: fadeInUp 0.8s ease 0.4s both;
+    }
+    .hero-product {
+      width: 200px;
+      height: 260px;
+      margin: 0 auto 32px;
+      background: linear-gradient(145deg, var(--gold), var(--gold-light));
+      border-radius: var(--radius-lg);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      box-shadow: 0 20px 60px rgba(0,0,0,0.3);
+      animation: floatIn 1s ease 0.6s both;
+      position: relative;
+      overflow: hidden;
+    }
+    .hero-product::after {
+      content: 'KOPI MAULANA';
+      font-family: 'Playfair Display', serif;
+      font-weight: 800;
+      font-size: 1.1rem;
+      color: var(--brown);
+      text-align: center;
+      line-height: 1.3;
+    }
+    .hero-product .badge-halal {
+      position: absolute;
+      top: 10px;
+      right: 10px;
+      background: var(--green);
+      color: white;
+      font-size: 0.55rem;
+      padding: 3px 8px;
+      border-radius: 6px;
+      font-weight: 700;
+      letter-spacing: 0.05em;
+    }
+    .hero-cta {
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+      background: var(--green);
+      color: white;
+      padding: 16px 36px;
+      border-radius: 100px;
+      font-size: 1rem;
+      font-weight: 700;
+      text-decoration: none;
+      transition: all 0.3s;
+      animation: fadeInUp 0.8s ease 0.8s both;
+      border: none;
+      cursor: pointer;
+    }
+    .hero-cta:hover { background: var(--green-dark); transform: translateY(-2px); box-shadow: 0 8px 24px rgba(45,106,79,0.3); }
+    .hero-cta::after { content: '→'; font-size: 1.2rem; }
+
+    /* ====== PROBLEM ====== */
+    .problem {
+      padding: 60px 20px;
+      text-align: center;
+    }
+    .problem h2 {
+      font-size: clamp(1.4rem, 4vw, 2rem);
+      margin-bottom: 32px;
+      color: var(--brown);
+    }
+    .problem-list {
+      display: flex;
+      flex-direction: column;
+      gap: 16px;
+      max-width: 480px;
+      margin: 0 auto;
+    }
+    .problem-item {
+      display: flex;
+      align-items: flex-start;
+      gap: 14px;
+      background: white;
+      padding: 18px 20px;
+      border-radius: var(--radius);
+      box-shadow: var(--shadow);
+      text-align: left;
+      border-left: 4px solid var(--red);
+    }
+    .problem-item .icon { font-size: 1.4rem; flex-shrink: 0; margin-top: 2px; }
+    .problem-item p { font-size: 0.95rem; color: var(--brown-light); }
+
+    /* ====== DIVIDER ====== */
+    .divider {
+      display: flex;
+      align-items: center;
+      gap: 16px;
+      max-width: 400px;
+      margin: 0 auto;
+      padding: 0 20px;
+    }
+    .divider::before, .divider::after {
+      content: '';
+      flex: 1;
+      height: 1px;
+      background: var(--gold);
+      opacity: 0.4;
+    }
+    .divider span {
+      color: var(--gold);
+      font-size: 1.2rem;
+    }
+
+    /* ====== WHY FAILS ====== */
+    .why-fails {
+      padding: 60px 20px;
+      background: white;
+    }
+    .why-fails .container { text-align: center; }
+    .section-label {
+      display: inline-block;
+      font-size: 0.7rem;
+      text-transform: uppercase;
+      letter-spacing: 0.15em;
+      color: var(--gold);
+      font-weight: 700;
+      margin-bottom: 12px;
+    }
+    .why-fails h2 {
+      font-size: clamp(1.3rem, 4vw, 1.8rem);
+      margin-bottom: 8px;
+    }
+    .why-fails h2 span { color: var(--red); text-transform: uppercase; }
+    .why-fails-sub {
+      font-size: 0.9rem;
+      color: var(--gray);
+      margin-bottom: 32px;
+    }
+    .compare-table {
+      width: 100%;
+      border-collapse: collapse;
+      border-radius: var(--radius);
+      overflow: hidden;
+      box-shadow: var(--shadow);
+      font-size: 0.85rem;
+    }
+    .compare-table th {
+      padding: 14px 12px;
+      font-family: 'Inter', sans-serif;
+      font-weight: 700;
+      text-align: center;
+    }
+    .compare-table th:first-child { background: var(--gray-light); color: var(--gray); }
+    .compare-table th:nth-child(2) { background: #fde8e8; color: var(--red); }
+    .compare-table th:nth-child(3) { background: #d4edda; color: var(--green); }
+    .compare-table td {
+      padding: 12px;
+      border-bottom: 1px solid var(--gray-light);
+      text-align: center;
+    }
+    .compare-table td:first-child { font-weight: 500; text-align: left; background: #f9fafb; }
+    .compare-table tr:last-child td { border-bottom: none; }
+
+    /* ====== PRODUCT FEATURE ====== */
+    .product-feature {
+      padding: 60px 20px;
+      text-align: center;
+    }
+    .product-feature h2 {
+      font-size: clamp(1.3rem, 4vw, 1.8rem);
+      margin-bottom: 8px;
+    }
+    .product-feature .sub {
+      color: var(--gray);
+      font-size: 0.9rem;
+      margin-bottom: 32px;
+    }
+    .feature-cards {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 12px;
+      max-width: 480px;
+      margin: 0 auto;
+    }
+    .feature-card {
+      background: white;
+      padding: 20px 14px;
+      border-radius: var(--radius);
+      box-shadow: var(--shadow);
+      text-align: center;
+    }
+    .feature-card .emoji { font-size: 2rem; margin-bottom: 8px; display: block; }
+    .feature-card h4 { font-family: 'Inter', sans-serif; font-size: 0.8rem; font-weight: 700; margin-bottom: 4px; color: var(--brown); }
+    .feature-card p { font-size: 0.72rem; color: var(--gray); line-height: 1.4; }
+
+    /* ====== BENEFITS ====== */
+    .benefits {
+      padding: 60px 20px;
+      background: white;
+    }
+    .benefits h2 {
+      font-size: clamp(1.3rem, 4vw, 1.8rem);
+      text-align: center;
+      margin-bottom: 32px;
+    }
+    .benefits-grid {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 14px;
+      max-width: 500px;
+      margin: 0 auto;
+    }
+    .benefit-item {
+      display: flex;
+      align-items: flex-start;
+      gap: 12px;
+      padding: 16px;
+      background: var(--cream);
+      border-radius: var(--radius);
+    }
+    .benefit-item .num {
+      flex-shrink: 0;
+      width: 28px;
+      height: 28px;
+      background: var(--green);
+      color: white;
+      border-radius: 50%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 0.75rem;
+      font-weight: 700;
+    }
+    .benefit-item h4 { font-family: 'Inter', sans-serif; font-size: 0.8rem; font-weight: 700; margin-bottom: 2px; }
+    .benefit-item p { font-size: 0.7rem; color: var(--gray); line-height: 1.4; }
+
+    /* ====== INGREDIENTS ====== */
+    .ingredients {
+      padding: 60px 20px;
+      text-align: center;
+    }
+    .ingredients h2 { font-size: clamp(1.3rem, 4vw, 1.8rem); margin-bottom: 8px; }
+    .ingredients .sub { color: var(--gray); font-size: 0.9rem; margin-bottom: 32px; }
+    .ingredient-pills {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 10px;
+      justify-content: center;
+      max-width: 480px;
+      margin: 0 auto 24px;
+    }
+    .pill {
+      display: inline-flex;
+      align-items: center;
+      gap: 6px;
+      background: white;
+      padding: 10px 18px;
+      border-radius: 100px;
+      font-size: 0.82rem;
+      font-weight: 600;
+      box-shadow: var(--shadow);
+      border: 1px solid var(--cream-dark);
+    }
+    .pill .dot {
+      width: 8px;
+      height: 8px;
+      border-radius: 50%;
+      background: var(--green);
+    }
+
+    /* ====== STEPS ====== */
+    .steps {
+      padding: 60px 20px;
+      background: white;
+    }
+    .steps h2 { font-size: clamp(1.3rem, 4vw, 1.8rem); text-align: center; margin-bottom: 32px; }
+    .steps-list {
+      display: flex;
+      flex-direction: column;
+      gap: 20px;
+      max-width: 460px;
+      margin: 0 auto;
+    }
+    .step {
+      display: flex;
+      align-items: flex-start;
+      gap: 16px;
+      padding: 20px;
+      background: var(--cream);
+      border-radius: var(--radius);
+      position: relative;
+    }
+    .step::before {
+      content: attr(data-step);
+      position: absolute;
+      top: -10px;
+      left: 20px;
+      background: var(--gold);
+      color: var(--brown);
+      width: 28px;
+      height: 28px;
+      border-radius: 50%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 0.75rem;
+      font-weight: 800;
+      font-family: 'Inter', sans-serif;
+    }
+    .step .icon { font-size: 1.8rem; }
+    .step h4 { font-family: 'Inter', sans-serif; font-size: 0.9rem; font-weight: 700; margin-bottom: 2px; }
+    .step p { font-size: 0.8rem; color: var(--gray); }
+
+    /* ====== TRUST / MEDICAL ====== */
+    .trust {
+      padding: 60px 20px;
+      text-align: center;
+    }
+    .trust h2 { font-size: clamp(1.3rem, 4vw, 1.8rem); margin-bottom: 8px; }
+    .trust .sub { color: var(--gray); font-size: 0.9rem; margin-bottom: 32px; }
+    .trust-badges {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 12px;
+      justify-content: center;
+      max-width: 480px;
+      margin: 0 auto;
+    }
+    .badge {
+      display: flex;
+      align-items: center;
+      gap: 8px;
+      background: white;
+      padding: 12px 20px;
+      border-radius: 100px;
+      box-shadow: var(--shadow);
+      font-size: 0.8rem;
+      font-weight: 600;
+    }
+    .badge .check { color: var(--green); font-size: 1rem; }
+
+    /* ====== CHARITY ====== */
+    .charity {
+      padding: 50px 20px;
+      background: linear-gradient(135deg, var(--green-dark), var(--green));
+      text-align: center;
+      color: white;
+    }
+    .charity h2 { font-size: clamp(1.2rem, 4vw, 1.6rem); margin-bottom: 12px; color: white; }
+    .charity p { font-size: 0.9rem; opacity: 0.85; max-width: 440px; margin: 0 auto; }
+    .charity .heart { font-size: 2.5rem; display: block; margin-bottom: 16px; }
+
+    /* ====== TESTIMONIALS ====== */
+    .testimonials {
+      padding: 60px 20px;
+    }
+    .testimonials h2 { font-size: clamp(1.3rem, 4vw, 1.8rem); text-align: center; margin-bottom: 32px; }
+    .testi-cards {
+      display: flex;
+      flex-direction: column;
+      gap: 16px;
+      max-width: 480px;
+      margin: 0 auto;
+    }
+    .testi-card {
+      background: white;
+      padding: 20px;
+      border-radius: var(--radius);
+      box-shadow: var(--shadow);
+      border-left: 4px solid var(--gold);
+    }
+    .testi-card .stars { color: var(--gold); font-size: 0.9rem; margin-bottom: 8px; }
+    .testi-card .quote { font-size: 0.88rem; font-style: italic; color: var(--brown-light); margin-bottom: 12px; line-height: 1.6; }
+    .testi-card .author { display: flex; align-items: center; gap: 10px; }
+    .testi-card .avatar {
+      width: 36px;
+      height: 36px;
+      border-radius: 50%;
+      background: var(--cream-dark);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 0.8rem;
+      font-weight: 700;
+      color: var(--brown);
+    }
+    .testi-card .name { font-size: 0.8rem; font-weight: 700; }
+    .testi-card .loc { font-size: 0.7rem; color: var(--gray); }
+
+    /* ====== PRICING ====== */
+    .pricing {
+      padding: 60px 20px;
+      background: white;
+    }
+    .pricing h2 { font-size: clamp(1.3rem, 4vw, 1.8rem); text-align: center; margin-bottom: 8px; }
+    .pricing .sub { text-align: center; color: var(--gray); font-size: 0.9rem; margin-bottom: 32px; }
+    .price-cards {
+      display: flex;
+      flex-direction: column;
+      gap: 16px;
+      max-width: 480px;
+      margin: 0 auto;
+    }
+    .price-card {
+      border: 2px solid var(--gray-light);
+      border-radius: var(--radius-lg);
+      padding: 24px;
+      position: relative;
+      transition: all 0.3s;
+      cursor: pointer;
+    }
+    .price-card:hover { border-color: var(--gold); box-shadow: var(--shadow-lg); }
+    .price-card.popular {
+      border-color: var(--green);
+      background: linear-gradient(180deg, #f0faf4 0%, white 100%);
+    }
+    .popular-badge {
+      position: absolute;
+      top: -12px;
+      left: 50%;
+      transform: translateX(-50%);
+      background: var(--green);
+      color: white;
+      padding: 4px 20px;
+      border-radius: 100px;
+      font-size: 0.7rem;
+      font-weight: 700;
+      text-transform: uppercase;
+      letter-spacing: 0.08em;
+      white-space: nowrap;
+    }
+    .price-card .tier { font-size: 0.8rem; font-weight: 600; color: var(--gray); margin-bottom: 4px; }
+    .price-card .qty { font-family: 'Playfair Display', serif; font-size: 1.4rem; font-weight: 800; margin-bottom: 8px; }
+    .price-card .original { font-size: 0.85rem; color: var(--gray); text-decoration: line-through; }
+    .price-card .price { font-family: 'Playfair Display', serif; font-size: 2.2rem; font-weight: 900; color: var(--green); }
+    .price-card .per { font-size: 0.75rem; color: var(--gray); }
+    .price-card .savings {
+      display: inline-block;
+      background: #fef3c7;
+      color: #92400e;
+      padding: 4px 12px;
+      border-radius: 100px;
+      font-size: 0.72rem;
+      font-weight: 700;
+      margin-top: 8px;
+    }
+    .price-card .bonus-label {
+      margin-top: 12px;
+      padding-top: 12px;
+      border-top: 1px dashed var(--gray-light);
+      font-size: 0.78rem;
+      color: var(--green);
+      font-weight: 600;
+    }
+    .price-card .bonus-label span { font-weight: 400; color: var(--gray); }
+    .price-card .free-shipping {
+      display: inline-flex;
+      align-items: center;
+      gap: 4px;
+      margin-top: 8px;
+      font-size: 0.72rem;
+      color: var(--green);
+      font-weight: 600;
+    }
+
+    /* ====== URGENCY BAR ====== */
+    .urgency-bar {
+      background: linear-gradient(90deg, #dc2626, #b91c1c);
+      color: white;
+      padding: 12px 20px;
+      text-align: center;
+      font-size: 0.85rem;
+      font-weight: 600;
+    }
+    .urgency-bar .timer {
+      font-family: 'SF Mono', 'Consolas', monospace;
+      background: rgba(0,0,0,0.2);
+      padding: 4px 12px;
+      border-radius: 6px;
+      margin-left: 8px;
+      font-size: 0.9rem;
+      letter-spacing: 0.05em;
+    }
+
+    /* ====== GUARANTEE ====== */
+    .guarantee {
+      padding: 60px 20px;
+      text-align: center;
+    }
+    .guarantee-box {
+      max-width: 480px;
+      margin: 0 auto;
+      background: white;
+      border: 2px solid var(--gold);
+      border-radius: var(--radius-lg);
+      padding: 32px 24px;
+      position: relative;
+    }
+    .guarantee-box .shield { font-size: 3rem; display: block; margin-bottom: 16px; }
+    .guarantee-box h2 { font-size: 1.4rem; margin-bottom: 12px; }
+    .guarantee-box p { font-size: 0.9rem; color: var(--brown-light); line-height: 1.7; max-width: 380px; margin: 0 auto; }
+
+    /* ====== FAQ ====== */
+    .faq {
+      padding: 60px 20px;
+      background: white;
+    }
+    .faq h2 { font-size: clamp(1.3rem, 4vw, 1.8rem); text-align: center; margin-bottom: 32px; }
+    .faq-list {
+      max-width: 500px;
+      margin: 0 auto;
+      display: flex;
+      flex-direction: column;
+      gap: 10px;
+    }
+    .faq-item {
+      border: 1px solid var(--gray-light);
+      border-radius: var(--radius);
+      overflow: hidden;
+    }
+    .faq-q {
+      width: 100%;
+      background: none;
+      border: none;
+      padding: 16px 20px;
+      text-align: left;
+      font-size: 0.88rem;
+      font-weight: 600;
+      color: var(--brown);
+      cursor: pointer;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      font-family: 'Inter', sans-serif;
+    }
+    .faq-q::after { content: '+'; font-size: 1.2rem; color: var(--gray); transition: transform 0.3s; }
+    .faq-item.open .faq-q::after { content: '−'; }
+    .faq-a {
+      max-height: 0;
+      overflow: hidden;
+      transition: max-height 0.3s ease, padding 0.3s ease;
+    }
+    .faq-item.open .faq-a {
+      max-height: 200px;
+      padding: 0 20px 16px;
+    }
+    .faq-a p { font-size: 0.82rem; color: var(--gray); line-height: 1.6; }
+
+    /* ====== CHECKOUT ====== */
+    .checkout {
+      padding: 60px 20px 40px;
+    }
+    .checkout h2 { font-size: clamp(1.3rem, 4vw, 1.8rem); text-align: center; margin-bottom: 24px; }
+    .checkout-form {
+      max-width: 480px;
+      margin: 0 auto;
+      background: white;
+      border-radius: var(--radius-lg);
+      padding: 24px;
+      box-shadow: var(--shadow-lg);
+    }
+    .form-group { margin-bottom: 16px; }
+    .form-group label {
+      display: block;
+      font-size: 0.78rem;
+      font-weight: 600;
+      color: var(--brown);
+      margin-bottom: 6px;
+    }
+    .form-group label .req { color: var(--red); }
+    .form-group input, .form-group select {
+      width: 100%;
+      padding: 12px 14px;
+      border: 1px solid var(--gray-light);
+      border-radius: 8px;
+      font-size: 0.88rem;
+      font-family: 'Inter', sans-serif;
+      color: var(--brown);
+      background: #fafafa;
+      transition: border-color 0.2s;
+    }
+    .form-group input:focus, .form-group select:focus {
+      outline: none;
+      border-color: var(--green);
+      box-shadow: 0 0 0 3px rgba(45,106,79,0.1);
+    }
+    .form-row { display: grid; grid-template-columns: 1fr 1fr; gap: 12px; }
+    .checkout-btn {
+      width: 100%;
+      padding: 16px;
+      background: var(--green);
+      color: white;
+      border: none;
+      border-radius: var(--radius);
+      font-size: 1rem;
+      font-weight: 700;
+      font-family: 'Inter', sans-serif;
+      cursor: pointer;
+      transition: all 0.3s;
+      margin-top: 8px;
+    }
+    .checkout-btn:hover { background: var(--green-dark); }
+    .checkout-trust {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 8px;
+      justify-content: center;
+      margin-top: 16px;
+    }
+    .checkout-trust span {
+      font-size: 0.68rem;
+      color: var(--gray);
+      display: flex;
+      align-items: center;
+      gap: 4px;
+    }
+
+    /* ====== STICKY BAR ====== */
+    .sticky-bar {
+      position: fixed;
+      bottom: 0;
+      left: 0;
+      right: 0;
+      background: white;
+      padding: 12px 20px;
+      box-shadow: 0 -4px 20px rgba(0,0,0,0.1);
+      z-index: 100;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 12px;
+    }
+    .sticky-bar .info { flex: 1; }
+    .sticky-bar .info .label { font-size: 0.68rem; color: var(--gray); }
+    .sticky-bar .info .price { font-family: 'Playfair Display', serif; font-size: 1.3rem; font-weight: 900; color: var(--green); }
+    .sticky-bar .btn {
+      background: var(--green);
+      color: white;
+      padding: 12px 28px;
+      border-radius: 100px;
+      font-size: 0.88rem;
+      font-weight: 700;
+      text-decoration: none;
+      white-space: nowrap;
+      transition: background 0.3s;
+    }
+    .sticky-bar .btn:hover { background: var(--green-dark); }
+
+    /* ====== FOOTER ====== */
+    .footer {
+      padding: 40px 20px;
+      text-align: center;
+      font-size: 0.72rem;
+      color: var(--gray);
+      border-top: 1px solid var(--gray-light);
+    }
+    .footer a { color: var(--brown); }
+
+    /* ====== ANIMATIONS ====== */
+    @keyframes fadeInUp {
+      from { opacity: 0; transform: translateY(20px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
+    @keyframes fadeInDown {
+      from { opacity: 0; transform: translateY(-20px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
+    @keyframes floatIn {
+      from { opacity: 0; transform: translateY(30px) scale(0.9); }
+      to { opacity: 1; transform: translateY(0) scale(1); }
+    }
+    .reveal {
+      opacity: 0;
+      transform: translateY(24px);
+      transition: opacity 0.6s ease, transform 0.6s ease;
+    }
+    .reveal.visible {
+      opacity: 1;
+      transform: translateY(0);
+    }
+
+    /* ====== RESPONSIVE ====== */
+    @media (min-width: 480px) {
+      .feature-cards { grid-template-columns: 1fr 1fr 1fr; }
+      .price-cards { flex-direction: row; }
+      .price-card { flex: 1; }
+    }
+    @media (min-width: 640px) {
+      .hero { padding: 80px 20px 100px; }
+      .hero-product { width: 220px; height: 290px; }
+    }
+  </style>
+</head>
+<body>
+
+  <!-- ====== HERO ====== -->
+  <section class="hero">
+    <div class="hero-badge">Farmasi Berdaftar KKM</div>
+    <h1>Badan letih. Mata layu.<br><span>Kopi biasa tak membantu.</span></h1>
+    <p class="hero-sub">Kopi Maulana — kopi herba yang diformulasi untuk orang bekerja keras. Rasa familiar, khasiat tiada tandingan.</p>
+    <div class="hero-product">
+      <span class="badge-halal">HALAL</span>
+    </div>
+    <a href="#checkout" class="hero-cta">Saya Nak Mula Rasa Beza</a>
+  </section>
+
+  <!-- ====== PROBLEM ====== -->
+  <section class="problem reveal">
+    <div class="container">
+      <h2>Pernah rasa hari baru bermula,<br>tapi badan sudah minta berehat?</h2>
+      <div class="problem-list">
+        <div class="problem-item">
+          <span class="icon">😩</span>
+          <p>Dah cuba kopi jenama mahal — still sama. Tenaga sekejap, lepas tu crash balik.</p>
+        </div>
+        <div class="problem-item">
+          <span class="icon">💊</span>
+          <p>Minum supplement, rasa macam menelan batu. Tak selesa, pastu stop.</p>
+        </div>
+        <div class="problem-item">
+          <span class="icon">😴</span>
+          <p>Bangun pagi dah rasa macam petang. Otak flat, badan serabut.</p>
+        </div>
+        <div class="problem-item">
+          <span class="icon">😤</span>
+          <p>Mood cepat变化, fokus kabur — orang sekeliling yang kena.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <div class="divider"><span>☕</span></div>
+
+  <!-- ====== WHY OTHERS FAIL ====== -->
+  <section class="why-fails reveal">
+    <div class="container">
+      <span class="section-label">Kenapa Ini Berlaku</span>
+      <h2>Kenapa Kopi Biasa & Suplemen<br><span>Tak Pernah Berkesan</span></h2>
+      <p class="why-fails-sub">Sebab mereka tak selesaikan punca — mereka tutup simptom je.</p>
+      <table class="compare-table">
+        <thead>
+          <tr>
+            <th></th>
+            <th>Kopi Biasa</th>
+            <th>Kopi Maulana</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>Kandungan</td>
+            <td>Kafein saja</td>
+            <td>Kafein + Herba Terpilih</td>
+          </tr>
+          <tr>
+            <td>Tenaga</td>
+            <td>Sekejap, lepas tu crash</td>
+            <td>Berpansjangan, stabil</td>
+          </tr>
+          <tr>
+            <td>Kesan Sampingan</td>
+            <td>Resdung, bloat, jantung laju</td>
+            <td>Selesa perut, tenang</td>
+          </tr>
+          <tr>
+            <td>Fokus</td>
+            <td>Kabur selepas 2 jam</td>
+            <td>Jelas sepanjang hari</td>
+          </tr>
+          <tr>
+            <td>Formulasi</td>
+            <td>Tak pasti</td>
+            <td>Diformulasi farmasi KKM</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+  </section>
+
+  <!-- ====== PRODUCT FEATURE ====== -->
+  <section class="product-feature reveal">
+    <div class="container">
+      <span class="section-label">Rasa Familiar, Khasiat Luar Biasa</span>
+      <h2>Rasa Kopi Yang Familiar,<br>Tapi Khasiat Lain Tiada Tandingan</h2>
+      <p class="sub">Gabungan unik kafein & herba yang diformulasi khas untuk anda.</p>
+      <div class="feature-cards">
+        <div class="feature-card">
+          <span class="emoji">☕</span>
+          <h4>Rasa Asli Kopi</h4>
+          <p>Takde rasa pelik. Macam kopi biasa yang anda minum setiap hari.</p>
+        </div>
+        <div class="feature-card">
+          <span class="emoji">🌿</span>
+          <h4>Herba Terpilih</h4>
+          <p>Akarkiri, Habatussauda & Maca — untuk tenaga & fokus optimal.</p>
+        </div>
+        <div class="feature-card">
+          <span class="emoji">⚡</span>
+          <h4>Tenaga Berpanjangan</h4>
+          <p>Bukan sekejap. Tenaga stabil dari pagi sampai petang.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ====== 6 BENEFITS ====== -->
+  <section class="benefits reveal">
+    <div class="container">
+      <h2>Enam Sebab Rutin Ini<br>Lebih Mudah Masuk Dalam Kehidupan Harian</h2>
+      <div class="benefits-grid">
+        <div class="benefit-item">
+          <span class="num">1</span>
+          <div>
+            <h4>Tak Perlu Menukar Gaya Hidup</h4>
+            <p>Minum macam kopi biasa. Tiada rutin rumit.</p>
+          </div>
+        </div>
+        <div class="benefit-item">
+          <span class="num">2</span>
+          <div>
+            <h4>Rasa Sedap</h4>
+            <p>Bukan herba pahit. Rasa kopi sebenar.</p>
+          </div>
+        </div>
+        <div class="benefit-item">
+          <span class="num">3</span>
+          <div>
+            <h4>Tenaga Stabil</h4>
+            <p>Takde crash. Fokus maintained sepanjang hari.</p>
+          </div>
+        </div>
+        <div class="benefit-item">
+          <span class="num">4</span>
+          <div>
+            <h4>Selesa Perut</h4>
+            <p>Takde resdung. Takde bloat. Perut ok.</p>
+          </div>
+        </div>
+        <div class="benefit-item">
+          <span class="num">5</span>
+          <div>
+            <h4>Mudah Dibawa</h4>
+            <p>Sachet kecil, masuk poket. Minum bila-bila.</p>
+          </div>
+        </div>
+        <div class="benefit-item">
+          <span class="num">6</span>
+          <div>
+            <h4>Harga Berpatutan</h4>
+            <p>Kurang dari RM2 sehari. Lebih murah dari kopi kedai.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ====== INGREDIENTS ====== -->
+  <section class="ingredients reveal">
+    <div class="container">
+      <span class="section-label">Bahan Pilihan</span>
+      <h2>Gabungan Ramuan Yang<br>Memberikan Kopi Maulana</h2>
+      <p class="sub">Setiap herba dipilih untuk tujuan spesifik. Bukan sekadar campak.</p>
+      <div class="ingredient-pills">
+        <div class="pill"><span class="dot"></span> Kopi Arabica</div>
+        <div class="pill"><span class="dot"></span> Akarkiri</div>
+        <div class="pill"><span class="dot"></span> Habatussauda</div>
+        <div class="pill"><span class="dot"></span> Maca Root</div>
+        <div class="pill"><span class="dot"></span> Kunyit</div>
+        <div class="pill"><span class="dot"></span> Halia</div>
+      </div>
+      <p style="font-size:0.78rem;color:var(--gray);max-width:400px;margin:0 auto;">Setiap ramuan diukur tepat. Tidak berlebihan. Tidak kurang. Diformulasi oleh ahli farmasi bertauliah.</p>
+    </div>
+  </section>
+
+  <div class="divider"><span>☕</span></div>
+
+  <!-- ====== 3 STEPS ====== -->
+  <section class="steps reveal">
+    <div class="container">
+      <h2>Tiga Langkah Ini<br>Kopi Anda Sudah Sedia</h2>
+      <div class="steps-list">
+        <div class="step" data-step="1">
+          <span class="icon">撕</span>
+          <div>
+            <h4>Buka Sachet</h4>
+            <p>Tarik, tuang. Selesai dalam 5 saat.</p>
+          </div>
+        </div>
+        <div class="step" data-step="2">
+          <span class="icon">🫗</span>
+          <div>
+            <h4>Tuang Air Panas</h4>
+            <p>150ml air panas. Kacau sekejap.</p>
+          </div>
+        </div>
+        <div class="step" data-step="3">
+          <span class="icon">😌</span>
+          <div>
+            <h4>Nikmati</h4>
+            <p>Rasa familiar. Tenaga datang perlahan — tapi pasti.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ====== TRUST / MEDICAL ====== -->
+  <section class="trust reveal">
+    <div class="container">
+      <span class="section-label">Diformulasi Pakar</span>
+      <h2>Lebih Yakin Memilih Kopi<br>Yang Diformulasi Mengikut Perubatan</h2>
+      <p class="sub">Bukan sekadar kopi campur herba. Ini formulasi klinikal.</p>
+      <div class="trust-badges">
+        <div class="badge"><span class="check">✓</span> Farmasi KKM Berdaftar</div>
+        <div class="badge"><span class="check">✓</span> Halal Malaysia</div>
+        <div class="badge"><span class="check">✓</span> 100% Herba Asli</div>
+        <div class="badge"><span class="check">✓</span> Tiada Bahan Terlarang</div>
+        <div class="badge"><span class="check">✓</span> Diuji Makmal</div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ====== CHARITY ====== -->
+  <section class="charity reveal">
+    <div class="container">
+      <span class="heart">❤️</span>
+      <h2>Setiap Pembelian<br>Menyumbang Kepada Anak Nusantara</h2>
+      <p>Kami percaya kopi yang baik boleh mengubah kehidupan. Sebahagian dari setiap jualan disumbangkan kepada pendidikan anak-anak kurang bernasib baik.</p>
+    </div>
+  </section>
+
+  <!-- ====== TESTIMONIALS ====== -->
+  <section class="testimonials reveal">
+    <div class="container">
+      <h2>Apa Kata Mereka Yang<br>Sudah Cuba?</h2>
+      <div class="testi-cards">
+        <div class="testi-card">
+          <div class="stars">★★★★★</div>
+          <p class="quote">"Selepas 2 minggu minum, saya bangun pagi dah tak rasa lesu. Fokus kerja pun lain macam. Ni yang saya cari selama ni."</p>
+          <div class="author">
+            <div class="avatar">A</div>
+            <div>
+              <div class="name">Azman Razak</div>
+              <div class="loc">Shah Alam, Selangor</div>
+            </div>
+          </div>
+        </div>
+        <div class="testi-card">
+          <div class="stars">★★★★★</div>
+          <p class="quote">"Saya kerja shift malam. Kopi biasa buat saya jantung laju. Kopi Maulana lain — tenang tapi cergas. Dah 3 bulan tak stop."</p>
+          <div class="author">
+            <div class="avatar">N</div>
+            <div>
+              <div class="name">Nurul Izzah</div>
+              <div class="loc">Johor Bahru, Johor</div>
+            </div>
+          </div>
+        </div>
+        <div class="testi-card">
+          <div class="stars">★★★★★</div>
+          <p class="quote">"Dah try macam-macam kopi. Ni je yang tak buat saya resdug. Rasa pun sedap, macam kopi kampung mak buat."</p>
+          <div class="author">
+            <div class="avatar">H</div>
+            <div>
+              <div class="name">Hafiz Zamri</div>
+              <div class="loc">Kota Bharu, Kelantan</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ====== URGENCY BAR ====== -->
+  <div class="urgency-bar">
+    🔥 Harga promosi berakhir dalam <span class="timer" id="timer">02:59:47</span>
+  </div>
+
+  <!-- ====== PRICING ====== -->
+  <section class="pricing reveal" id="pricing">
+    <div class="container">
+      <h2>Pilih Pakej Yang Sesuai<br>Dengan Rutin Anda</h2>
+      <p class="sub">Semua pakej termasuk jaminan 30 hari pulangan wang.</p>
+      <div class="price-cards">
+
+        <!-- Pakej 1 -->
+        <div class="price-card" onclick="selectPlan(this, 49)">
+          <div class="tier">Pakej Trial</div>
+          <div class="qty">1 Kotak</div>
+          <div class="original">RM79</div>
+          <div class="price">RM49</div>
+          <div class="per">RM1.63 sehari (30 hari)</div>
+          <div class="savings">Jimat RM30</div>
+        </div>
+
+        <!-- Pakej 3 - POPULAR -->
+        <div class="price-card popular" onclick="selectPlan(this, 119)">
+          <span class="popular-badge">⭐ Paling Popular</span>
+          <div class="tier">Pakej Best Value</div>
+          <div class="qty">3 Kotak</div>
+          <div class="original">RM237</div>
+          <div class="price">RM119</div>
+          <div class="per">RM1.32 sehari (90 hari)</div>
+          <div class="savings">Jimat RM118 (50%)</div>
+          <div class="bonus-label">🎁 Bonus: <span>Free Panduan Minum Kopi Herba (RM49)</span></div>
+          <div class="free-shipping">🚚 Free Shipping</div>
+        </div>
+
+        <!-- Pakej 5 -->
+        <div class="price-card" onclick="selectPlan(this, 169)">
+          <div class="tier">Pakej Bulanan</div>
+          <div class="qty">5 Kotak</div>
+          <div class="original">RM395</div>
+          <div class="price">RM169</div>
+          <div class="per">RM1.13 sehari (150 hari)</div>
+          <div class="savings">Jimat RM226 (57%)</div>
+          <div class="bonus-label">🎁 Bonus: <span>Free Mug + Panduan (RM79)</span></div>
+          <div class="free-shipping">🚚 Free Shipping</div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ====== GUARANTEE ====== -->
+  <section class="guarantee reveal">
+    <div class="container">
+      <div class="guarantee-box">
+        <span class="shield">🛡️</span>
+        <h2>Jaminan Pulangan Wang<br>30 Hari</h2>
+        <p>Cuba Kopi Maulana selama 30 hari. Kalau anda tak rasa beza — tenaga, fokus, mood — kami pulangkan <strong>100% wang anda</strong>. Tanpa soal. Tanpa surat. Kami yang tanggung risiko.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- ====== FAQ ====== -->
+  <section class="faq reveal">
+    <div class="container">
+      <h2>Soalan Lazim</h2>
+      <div class="faq-list">
+        <div class="faq-item">
+          <button class="faq-q">Kalau saya ambil ubat klinik, boleh minum juga?</button>
+          <div class="faq-a"><p>Ya. Kopi Maulana menggunakan herba semula jadi yang tidak berinteraksi dengan ubat-ubatan biasa. Namun, jika anda mengambil ubat kronik (darah tinggi, kencing manis), kami sarankan dapatkan nasihat doktor terlebih dahulu.</p></div>
+        </div>
+        <div class="faq-item">
+          <button class="faq-q">Berapa lama nampak kesan?</button>
+          <div class="faq-a"><p>Kebanyakan pengguna mula rasa beza dalam 7-14 hari. Tenaga stabil, fokus lebih baik. Kesannya bertambah baik apabila diamalkan secara konsisten.</p></div>
+        </div>
+        <div class="faq-item">
+          <button class="faq-q">Halal ke?</button>
+          <div class="faq-a"><p>Ya, 100% Halal. Diformulasi dan dibuat di kilang yang mendapat sijil Halal Malaysia. Tiada bahan haiwan atau alkohol.</p></div>
+        </div>
+        <div class="faq-item">
+          <button class="faq-q">Boleh bagi orang tua?</button>
+          <div class="faq-a"><p>Ya, sesuai untuk golongan 30+. Kandungan kafein adalah sederhana — lebih rendah dari kopi kedai. Herba di dalamnya membantu mengimbangi kesan kafein.</p></div>
+        </div>
+        <div class="faq-item">
+          <button class="faq-q">Rasa dia macam mana?</button>
+          <div class="faq-a"><p>Rasa kopi sebenar. Takde rasa herba pelik. Ramai yang kata "macam kopi kampung yang sedap".</p></div>
+        </div>
+        <div class="faq-item">
+          <button class="faq-q">Cara bayar macam mana?</button>
+          <div class="faq-a"><p>Bayar semasa terima (COD) atau bank transfer. Kami hantar melalui Ninja Van — selalunya sampai dalam 2-3 hari bekerja.</p></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <div class="divider"><span>☕</span></div>
+
+  <!-- ====== CHECKOUT ====== -->
+  <section class="checkout" id="checkout">
+    <div class="container">
+      <h2>Lengkapkan Pesanan Anda</h2>
+      <div class="checkout-form">
+        <div class="form-group">
+          <label>Nama Penuh <span class="req">*</span></label>
+          <input type="text" placeholder="Contoh: Ahmad bin Abdullah">
+        </div>
+        <div class="form-group">
+          <label>No. Telefon <span class="req">*</span></label>
+          <input type="tel" placeholder="60123456789">
+        </div>
+        <div class="form-group">
+          <label>Alamat Penuh <span class="req">*</span></label>
+          <input type="text" placeholder="No. Rumah, Jalan, Kampung">
+        </div>
+        <div class="form-row">
+          <div class="form-group">
+            <label>Poskod <span class="req">*</span></label>
+            <input type="text" placeholder="43300">
+          </div>
+          <div class="form-group">
+            <label>Bandar <span class="req">*</span></label>
+            <input type="text" placeholder="Seri Kembangan">
+          </div>
+        </div>
+        <div class="form-group">
+          <label>Negeri <span class="req">*</span></label>
+          <select>
+            <option value="">Pilih Negeri</option>
+            <option>Johor</option>
+            <option>Kedah</option>
+            <option>Kelantan</option>
+            <option>Melaka</option>
+            <option>Negeri Sembilan</option>
+            <option>Pahang</option>
+            <option>Perak</option>
+            <option>Perlis</option>
+            <option>Pulau Pinang</option>
+            <option>Sabah</option>
+            <option>Sarawak</option>
+            <option>Selangor</option>
+            <option>Terengganu</option>
+            <option>Wilayah Persekutuan Kuala Lumpur</option>
+            <option>Wilayah Persekutuan Labuan</option>
+            <option>Wilayah Persekutuan Putrajaya</option>
+          </select>
+        </div>
+        <div class="form-group">
+          <label>Pilih Pakej <span class="req">*</span></label>
+          <select id="package-select">
+            <option value="49">1 Kotak — RM49</option>
+            <option value="119" selected>3 Kotak — RM119 (Best Value)</option>
+            <option value="169">5 Kotak — RM169</option>
+          </select>
+        </div>
+        <div class="form-group">
+          <label>Cara Bayar</label>
+          <select>
+            <option>COD (Bayar Semasa Terima)</option>
+            <option>Bank Transfer</option>
+          </select>
+        </div>
+        <button class="checkout-btn" type="button">
+          🛒 Bayar Sekarang — RM <span id="checkout-price">119</span>
+        </button>
+        <div class="checkout-trust">
+          <span>🔒 Secure Payment</span>
+          <span>🚚 Ninja Van</span>
+          <span>↩️ 30 Hari Return</span>
+          <span>📞 WhatsApp Support</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ====== FOOTER ====== -->
+  <footer class="footer">
+    <div class="container">
+      <p>&copy; 2026 Kopi Maulana. Hak cipta terpelihara.</p>
+      <p style="margin-top:8px;">
+        <a href="#">Polisi Privasi</a> &middot;
+        <a href="#">Syarat &amp; Ketentuan</a> &middot;
+        <a href="#">Hubungi Kami</a>
+      </p>
+      <p style="margin-top:12px;font-size:0.65rem;color:#9ca3af;">
+        Produk ini bukan ubat. Ia adalah makanan tambahan herba. 
+        Sentiasa dapatkan nasihat profesional untuk masalah kesihatan.
+      </p>
+    </div>
+  </footer>
+
+  <!-- ====== STICKY BAR ====== -->
+  <div class="sticky-bar" id="sticky-bar">
+    <div class="info">
+      <div class="label">Harga Promosi</div>
+      <div class="price">RM119</div>
+    </div>
+    <a href="#checkout" class="btn">Beli Sekarang →</a>
+  </div>
+
+  <script>
+    // ====== REVEAL ON SCROLL ======
+    const observer = new IntersectionObserver((entries) => {
+      entries.forEach(entry => {
+        if (entry.isIntersecting) {
+          entry.target.classList.add('visible');
+        }
+      });
+    }, { threshold: 0.1 });
+
+    document.querySelectorAll('.reveal').forEach(el => observer.observe(el));
+
+    // ====== FAQ TOGGLE ======
+    document.querySelectorAll('.faq-q').forEach(btn => {
+      btn.addEventListener('click', () => {
+        const item = btn.parentElement;
+        const wasOpen = item.classList.contains('open');
+        document.querySelectorAll('.faq-item').forEach(i => i.classList.remove('open'));
+        if (!wasOpen) item.classList.add('open');
+      });
+    });
+
+    // ====== PRICE SELECTOR ======
+    function selectPlan(el, price) {
+      document.querySelectorAll('.price-card').forEach(c => c.style.borderColor = '');
+      el.style.borderColor = 'var(--green)';
+      document.getElementById('checkout-price').textContent = price;
+      document.getElementById('package-select').value = price;
+      document.getElementById('sticky-bar').querySelector('.price').textContent = 'RM' + price;
+    }
+
+    document.getElementById('package-select').addEventListener('change', function() {
+      const price = this.value;
+      document.getElementById('checkout-price').textContent = price;
+      document.getElementById('sticky-bar').querySelector('.price').textContent = 'RM' + price;
+    });
+
+    // ====== COUNTDOWN TIMER ======
+    function startTimer() {
+      let total = 3 * 3600; // 3 hours
+      const timerEl = document.getElementById('timer');
+      const interval = setInterval(() => {
+        total--;
+        if (total <= 0) { clearInterval(interval); total = 3 * 3600; }
+        const h = Math.floor(total / 3600);
+        const m = Math.floor((total % 3600) / 60);
+        const s = total % 60;
+        timerEl.textContent =
+          String(h).padStart(2, '0') + ':' +
+          String(m).padStart(2, '0') + ':' +
+          String(s).padStart(2, '0');
+      }, 1000);
+    }
+    startTimer();
+
+    // ====== HIDE STICKY BAR AT FOOTER ======
+    const footer = document.querySelector('.footer');
+    const stickyBar = document.getElementById('sticky-bar');
+    const footerObserver = new IntersectionObserver((entries) => {
+      entries.forEach(entry => {
+        stickyBar.style.display = entry.isIntersecting ? 'none' : 'flex';
+      });
+    }, { threshold: 0 });
+    footerObserver.observe(footer);
+  </script>
+
+</body>
+</html>
