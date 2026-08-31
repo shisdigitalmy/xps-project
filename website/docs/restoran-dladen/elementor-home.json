@@ -1,0 +1,743 @@
+{
+  "content": [
+    {
+      "id": "dln000",
+      "elType": "container",
+      "isInner": false,
+      "settings": {
+        "_element_id": "utama",
+        "container_type": "full-width",
+        "flex_direction": "column",
+        "flex_align_items": "center",
+        "background_background": "classic",
+        "background_color": "#F3EAD8",
+        "padding": {"unit": "px", "top": "72", "right": "20", "bottom": "72", "left": "20", "isLinked": false},
+        "padding_mobile": {"unit": "px", "top": "48", "right": "16", "bottom": "48", "left": "16", "isLinked": false}
+      },
+      "elements": [
+        {
+          "id": "dln010",
+          "elType": "container",
+          "isInner": true,
+          "settings": {
+            "container_type": "boxed",
+            "content_width": {"unit": "px", "size": 1140},
+            "flex_direction": "row",
+            "flex_align_items": "center",
+            "flex_gap": {"column": "48", "row": "32", "isLinked": false, "unit": "px", "size": 48},
+            "flex_direction_mobile": "column-reverse"
+          },
+          "elements": [
+            {
+              "id": "dln011",
+              "elType": "container",
+              "isInner": true,
+              "settings": {
+                "width": {"unit": "%", "size": 55},
+                "width_mobile": {"unit": "%", "size": 100},
+                "flex_direction": "column",
+                "flex_gap": {"column": "16", "row": "16", "isLinked": true, "unit": "px", "size": 16}
+              },
+              "elements": [
+                {
+                  "id": "dln012",
+                  "elType": "widget",
+                  "widgetType": "text-editor",
+                  "settings": {
+                    "editor": "<p><strong style=\"letter-spacing:.14em;text-transform:uppercase;color:#C1502E;font-size:14px;\">BANDAR SERI PUTRA, BANGI</strong></p>",
+                    "text_color": "#C1502E"
+                  },
+                  "elements": []
+                },
+                {
+                  "id": "dln013",
+                  "elType": "widget",
+                  "widgetType": "heading",
+                  "settings": {
+                    "title": "Rendang Tok Warisan, Sarapan Kampung Setiap Pagi",
+                    "header_size": "h1",
+                    "title_color": "#22402C",
+                    "typography_typography": "custom",
+                    "typography_font_family": "Fraunces",
+                    "typography_font_size": {"unit": "px", "size": 52},
+                    "typography_font_size_mobile": {"unit": "px", "size": 34},
+                    "typography_font_weight": "700",
+                    "typography_line_height": {"unit": "em", "size": 1.15}
+                  },
+                  "elements": []
+                },
+                {
+                  "id": "dln014",
+                  "elType": "widget",
+                  "widgetType": "text-editor",
+                  "settings": {
+                    "editor": "<p>Dari dapur kami di Bandar Seri Putra — nasi lemak, pulut kuning, dan rendang yang dimasak dengan resipi asli. Sedia untuk keluarga, majlis, dan kenduri.</p>",
+                    "text_color": "#6B5D4F",
+                    "typography_typography": "custom",
+                    "typography_font_size": {"unit": "px", "size": 18}
+                  },
+                  "elements": []
+                },
+                {
+                  "id": "dln015",
+                  "elType": "container",
+                  "isInner": true,
+                  "settings": {
+                    "flex_direction": "row",
+                    "flex_gap": {"column": "14", "row": "12", "isLinked": false, "unit": "px", "size": 14},
+                    "flex_wrap": "wrap",
+                    "margin": {"unit": "px", "top": "8", "right": "0", "bottom": "8", "left": "0", "isLinked": false}
+                  },
+                  "elements": [
+                    {
+                      "id": "dln016",
+                      "elType": "widget",
+                      "widgetType": "button",
+                      "settings": {
+                        "text": "Pesan Catering / Rendang Pukal",
+                        "link": {"url": "#pesanan", "is_external": "", "nofollow": ""},
+                        "align": "left",
+                        "button_text_color": "#FFFFFF",
+                        "background_color": "#C1502E",
+                        "border_radius": {"unit": "px", "top": "999", "right": "999", "bottom": "999", "left": "999", "isLinked": true},
+                        "typography_typography": "custom",
+                        "typography_font_weight": "700"
+                      },
+                      "elements": []
+                    },
+                    {
+                      "id": "dln017",
+                      "elType": "widget",
+                      "widgetType": "button",
+                      "settings": {
+                        "text": "WhatsApp 012-246 6678",
+                        "link": {"url": "https://wa.me/60122466678", "is_external": "on", "nofollow": "on"},
+                        "align": "left",
+                        "button_text_color": "#C1502E",
+                        "background_color": "rgba(0,0,0,0)",
+                        "border_border": "solid",
+                        "border_width": {"unit": "px", "top": "2", "right": "2", "bottom": "2", "left": "2", "isLinked": true},
+                        "border_color": "#C1502E",
+                        "border_radius": {"unit": "px", "top": "999", "right": "999", "bottom": "999", "left": "999", "isLinked": true},
+                        "typography_typography": "custom",
+                        "typography_font_weight": "700"
+                      },
+                      "elements": []
+                    }
+                  ]
+                },
+                {
+                  "id": "dln018",
+                  "elType": "widget",
+                  "widgetType": "text-editor",
+                  "settings": {
+                    "editor": "<p><strong>&#9200; Buka setiap hari &middot; 6:30 pagi &ndash; 4:00 petang</strong></p>",
+                    "text_color": "#2E5339"
+                  },
+                  "elements": []
+                }
+              ]
+            },
+            {
+              "id": "dln020",
+              "elType": "container",
+              "isInner": true,
+              "settings": {
+                "width": {"unit": "%", "size": 45},
+                "width_mobile": {"unit": "%", "size": 100},
+                "flex_direction": "column"
+              },
+              "elements": [
+                {
+                  "id": "dln021",
+                  "elType": "widget",
+                  "widgetType": "image",
+                  "settings": {
+                    "image": {"url": "https://images.unsplash.com/photo-1585937421612-70a008356fbe?w=900&q=80", "id": "", "alt": "Rendang daging dengan nasi panas di hidangan kampung", "source": "library"},
+                    "align": "center",
+                    "width": {"unit": "%", "size": 100},
+                    "border_radius": {"unit": "px", "top": "18", "right": "18", "bottom": "18", "left": "18", "isLinked": true}
+                  },
+                  "elements": []
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "dln100",
+      "elType": "container",
+      "isInner": false,
+      "settings": {
+        "container_type": "full-width",
+        "flex_direction": "column",
+        "flex_align_items": "center",
+        "background_background": "classic",
+        "background_color": "#D9A441",
+        "padding": {"unit": "px", "top": "6", "right": "0", "bottom": "6", "left": "0", "isLinked": false}
+      },
+      "elements": [
+        {
+          "id": "dln101",
+          "elType": "widget",
+          "widgetType": "text-editor",
+          "settings": {
+            "editor": "<p style=\"text-align:center;letter-spacing:.3em;font-size:11px;color:#2B2118;\">&#9670;&nbsp;&nbsp;&#9670;&nbsp;&nbsp;&#9670;&nbsp;&nbsp;&#9670;&nbsp;&nbsp;&#9670;&nbsp;&nbsp;&#9670;&nbsp;&nbsp;&#9670;</p>"
+          },
+          "elements": []
+        }
+      ]
+    },
+    {
+      "id": "dln200",
+      "elType": "container",
+      "isInner": false,
+      "settings": {
+        "_element_id": "menu",
+        "container_type": "full-width",
+        "flex_direction": "column",
+        "flex_align_items": "center",
+        "background_background": "classic",
+        "background_color": "#FBF6EC",
+        "padding": {"unit": "px", "top": "80", "right": "20", "bottom": "80", "left": "20", "isLinked": false},
+        "padding_mobile": {"unit": "px", "top": "52", "right": "16", "bottom": "52", "left": "16", "isLinked": false}
+      },
+      "elements": [
+        {
+          "id": "dln201",
+          "elType": "container",
+          "isInner": true,
+          "settings": {
+            "container_type": "boxed",
+            "content_width": {"unit": "px", "size": 1140},
+            "flex_direction": "column",
+            "flex_gap": {"column": "28", "row": "28", "isLinked": true, "unit": "px", "size": 28}
+          },
+          "elements": [
+            {
+              "id": "dln202",
+              "elType": "widget",
+              "widgetType": "heading",
+              "settings": {
+                "title": "Menu Kegemaran",
+                "header_size": "h2",
+                "align": "center",
+                "title_color": "#22402C",
+                "typography_typography": "custom",
+                "typography_font_family": "Fraunces",
+                "typography_font_size": {"unit": "px", "size": 40},
+                "typography_font_size_mobile": {"unit": "px", "size": 28},
+                "typography_font_weight": "600"
+              },
+              "elements": []
+            },
+            {
+              "id": "dln203",
+              "elType": "widget",
+              "widgetType": "text-editor",
+              "settings": {
+                "editor": "<p style=\"text-align:center;\">Dimasak segar setiap pagi. Lauk kampung yang sama rasa setiap kali datang.</p>",
+                "text_color": "#6B5D4F",
+                "align": "center"
+              },
+              "elements": []
+            },
+            {
+              "id": "dln204",
+              "elType": "container",
+              "isInner": true,
+              "settings": {
+                "flex_direction": "row",
+                "flex_wrap": "wrap",
+                "flex_gap": {"column": "24", "row": "24", "isLinked": true, "unit": "px", "size": 24}
+              },
+              "elements": [
+                {
+                  "id": "dln210",
+                  "elType": "container",
+                  "isInner": true,
+                  "settings": {
+                    "width": {"unit": "%", "size": 31.5},
+                    "width_mobile": {"unit": "%", "size": 100},
+                    "flex_direction": "column",
+                    "background_background": "classic",
+                    "background_color": "#FFFFFF",
+                    "border_radius": {"unit": "px", "top": "18", "right": "18", "bottom": "18", "left": "18", "isLinked": true},
+                    "box_shadow_box_shadow_type": true,
+                    "box_shadow_box_shadow": {"horizontal": 0, "vertical": 10, "blur": 30, "spread": 0, "color": "rgba(43,33,24,0.1)"},
+                    "overflow": "hidden"
+                  },
+                  "elements": [
+                    {"id": "dln211", "elType": "widget", "widgetType": "image", "settings": {"image": {"url": "https://images.unsplash.com/photo-1601050690597-df0568f70950?w=700&q=80", "id": "", "alt": "Rendang tok", "source": "library"}, "width": {"unit": "%", "size": 100}}, "elements": []},
+                    {
+                      "id": "dln212",
+                      "elType": "container",
+                      "isInner": true,
+                      "settings": {"flex_direction": "column", "flex_gap": {"column": "6", "row": "6", "isLinked": true, "unit": "px", "size": 6}, "padding": {"unit": "px", "top": "20", "right": "22", "bottom": "24", "left": "22", "isLinked": false}},
+                      "elements": [
+                        {"id": "dln213", "elType": "widget", "widgetType": "heading", "settings": {"title": "Rendang Tok", "header_size": "h3", "title_color": "#22402C", "typography_typography": "custom", "typography_font_family": "Fraunces", "typography_font_size": {"unit": "px", "size": 20}, "typography_font_weight": "600"}, "elements": []},
+                        {"id": "dln214", "elType": "widget", "widgetType": "text-editor", "settings": {"editor": "<p><strong>RM55 / 500g &middot; RM100 / 1kg</strong></p>", "text_color": "#C1502E"}, "elements": []},
+                        {"id": "dln215", "elType": "widget", "widgetType": "text-editor", "settings": {"editor": "<p>Lemak, pekat, dimasak lama hingga remes sempurna. Signature D&rsquo;LaDen.</p>", "text_color": "#6B5D4F", "typography_typography": "custom", "typography_font_size": {"unit": "px", "size": 15}}, "elements": []}
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "id": "dln220",
+                  "elType": "container",
+                  "isInner": true,
+                  "settings": {
+                    "width": {"unit": "%", "size": 31.5},
+                    "width_mobile": {"unit": "%", "size": 100},
+                    "flex_direction": "column",
+                    "background_background": "classic",
+                    "background_color": "#FFFFFF",
+                    "border_radius": {"unit": "px", "top": "18", "right": "18", "bottom": "18", "left": "18", "isLinked": true},
+                    "box_shadow_box_shadow_type": true,
+                    "box_shadow_box_shadow": {"horizontal": 0, "vertical": 10, "blur": 30, "spread": 0, "color": "rgba(43,33,24,0.1)"},
+                    "overflow": "hidden"
+                  },
+                  "elements": [
+                    {"id": "dln221", "elType": "widget", "widgetType": "image", "settings": {"image": {"url": "https://images.unsplash.com/photo-1585032226651-759b368d7246?w=700&q=80", "id": "", "alt": "Pulut kuning rendang", "source": "library"}, "width": {"unit": "%", "size": 100}}, "elements": []},
+                    {
+                      "id": "dln222",
+                      "elType": "container",
+                      "isInner": true,
+                      "settings": {"flex_direction": "column", "flex_gap": {"column": "6", "row": "6", "isLinked": true, "unit": "px", "size": 6}, "padding": {"unit": "px", "top": "20", "right": "22", "bottom": "24", "left": "22", "isLinked": false}},
+                      "elements": [
+                        {"id": "dln223", "elType": "widget", "widgetType": "heading", "settings": {"title": "Pulut Kuning Rendang", "header_size": "h3", "title_color": "#22402C", "typography_typography": "custom", "typography_font_family": "Fraunces", "typography_font_size": {"unit": "px", "size": 20}, "typography_font_weight": "600"}, "elements": []},
+                        {"id": "dln224", "elType": "widget", "widgetType": "text-editor", "settings": {"editor": "<p><strong>dari RM16</strong></p>", "text_color": "#C1502E"}, "elements": []},
+                        {"id": "dln225", "elType": "widget", "widgetType": "text-editor", "settings": {"editor": "<p>Pulut kuning kukus lembut dengan rendang ayam atau daging &mdash; wajib untuk pagi kenduri.</p>", "text_color": "#6B5D4F", "typography_typography": "custom", "typography_font_size": {"unit": "px", "size": 15}}, "elements": []}
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "id": "dln230",
+                  "elType": "container",
+                  "isInner": true,
+                  "settings": {
+                    "width": {"unit": "%", "size": 31.5},
+                    "width_mobile": {"unit": "%", "size": 100},
+                    "flex_direction": "column",
+                    "background_background": "classic",
+                    "background_color": "#FFFFFF",
+                    "border_radius": {"unit": "px", "top": "18", "right": "18", "bottom": "18", "left": "18", "isLinked": true},
+                    "box_shadow_box_shadow_type": true,
+                    "box_shadow_box_shadow": {"horizontal": 0, "vertical": 10, "blur": 30, "spread": 0, "color": "rgba(43,33,24,0.1)"},
+                    "overflow": "hidden"
+                  },
+                  "elements": [
+                    {"id": "dln231", "elType": "widget", "widgetType": "image", "settings": {"image": {"url": "https://images.unsplash.com/photo-1587223962936-2b7a4d6d4d26?w=700&q=80", "id": "", "alt": "Nasi lemak lauk pagi", "source": "library"}, "width": {"unit": "%", "size": 100}}, "elements": []},
+                    {
+                      "id": "dln232",
+                      "elType": "container",
+                      "isInner": true,
+                      "settings": {"flex_direction": "column", "flex_gap": {"column": "6", "row": "6", "isLinked": true, "unit": "px", "size": 6}, "padding": {"unit": "px", "top": "20", "right": "22", "bottom": "24", "left": "22", "isLinked": false}},
+                      "elements": [
+                        {"id": "dln233", "elType": "widget", "widgetType": "heading", "settings": {"title": "Nasi Lemak &amp; Lauk Pagi", "header_size": "h3", "title_color": "#22402C", "typography_typography": "custom", "typography_font_family": "Fraunces", "typography_font_size": {"unit": "px", "size": 20}, "typography_font_weight": "600"}, "elements": []},
+                        {"id": "dln234", "elType": "widget", "widgetType": "text-editor", "settings": {"editor": "<p><strong>dari RM8</strong></p>", "text_color": "#C1502E"}, "elements": []},
+                        {"id": "dln235", "elType": "widget", "widgetType": "text-editor", "settings": {"editor": "<p>Ayam goreng rempah, rendang ayam, hati kicap, dan sambal yang dicari ramai.</p>", "text_color": "#6B5D4F", "typography_typography": "custom", "typography_font_size": {"unit": "px", "size": 15}}, "elements": []}
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "id": "dln240",
+                  "elType": "container",
+                  "isInner": true,
+                  "settings": {
+                    "width": {"unit": "%", "size": 31.5},
+                    "width_mobile": {"unit": "%", "size": 100},
+                    "flex_direction": "column",
+                    "background_background": "classic",
+                    "background_color": "#FFFFFF",
+                    "border_radius": {"unit": "px", "top": "18", "right": "18", "bottom": "18", "left": "18", "isLinked": true},
+                    "box_shadow_box_shadow_type": true,
+                    "box_shadow_box_shadow": {"horizontal": 0, "vertical": 10, "blur": 30, "spread": 0, "color": "rgba(43,33,24,0.1)"},
+                    "overflow": "hidden"
+                  },
+                  "elements": [
+                    {"id": "dln241", "elType": "widget", "widgetType": "image", "settings": {"image": {"url": "https://images.unsplash.com/photo-1606313564200-e75d5e30476c?w=700&q=80", "id": "", "alt": "Kuih muih tradisional", "source": "library"}, "width": {"unit": "%", "size": 100}}, "elements": []},
+                    {
+                      "id": "dln242",
+                      "elType": "container",
+                      "isInner": true,
+                      "settings": {"flex_direction": "column", "flex_gap": {"column": "6", "row": "6", "isLinked": true, "unit": "px", "size": 6}, "padding": {"unit": "px", "top": "20", "right": "22", "bottom": "24", "left": "22", "isLinked": false}},
+                      "elements": [
+                        {"id": "dln243", "elType": "widget", "widgetType": "heading", "settings": {"title": "Kuih Muih Tradisional", "header_size": "h3", "title_color": "#22402C", "typography_typography": "custom", "typography_font_family": "Fraunces", "typography_font_size": {"unit": "px", "size": 20}, "typography_font_weight": "600"}, "elements": []},
+                        {"id": "dln244", "elType": "widget", "widgetType": "text-editor", "settings": {"editor": "<p><strong>dari RM4.90</strong></p>", "text_color": "#C1502E"}, "elements": []},
+                        {"id": "dln245", "elType": "widget", "widgetType": "text-editor", "settings": {"editor": "<p>Kuih bakar kemboja, kaswi gula merah, kuih lopes, apam gula hangus.</p>", "text_color": "#6B5D4F", "typography_typography": "custom", "typography_font_size": {"unit": "px", "size": 15}}, "elements": []}
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "id": "dln250",
+                  "elType": "container",
+                  "isInner": true,
+                  "settings": {
+                    "width": {"unit": "%", "size": 31.5},
+                    "width_mobile": {"unit": "%", "size": 100},
+                    "flex_direction": "column",
+                    "background_background": "classic",
+                    "background_color": "#FFFFFF",
+                    "border_radius": {"unit": "px", "top": "18", "right": "18", "bottom": "18", "left": "18", "isLinked": true},
+                    "box_shadow_box_shadow_type": true,
+                    "box_shadow_box_shadow": {"horizontal": 0, "vertical": 10, "blur": 30, "spread": 0, "color": "rgba(43,33,24,0.1)"},
+                    "overflow": "hidden"
+                  },
+                  "elements": [
+                    {"id": "dln251", "elType": "widget", "widgetType": "image", "settings": {"image": {"url": "https://images.unsplash.com/photo-1590301157890-4810ed352733?w=700&q=80", "id": "", "alt": "Sambal krupkrap botol", "source": "library"}, "width": {"unit": "%", "size": 100}}, "elements": []},
+                    {
+                      "id": "dln252",
+                      "elType": "container",
+                      "isInner": true,
+                      "settings": {"flex_direction": "column", "flex_gap": {"column": "6", "row": "6", "isLinked": true, "unit": "px", "size": 6}, "padding": {"unit": "px", "top": "20", "right": "22", "bottom": "24", "left": "22", "isLinked": false}},
+                      "elements": [
+                        {"id": "dln253", "elType": "widget", "widgetType": "heading", "settings": {"title": "Sambal Krupkrap (Botol)", "header_size": "h3", "title_color": "#22402C", "typography_typography": "custom", "typography_font_family": "Fraunces", "typography_font_size": {"unit": "px", "size": 20}, "typography_font_weight": "600"}, "elements": []},
+                        {"id": "dln254", "elType": "widget", "widgetType": "text-editor", "settings": {"editor": "<p><strong>RM20</strong></p>", "text_color": "#C1502E"}, "elements": []},
+                        {"id": "dln255", "elType": "widget", "widgetType": "text-editor", "settings": {"editor": "<p>Sambal bilis &amp; sambal paru dalam botol. Crunch tahan lama, selalu stok untuk balik kampung.</p>", "text_color": "#6B5D4F", "typography_typography": "custom", "typography_font_size": {"unit": "px", "size": 15}}, "elements": []}
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "id": "dln260",
+                  "elType": "container",
+                  "isInner": true,
+                  "settings": {
+                    "width": {"unit": "%", "size": 31.5},
+                    "width_mobile": {"unit": "%", "size": 100},
+                    "flex_direction": "column",
+                    "background_background": "classic",
+                    "background_color": "#FFFFFF",
+                    "border_radius": {"unit": "px", "top": "18", "right": "18", "bottom": "18", "left": "18", "isLinked": true},
+                    "box_shadow_box_shadow_type": true,
+                    "box_shadow_box_shadow": {"horizontal": 0, "vertical": 10, "blur": 30, "spread": 0, "color": "rgba(43,33,24,0.1)"},
+                    "overflow": "hidden"
+                  },
+                  "elements": [
+                    {"id": "dln261", "elType": "widget", "widgetType": "image", "settings": {"image": {"url": "https://images.unsplash.com/photo-1567337710282-00832b415979?w=700&q=80", "id": "", "alt": "Kari kambing dan gulai kawah", "source": "library"}, "width": {"unit": "%", "size": 100}}, "elements": []},
+                    {
+                      "id": "dln262",
+                      "elType": "container",
+                      "isInner": true,
+                      "settings": {"flex_direction": "column", "flex_gap": {"column": "6", "row": "6", "isLinked": true, "unit": "px", "size": 6}, "padding": {"unit": "px", "top": "20", "right": "22", "bottom": "24", "left": "22", "isLinked": false}},
+                      "elements": [
+                        {"id": "dln263", "elType": "widget", "widgetType": "heading", "settings": {"title": "Kari Kambing &amp; Gulai Kawah", "header_size": "h3", "title_color": "#22402C", "typography_typography": "custom", "typography_font_family": "Fraunces", "typography_font_size": {"unit": "px", "size": 20}, "typography_font_weight": "600"}, "elements": []},
+                        {"id": "dln264", "elType": "widget", "widgetType": "text-editor", "settings": {"editor": "<p><strong>dari RM15</strong></p>", "text_color": "#C1502E"}, "elements": []},
+                        {"id": "dln265", "elType": "widget", "widgetType": "text-editor", "settings": {"editor": "<p>Gulai daging kawah &amp; kari kambing pekat &mdash; untuk sarapan berat atau majlis besar.</p>", "text_color": "#6B5D4F", "typography_typography": "custom", "typography_font_size": {"unit": "px", "size": 15}}, "elements": []}
+                      ]
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "dln300",
+      "elType": "container",
+      "isInner": false,
+      "settings": {
+        "_element_id": "pesanan-pukal",
+        "container_type": "full-width",
+        "flex_direction": "column",
+        "flex_align_items": "center",
+        "background_background": "classic",
+        "background_color": "#2E5339",
+        "padding": {"unit": "px", "top": "80", "right": "20", "bottom": "80", "left": "20", "isLinked": false},
+        "padding_mobile": {"unit": "px", "top": "52", "right": "16", "bottom": "52", "left": "16", "isLinked": false}
+      },
+      "elements": [
+        {
+          "id": "dln301",
+          "elType": "container",
+          "isInner": true,
+          "settings": {
+            "container_type": "boxed",
+            "content_width": {"unit": "px", "size": 1140},
+            "flex_direction": "column",
+            "flex_gap": {"column": "26", "row": "26", "isLinked": true, "unit": "px", "size": 26}
+          },
+          "elements": [
+            {
+              "id": "dln302",
+              "elType": "widget",
+              "widgetType": "text-editor",
+              "settings": {"editor": "<p><strong style=\"letter-spacing:.14em;text-transform:uppercase;color:#D9A441;font-size:14px;\">UNTUK MAJLIS ANDA</strong></p>", "text_color": "#D9A441", "align": "center"},
+              "elements": []
+            },
+            {
+              "id": "dln303",
+              "elType": "widget",
+              "widgetType": "heading",
+              "settings": {
+                "title": "Kenduri, Mesyuarat &amp; Stok Rumah &mdash; Kami Sedia",
+                "header_size": "h2",
+                "align": "center",
+                "title_color": "#FBF6EC",
+                "typography_typography": "custom",
+                "typography_font_family": "Fraunces",
+                "typography_font_size": {"unit": "px", "size": 40},
+                "typography_font_size_mobile": {"unit": "px", "size": 28},
+                "typography_font_weight": "600"
+              },
+              "elements": []
+            },
+            {
+              "id": "dln304",
+              "elType": "widget",
+              "widgetType": "text-editor",
+              "settings": {"editor": "<p style=\"text-align:center;\">Tempah lauk pukal untuk kenduri kahwin, akikah, doa selamat, mesyuarat pejabat, atau sekadar stok rendang dalam peti sejuk.</p>", "text_color": "rgba(251,246,236,0.85)", "align": "center"},
+              "elements": []
+            },
+            {
+              "id": "dln305",
+              "elType": "container",
+              "isInner": true,
+              "settings": {
+                "flex_direction": "row",
+                "flex_wrap": "wrap",
+                "flex_gap": {"column": "24", "row": "24", "isLinked": true, "unit": "px", "size": 24}
+              },
+              "elements": [
+                {
+                  "id": "dln306",
+                  "elType": "container",
+                  "isInner": true,
+                  "settings": {"width": {"unit": "%", "size": 31.5}, "width_mobile": {"unit": "%", "size": 100}, "flex_direction": "column", "flex_gap": {"column": "10", "row": "10", "isLinked": true, "unit": "px", "size": 10}, "background_background": "classic", "background_color": "rgba(255,255,255,0.06)", "border_border": "solid", "border_width": {"unit": "px", "top": "1", "right": "1", "bottom": "1", "left": "1", "isLinked": true}, "border_color": "rgba(255,255,255,0.15)", "border_radius": {"unit": "px", "top": "18", "right": "18", "bottom": "18", "left": "18", "isLinked": true}, "padding": {"unit": "px", "top": "26", "right": "26", "bottom": "26", "left": "26", "isLinked": true}},
+                  "elements": [
+                    {"id": "dln307", "elType": "widget", "widgetType": "heading", "settings": {"title": "Rendang &amp; Masakan Daging Pukal", "header_size": "h3", "title_color": "#D9A441", "typography_typography": "custom", "typography_font_family": "Fraunces", "typography_font_size": {"unit": "px", "size": 19}, "typography_font_weight": "600"}, "elements": []},
+                    {"id": "dln308", "elType": "widget", "widgetType": "text-editor", "settings": {"editor": "<p>Rendang Tok, Rendang Nasib, Dendeng, Masak Hitam, Palembang &mdash; 500g / 1kg, sedia panas atau sejuk beku.</p>", "text_color": "rgba(251,246,236,0.85)", "typography_typography": "custom", "typography_font_size": {"unit": "px", "size": 15}}, "elements": []}
+                  ]
+                },
+                {
+                  "id": "dln309",
+                  "elType": "container",
+                  "isInner": true,
+                  "settings": {"width": {"unit": "%", "size": 31.5}, "width_mobile": {"unit": "%", "size": 100}, "flex_direction": "column", "flex_gap": {"column": "10", "row": "10", "isLinked": true, "unit": "px", "size": 10}, "background_background": "classic", "background_color": "rgba(255,255,255,0.06)", "border_border": "solid", "border_width": {"unit": "px", "top": "1", "right": "1", "bottom": "1", "left": "1", "isLinked": true}, "border_color": "rgba(255,255,255,0.15)", "border_radius": {"unit": "px", "top": "18", "right": "18", "bottom": "18", "left": "18", "isLinked": true}, "padding": {"unit": "px", "top": "26", "right": "26", "bottom": "26", "left": "26", "isLinked": true}},
+                  "elements": [
+                    {"id": "dln310", "elType": "widget", "widgetType": "heading", "settings": {"title": "Ayam Sekeluarga", "header_size": "h3", "title_color": "#D9A441", "typography_typography": "custom", "typography_font_family": "Fraunces", "typography_font_size": {"unit": "px", "size": 19}, "typography_font_weight": "600"}, "elements": []},
+                    {"id": "dln311", "elType": "widget", "widgetType": "text-editor", "settings": {"editor": "<p>Rendang Ayam Tua Cili Padi, Ayam Masak Merah &mdash; separuh ekor atau seekor, cukup untuk satu meja.</p>", "text_color": "rgba(251,246,236,0.85)", "typography_typography": "custom", "typography_font_size": {"unit": "px", "size": 15}}, "elements": []}
+                  ]
+                },
+                {
+                  "id": "dln312",
+                  "elType": "container",
+                  "isInner": true,
+                  "settings": {"width": {"unit": "%", "size": 31.5}, "width_mobile": {"unit": "%", "size": 100}, "flex_direction": "column", "flex_gap": {"column": "10", "row": "10", "isLinked": true, "unit": "px", "size": 10}, "background_background": "classic", "background_color": "rgba(255,255,255,0.06)", "border_border": "solid", "border_width": {"unit": "px", "top": "1", "right": "1", "bottom": "1", "left": "1", "isLinked": true}, "border_color": "rgba(255,255,255,0.15)", "border_radius": {"unit": "px", "top": "18", "right": "18", "bottom": "18", "left": "18", "isLinked": true}, "padding": {"unit": "px", "top": "26", "right": "26", "bottom": "26", "left": "26", "isLinked": true}},
+                  "elements": [
+                    {"id": "dln313", "elType": "widget", "widgetType": "heading", "settings": {"title": "Kari &amp; Gulai Besar", "header_size": "h3", "title_color": "#D9A441", "typography_typography": "custom", "typography_font_family": "Fraunces", "typography_font_size": {"unit": "px", "size": 19}, "typography_font_weight": "600"}, "elements": []},
+                    {"id": "dln314", "elType": "widget", "widgetType": "text-editor", "settings": {"editor": "<p>Kari Kambing 1kg, Gulai Daging Kawah 1kg &mdash; kegemaran mesyuarat pagi dan kenduri tengah hari.</p>", "text_color": "rgba(251,246,236,0.85)", "typography_typography": "custom", "typography_font_size": {"unit": "px", "size": 15}}, "elements": []}
+                  ]
+                }
+              ]
+            },
+            {
+              "id": "dln315",
+              "elType": "container",
+              "isInner": true,
+              "settings": {"flex_direction": "row", "flex_align_items": "center", "flex_gap": {"column": "18", "row": "12", "isLinked": false, "unit": "px", "size": 18}, "flex_wrap": "wrap", "justify": "center"},
+              "elements": [
+                {"id": "dln316", "elType": "widget", "widgetType": "button", "settings": {"text": "Isi Borang Pesanan", "link": {"url": "#pesanan", "is_external": "", "nofollow": ""}, "align": "left", "button_text_color": "#FFFFFF", "background_color": "#C1502E", "border_radius": {"unit": "px", "top": "999", "right": "999", "bottom": "999", "left": "999", "isLinked": true}, "typography_typography": "custom", "typography_font_weight": "700"}, "elements": []},
+                {"id": "dln317", "elType": "widget", "widgetType": "text-editor", "settings": {"editor": "<p><strong>&#128197; Tempah 2&ndash;3 hari awal untuk majlis besar</strong></p>", "text_color": "rgba(251,246,236,0.75)"}, "elements": []}
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "dln400",
+      "elType": "container",
+      "isInner": false,
+      "settings": {
+        "_element_id": "testimoni",
+        "container_type": "full-width",
+        "flex_direction": "column",
+        "flex_align_items": "center",
+        "background_background": "classic",
+        "background_color": "#FBF6EC",
+        "padding": {"unit": "px", "top": "80", "right": "20", "bottom": "80", "left": "20", "isLinked": false},
+        "padding_mobile": {"unit": "px", "top": "52", "right": "16", "bottom": "52", "left": "16", "isLinked": false}
+      },
+      "elements": [
+        {
+          "id": "dln401",
+          "elType": "container",
+          "isInner": true,
+          "settings": {
+            "container_type": "boxed",
+            "content_width": {"unit": "px", "size": 1140},
+            "flex_direction": "column",
+            "flex_gap": {"column": "28", "row": "28", "isLinked": true, "unit": "px", "size": 28}
+          },
+          "elements": [
+            {"id": "dln402", "elType": "widget", "widgetType": "heading", "settings": {"title": "Kata Mereka", "header_size": "h2", "align": "center", "title_color": "#22402C", "typography_typography": "custom", "typography_font_family": "Fraunces", "typography_font_size": {"unit": "px", "size": 40}, "typography_font_size_mobile": {"unit": "px", "size": 28}, "typography_font_weight": "600"}, "elements": []},
+            {
+              "id": "dln403",
+              "elType": "container",
+              "isInner": true,
+              "settings": {"flex_direction": "row", "flex_wrap": "wrap", "flex_gap": {"column": "24", "row": "24", "isLinked": true, "unit": "px", "size": 24}},
+              "elements": [
+                {"id": "dln404", "elType": "container", "isInner": true, "settings": {"width": {"unit": "%", "size": 31.5}, "width_mobile": {"unit": "%", "size": 100}, "flex_direction": "column", "flex_gap": {"column": "10", "row": "10", "isLinked": true, "unit": "px", "size": 10}, "background_background": "classic", "background_color": "#FFFFFF", "border_border": "solid", "border_width": {"unit": "px", "top": "4", "right": "0", "bottom": "0", "left": "0", "isLinked": false}, "border_color": "#D9A441", "border_radius": {"unit": "px", "top": "18", "right": "18", "bottom": "18", "left": "18", "isLinked": true}, "box_shadow_box_shadow_type": true, "box_shadow_box_shadow": {"horizontal": 0, "vertical": 10, "blur": 30, "spread": 0, "color": "rgba(43,33,24,0.1)"}, "padding": {"unit": "px", "top": "28", "right": "28", "bottom": "28", "left": "28", "isLinked": true}}, "elements": [
+                  {"id": "dln405", "elType": "widget", "widgetType": "text-editor", "settings": {"editor": "<p style=\"color:#D9A441;letter-spacing:.15em;\">&#9733;&#9733;&#9733;&#9733;&#9733;</p>"}, "elements": []},
+                  {"id": "dln406", "elType": "widget", "widgetType": "text-editor", "settings": {"editor": "<p>&ldquo;Nasi lemak sedap as always.&rdquo;</p>", "text_color": "#2B2118", "typography_typography": "custom", "typography_font_size": {"unit": "px", "size": 16}}, "elements": []},
+                  {"id": "dln407", "elType": "widget", "widgetType": "text-editor", "settings": {"editor": "<p><strong style=\"color:#C1502E;\">Iza</strong> &mdash; ulasan Foodpanda</p>"}, "elements": []}
+                ]},
+                {"id": "dln408", "elType": "container", "isInner": true, "settings": {"width": {"unit": "%", "size": 31.5}, "width_mobile": {"unit": "%", "size": 100}, "flex_direction": "column", "flex_gap": {"column": "10", "row": "10", "isLinked": true, "unit": "px", "size": 10}, "background_background": "classic", "background_color": "#FFFFFF", "border_border": "solid", "border_width": {"unit": "px", "top": "4", "right": "0", "bottom": "0", "left": "0", "isLinked": false}, "border_color": "#D9A441", "border_radius": {"unit": "px", "top": "18", "right": "18", "bottom": "18", "left": "18", "isLinked": true}, "box_shadow_box_shadow_type": true, "box_shadow_box_shadow": {"horizontal": 0, "vertical": 10, "blur": 30, "spread": 0, "color": "rgba(43,33,24,0.1)"}, "padding": {"unit": "px", "top": "28", "right": "28", "bottom": "28", "left": "28", "isLinked": true}}, "elements": [
+                  {"id": "dln409", "elType": "widget", "widgetType": "text-editor", "settings": {"editor": "<p style=\"color:#D9A441;letter-spacing:.15em;\">&#9733;&#9733;&#9733;&#9733;&#9733;</p>"}, "elements": []},
+                  {"id": "dln410", "elType": "widget", "widgetType": "text-editor", "settings": {"editor": "<p>&ldquo;Harga yang berbaloi &amp; kuantiti yang banyak.&rdquo;</p>", "text_color": "#2B2118", "typography_typography": "custom", "typography_font_size": {"unit": "px", "size": 16}}, "elements": []},
+                  {"id": "dln411", "elType": "widget", "widgetType": "text-editor", "settings": {"editor": "<p><strong style=\"color:#C1502E;\">Intan</strong> &mdash; ulasan Foodpanda</p>"}, "elements": []}
+                ]},
+                {"id": "dln412", "elType": "container", "isInner": true, "settings": {"width": {"unit": "%", "size": 31.5}, "width_mobile": {"unit": "%", "size": 100}, "flex_direction": "column", "flex_gap": {"column": "10", "row": "10", "isLinked": true, "unit": "px", "size": 10}, "background_background": "classic", "background_color": "#FFFFFF", "border_border": "solid", "border_width": {"unit": "px", "top": "4", "right": "0", "bottom": "0", "left": "0", "isLinked": false}, "border_color": "#D9A441", "border_radius": {"unit": "px", "top": "18", "right": "18", "bottom": "18", "left": "18", "isLinked": true}, "box_shadow_box_shadow_type": true, "box_shadow_box_shadow": {"horizontal": 0, "vertical": 10, "blur": 30, "spread": 0, "color": "rgba(43,33,24,0.1)"}, "padding": {"unit": "px", "top": "28", "right": "28", "bottom": "28", "left": "28", "isLinked": true}}, "elements": [
+                  {"id": "dln413", "elType": "widget", "widgetType": "text-editor", "settings": {"editor": "<p style=\"color:#D9A441;letter-spacing:.15em;\">&#9733;&#9733;&#9733;&#9733;&#9733;</p>"}, "elements": []},
+                  {"id": "dln414", "elType": "widget", "widgetType": "text-editor", "settings": {"editor": "<p>&ldquo;Banyak kali dah repeat kat restoran ini. Banyak pilihan &amp; kena dengan selera.&rdquo;</p>", "text_color": "#2B2118", "typography_typography": "custom", "typography_font_size": {"unit": "px", "size": 16}}, "elements": []},
+                  {"id": "dln415", "elType": "widget", "widgetType": "text-editor", "settings": {"editor": "<p><strong style=\"color:#C1502E;\">Wati</strong> &mdash; ulasan Foodpanda</p>"}, "elements": []}
+                ]}
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "dln500",
+      "elType": "container",
+      "isInner": false,
+      "settings": {
+        "_element_id": "pesanan",
+        "container_type": "full-width",
+        "flex_direction": "column",
+        "flex_align_items": "center",
+        "background_background": "classic",
+        "background_color": "#F3EAD8",
+        "padding": {"unit": "px", "top": "80", "right": "20", "bottom": "80", "left": "20", "isLinked": false},
+        "padding_mobile": {"unit": "px", "top": "52", "right": "16", "bottom": "52", "left": "16", "isLinked": false}
+      },
+      "elements": [
+        {
+          "id": "dln501",
+          "elType": "container",
+          "isInner": true,
+          "settings": {
+            "container_type": "boxed",
+            "content_width": {"unit": "px", "size": 1140},
+            "flex_direction": "row",
+            "flex_align_items": "flex-start",
+            "flex_gap": {"column": "48", "row": "32", "isLinked": false, "unit": "px", "size": 48},
+            "flex_direction_mobile": "column"
+          },
+          "elements": [
+            {
+              "id": "dln502",
+              "elType": "container",
+              "isInner": true,
+              "settings": {"width": {"unit": "%", "size": 42}, "width_mobile": {"unit": "%", "size": 100}, "flex_direction": "column", "flex_gap": {"column": "16", "row": "16", "isLinked": true, "unit": "px", "size": 16}},
+              "elements": [
+                {"id": "dln503", "elType": "widget", "widgetType": "text-editor", "settings": {"editor": "<p><strong style=\"letter-spacing:.14em;text-transform:uppercase;color:#C1502E;font-size:14px;\">BORANG PESANAN</strong></p>"}, "elements": []},
+                {"id": "dln504", "elType": "widget", "widgetType": "heading", "settings": {"title": "Pesan Sekarang", "header_size": "h2", "title_color": "#22402C", "typography_typography": "custom", "typography_font_family": "Fraunces", "typography_font_size": {"unit": "px", "size": 40}, "typography_font_size_mobile": {"unit": "px", "size": 28}, "typography_font_weight": "600"}, "elements": []},
+                {"id": "dln505", "elType": "widget", "widgetType": "text-editor", "settings": {"editor": "<p>Isi borang di sebelah &mdash; kami akan hubungi anda di WhatsApp untuk sahkan pesanan dan harga.</p>", "text_color": "#6B5D4F"}, "elements": []},
+                {"id": "dln506", "elType": "widget", "widgetType": "icon-list", "settings": {"icon_list": [
+                  {"_id": "stp1", "text": "Isi butiran pesanan anda (jenis, tarikh, kuantiti)", "selected_icon": {"value": "fas fa-1", "library": "fa-solid"}},
+                  {"_id": "stp2", "text": "Kami WhatsApp anda untuk sahkan &amp; beri harga akhir", "selected_icon": {"value": "fas fa-2", "library": "fa-solid"}},
+                  {"_id": "stp3", "text": "Lauk siap diambil atau dihantar ikut perjanjian", "selected_icon": {"value": "fas fa-3", "library": "fa-solid"}}
+                ], "text_color": "#6B5D4F", "icon_color": "#D9A441", "space_between": {"unit": "px", "size": 14}}, "elements": []},
+                {"id": "dln507", "elType": "widget", "widgetType": "text-editor", "settings": {"editor": "<p style=\"background:#FFFFFF;padding:18px 22px;border-radius:14px;\"><strong>Mahu cepat?</strong> WhatsApp terus: <a href=\"https://wa.me/60122466678\" style=\"color:#C1502E;font-weight:700;\">012-246 6678</a></p>"}, "elements": []}
+              ]
+            },
+            {
+              "id": "dln510",
+              "elType": "container",
+              "isInner": true,
+              "settings": {"width": {"unit": "%", "size": 58}, "width_mobile": {"unit": "%", "size": 100}, "flex_direction": "column", "background_background": "classic", "background_color": "#FFFFFF", "border_radius": {"unit": "px", "top": "18", "right": "18", "bottom": "18", "left": "18", "isLinked": true}, "box_shadow_box_shadow_type": true, "box_shadow_box_shadow": {"horizontal": 0, "vertical": 10, "blur": 30, "spread": 0, "color": "rgba(43,33,24,0.1)"}, "padding": {"unit": "px", "top": "32", "right": "32", "bottom": "32", "left": "32", "isLinked": true}},
+              "elements": [
+                {
+                  "id": "dln511",
+                  "elType": "widget",
+                  "widgetType": "shortcode",
+                  "settings": {
+                    "shortcode": "[contact-form-7 id=\"GANTI-DENGAN-ID-FORM\" title=\"Pesanan D'LaDen\"]"
+                  },
+                  "elements": []
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "dln600",
+      "elType": "container",
+      "isInner": false,
+      "settings": {
+        "_element_id": "lokasi",
+        "container_type": "full-width",
+        "flex_direction": "column",
+        "flex_align_items": "center",
+        "background_background": "classic",
+        "background_color": "#FBF6EC",
+        "padding": {"unit": "px", "top": "80", "right": "20", "bottom": "80", "left": "20", "isLinked": false},
+        "padding_mobile": {"unit": "px", "top": "52", "right": "16", "bottom": "52", "left": "16", "isLinked": false}
+      },
+      "elements": [
+        {
+          "id": "dln601",
+          "elType": "container",
+          "isInner": true,
+          "settings": {
+            "container_type": "boxed",
+            "content_width": {"unit": "px", "size": 1140},
+            "flex_direction": "column",
+            "flex_gap": {"column": "28", "row": "28", "isLinked": true, "unit": "px", "size": 28}
+          },
+          "elements": [
+            {"id": "dln602", "elType": "widget", "widgetType": "heading", "settings": {"title": "Datang &amp; Rasa Sendiri", "header_size": "h2", "align": "center", "title_color": "#22402C", "typography_typography": "custom", "typography_font_family": "Fraunces", "typography_font_size": {"unit": "px", "size": 40}, "typography_font_size_mobile": {"unit": "px", "size": 28}, "typography_font_weight": "600"}, "elements": []},
+            {
+              "id": "dln603",
+              "elType": "container",
+              "isInner": true,
+              "settings": {"flex_direction": "row", "flex_align_items": "stretch", "flex_gap": {"column": "48", "row": "32", "isLinked": false, "unit": "px", "size": 48}, "flex_direction_mobile": "column"},
+              "elements": [
+                {
+                  "id": "dln604",
+                  "elType": "container",
+                  "isInner": true,
+                  "settings": {"width": {"unit": "%", "size": 45}, "width_mobile": {"unit": "%", "size": 100}, "flex_direction": "column", "flex_gap": {"column": "20", "row": "20", "isLinked": true, "unit": "px", "size": 20}},
+                  "elements": [
+                    {"id": "dln605", "elType": "widget", "widgetType": "icon-list", "settings": {"icon_list": [
+                      {"_id": "loc1", "text": "<strong>Alamat</strong><br>No 24, Jalan Seri Putra 3/13, Bandar Seri Putra, 43000 Bangi, Selangor", "selected_icon": {"value": "fas fa-map-marker-alt", "library": "fa-solid"}},
+                      {"_id": "loc2", "text": "<strong>Waktu Operasi</strong><br>Setiap hari &mdash; 6:30 pagi hingga 4:00 petang", "selected_icon": {"value": "far fa-clock", "library": "fa-regular"}},
+                      {"_id": "loc3", "text": "<strong>Telefon / WhatsApp</strong><br><a href=\"https://wa.me/60122466678\">012-246 6678</a>", "selected_icon": {"value": "fas fa-phone", "library": "fa-solid"}},
+                      {"_id": "loc4", "text": "<strong>Delivery</strong><br>Ada di Foodpanda &mdash; cari &ldquo;Restoran D&rsquo;Laden Bandar Seri Putra&rdquo;", "selected_icon": {"value": "fas fa-motorcycle", "library": "fa-solid"}}
+                    ], "text_color": "#6B5D4F", "icon_color": "#C1502E", "space_between": {"unit": "px", "size": 20}}, "elements": []}
+                  ]
+                },
+                {
+                  "id": "dln606",
+                  "elType": "container",
+                  "isInner": true,
+                  "settings": {"width": {"unit": "%", "size": 55}, "width_mobile": {"unit": "%", "size": 100}, "flex_direction": "column", "border_radius": {"unit": "px", "top": "18", "right": "18", "bottom": "18", "left": "18", "isLinked": true}, "box_shadow_box_shadow_type": true, "box_shadow_box_shadow": {"horizontal": 0, "vertical": 10, "blur": 30, "spread": 0, "color": "rgba(43,33,24,0.1)"}, "overflow": "hidden"},
+                  "elements": [
+                    {"id": "dln607", "elType": "widget", "widgetType": "google_maps", "settings": {"address": "Jalan Seri Putra 3/13, Bandar Seri Putra, 43000 Bangi, Selangor", "zoom": {"unit": "zoom", "size": 15}, "height": {"unit": "px", "size": 420}}, "elements": []}
+                  ]
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "page_settings": {"hide_title": "yes"},
+  "version": "0.4",
+  "title": "D'LaDen — Home",
+  "type": "page"
+}

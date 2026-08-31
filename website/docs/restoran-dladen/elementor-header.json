@@ -1,0 +1,119 @@
+{
+  "content": [
+    {
+      "id": "hdr000",
+      "elType": "container",
+      "isInner": false,
+      "settings": {
+        "container_type": "full-width",
+        "flex_direction": "column",
+        "flex_align_items": "center",
+        "background_background": "classic",
+        "background_color": "#FBF6EC",
+        "padding": {"unit": "px", "top": "14", "right": "20", "bottom": "14", "left": "20", "isLinked": false},
+        "border_border": "solid",
+        "border_width": {"unit": "px", "top": "0", "right": "0", "bottom": "1", "left": "0", "isLinked": false},
+        "border_color": "rgba(43,33,24,0.08)"
+      },
+      "elements": [
+        {
+          "id": "hdr001",
+          "elType": "container",
+          "isInner": true,
+          "settings": {
+            "container_type": "boxed",
+            "content_width": {"unit": "px", "size": 1140},
+            "flex_direction": "row",
+            "flex_align_items": "center",
+            "flex_justify_content": "space-between",
+            "flex_gap": {"column": "20", "row": "12", "isLinked": false, "unit": "px", "size": 20},
+            "flex_wrap": "wrap"
+          },
+          "elements": [
+            {
+              "id": "hdr002",
+              "elType": "container",
+              "isInner": true,
+              "settings": {"flex_direction": "row", "flex_align_items": "center", "flex_gap": {"column": "10", "row": "10", "isLinked": true, "unit": "px", "size": 10}},
+              "elements": [
+                {
+                  "id": "hdr003",
+                  "elType": "widget",
+                  "widgetType": "heading",
+                  "settings": {
+                    "title": "Restoran D&rsquo;LaDen",
+                    "header_size": "p",
+                    "title_color": "#22402C",
+                    "typography_typography": "custom",
+                    "typography_font_family": "Fraunces",
+                    "typography_font_size": {"unit": "px", "size": 22},
+                    "typography_font_weight": "700"
+                  },
+                  "elements": []
+                }
+              ]
+            },
+            {
+              "id": "hdr010",
+              "elType": "container",
+              "isInner": true,
+              "settings": {"flex_direction": "row", "flex_align_items": "center"},
+              "elements": [
+                {
+                  "id": "hdr011",
+                  "elType": "widget",
+                  "widgetType": "icon-list",
+                  "settings": {
+                    "view": "inline",
+                    "icon_list": [
+                      {"_id": "nav1", "text": "Utama", "selected_icon": {"value": "", "library": ""}, "link": {"url": "#utama", "is_external": "", "nofollow": ""}},
+                      {"_id": "nav2", "text": "Menu", "selected_icon": {"value": "", "library": ""}, "link": {"url": "#menu", "is_external": "", "nofollow": ""}},
+                      {"_id": "nav3", "text": "Pesanan Pukal", "selected_icon": {"value": "", "library": ""}, "link": {"url": "#pesanan-pukal", "is_external": "", "nofollow": ""}},
+                      {"_id": "nav4", "text": "Lokasi", "selected_icon": {"value": "", "library": ""}, "link": {"url": "#lokasi", "is_external": "", "nofollow": ""}}
+                    ],
+                    "text_color": "#2B2118",
+                    "space_between": {"unit": "px", "size": 24},
+                    "icon_space": {"unit": "px", "size": 0},
+                    "typography_typography": "custom",
+                    "typography_font_weight": "600",
+                    "typography_font_size": {"unit": "px", "size": 15}
+                  },
+                  "elements": []
+                }
+              ]
+            },
+            {
+              "id": "hdr020",
+              "elType": "container",
+              "isInner": true,
+              "settings": {"flex_direction": "row", "flex_align_items": "center"},
+              "elements": [
+                {
+                  "id": "hdr021",
+                  "elType": "widget",
+                  "widgetType": "button",
+                  "settings": {
+                    "text": "Pesan Sekarang",
+                    "link": {"url": "#pesanan", "is_external": "", "nofollow": ""},
+                    "align": "center",
+                    "button_text_color": "#FFFFFF",
+                    "background_color": "#C1502E",
+                    "border_radius": {"unit": "px", "top": "999", "right": "999", "bottom": "999", "left": "999", "isLinked": true},
+                    "typography_typography": "custom",
+                    "typography_font_weight": "700",
+                    "typography_font_size": {"unit": "px", "size": 15}
+                  },
+                  "elements": []
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "page_settings": {},
+  "version": "0.4",
+  "title": "D'LaDen — Header (HFE)",
+  "type": "page"
+}

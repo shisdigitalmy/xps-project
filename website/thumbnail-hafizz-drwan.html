@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="ms">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Thumbnail - Podcast Hafizz x Dr Wan</title>
+<link href="https://fonts.googleapis.com/css2?family=Anton&family=Inter:wght@700;900&display=swap" rel="stylesheet">
+<style>
+  body { margin:0; background:#111; display:flex; align-items:center; justify-content:center; min-height:100vh; font-family:'Inter',sans-serif; }
+  .wrap { padding:20px; }
+  .thumb {
+    width:1280px; height:720px;
+    background:#000;
+    position:relative;
+    overflow:hidden;
+    display:flex;
+    flex-direction:column;
+    box-shadow:0 20px 60px rgba(0,0,0,0.6);
+  }
+  .thumb-top {
+    text-align:center;
+    padding:38px 40px 0;
+    z-index:2;
+  }
+  .thumb-label {
+    font-size:14px; letter-spacing:4px; color:#fff; opacity:0.7; margin-bottom:12px; font-weight:700;
+  }
+  .thumb-title {
+    font-family:'Anton', sans-serif;
+    font-size:78px;
+    line-height:0.95;
+    color:#fff;
+    text-transform:lowercase;
+    letter-spacing:-1px;
+  }
+  .thumb-title .red {
+    background:#e10600;
+    color:#fff;
+    padding:2px 14px 6px;
+    display:inline-block;
+    transform:rotate(-0.5deg);
+  }
+  .thumb-title .line { display:block; }
+  .thumb-bottom {
+    flex:1;
+    display:flex;
+    align-items:flex-end;
+    justify-content:space-between;
+    padding:0 0 0 0;
+    position:relative;
+  }
+  .person {
+    width:50%;
+    height:420px;
+    position:relative;
+    overflow:hidden;
+  }
+  .person img {
+    width:100%; height:100%;
+    object-fit:cover;
+    object-position:top center;
+    filter:contrast(1.05) saturate(1.05);
+  }
+  .person::after {
+    content:"";
+    position:absolute; inset:0;
+    background:linear-gradient(to top, rgba(0,0,0,0.6) 0%, transparent 45%);
+  }
+  .mic {
+    position:absolute;
+    bottom:24px;
+    left:50%;
+    transform:translateX(-50%);
+    width:68px; height:140px;
+    background:linear-gradient(to bottom, #222 0%, #000 100%);
+    border-radius:34px;
+    border:3px solid #333;
+    z-index:3;
+    display:flex; align-items:flex-start; justify-content:center; padding-top:18px;
+  }
+  .mic::before {
+    content:"";
+    width:44px; height:44px;
+    background:#111;
+    border-radius:50%;
+    border:2px solid #444;
+  }
+  .hint { color:#aaa; text-align:center; margin-top:16px; font-size:13px; }
+  @media (max-width:1300px) { .thumb { transform:scale(0.6); transform-origin:top center; } }
+</style>
+</head>
+<body>
+<div class="wrap">
+  <div class="thumb" id="thumb">
+    <div class="thumb-top">
+      <div class="thumb-label">PODCAST HAFIZZ &nbsp;•&nbsp; TETAMU DR WAN</div>
+      <div class="thumb-title">
+        <span class="line">Kenapa <span style="color:#fff;">stres</span> mudah</span>
+        <span class="line"><span class="red">trigger keradangan?</span></span>
+      </div>
+    </div>
+    <div class="thumb-bottom">
+      <div class="person">
+        <img src="hafizz-host.png" alt="Hafizz">
+        <div class="mic"></div>
+      </div>
+      <div class="person">
+        <img src="drwan-guest.png" alt="Dr Wan">
+        <div class="mic"></div>
+      </div>
+    </div>
+  </div>
+  <p class="hint">1280×720 — Buka file ni di browser, screenshot (Win+Shift+S) untuk dapat PNG thumbnail. Text 100% sharp, takde AI slop.</p>
+</div>
+</body>
+</html>
