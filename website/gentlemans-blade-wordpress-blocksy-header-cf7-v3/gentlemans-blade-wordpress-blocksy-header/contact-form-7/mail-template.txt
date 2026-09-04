@@ -1,0 +1,17 @@
+CF7 Mail tab — paste into "Message body". Set "To" to the shop inbox,
+"From" to "[your-name] <wordpress@gentlemensblade.fvor8.com>",
+"Subject" to the line below, "Additional headers" to "Reply-To: [your-contact]".
+
+Subject: New booking — [service] on [booking-date] at [booking-time]
+
+Name: [your-name]
+Contact: [your-contact]
+Service: [service]
+Barber: [barber]
+Date: [booking-date]
+Time: [booking-time]
+Notes:
+[your-notes]
+
+--
+Sent from the booking form at https://gentlemensblade.fvor8.com

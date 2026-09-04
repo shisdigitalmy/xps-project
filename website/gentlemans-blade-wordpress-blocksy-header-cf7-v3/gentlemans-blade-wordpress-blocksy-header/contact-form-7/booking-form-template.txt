@@ -1,0 +1,10 @@
+<div class="gb-form-grid">
+[text* your-name autocomplete:name placeholder "Full Name"]
+[text* your-contact placeholder "Phone / Email"]
+[select* service "Master Cut ($15.00+)" "Beard Sculpt ($15.00+)" "Royal Ritual Shave ($25.00+)" "Scalp & Relax ($28.00+)" "Gentleman's Full Combo ($55.00+)"]
+[select barber "Any Available Master Barber" "Marcus The Blade (Founder)" "James Vance (Razor Specialist)" "Leo Rossi (Beard Architect)"]
+[date* booking-date min:today]
+[select* booking-time "10:00 AM" "11:30 AM" "02:00 PM" "03:30 PM" "05:00 PM" "06:30 PM"]
+</div>
+[textarea your-notes placeholder "Hot towel preference, beverage, style inspo... (optional)"]
+[submit "CONFIRM APPOINTMENT"]
