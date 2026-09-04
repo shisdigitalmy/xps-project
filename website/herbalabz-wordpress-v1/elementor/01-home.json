@@ -1,0 +1,3787 @@
+{
+  "version": "0.4",
+  "title": "Herbalabz — Herba Tradisi, Pilihan Masa Kini",
+  "type": "page",
+  "content": [
+    {
+      "id": "0000008",
+      "elType": "container",
+      "settings": {
+        "layout": "full-width",
+        "css_id": "home",
+        "flex_direction": "column",
+        "flex_align_items": "center",
+        "flex_justify_content": "center",
+        "min_height": {
+          "unit": "vh",
+          "size": 92,
+          "sizes": []
+        },
+        "min_height_tablet": {
+          "unit": "vh",
+          "size": 72,
+          "sizes": []
+        },
+        "padding": {
+          "unit": "px",
+          "top": "120",
+          "right": "24",
+          "bottom": "80",
+          "left": "24",
+          "isLinked": false
+        },
+        "background_background": "classic",
+        "background_image": {
+          "url": "https://herbalabz.local/wp-content/uploads/herbalabz-wordpress-v1/hero.webp",
+          "id": ""
+        },
+        "background_position": "center center",
+        "background_size": "cover",
+        "background_overlay_background": "classic",
+        "background_overlay_color": "#0C382E",
+        "background_overlay_opacity": {
+          "unit": "px",
+          "size": 0.55,
+          "sizes": []
+        },
+        "css_classes": "hero-enter gb-hero"
+      },
+      "elements": [
+        {
+          "id": "0000007",
+          "elType": "container",
+          "settings": {
+            "layout": "boxed",
+            "content_width": {
+              "unit": "px",
+              "size": 900,
+              "sizes": []
+            },
+            "flex_direction": "column",
+            "flex_align_items": "center",
+            "flex_gap": {
+              "column": "8",
+              "row": "8",
+              "isLinked": true,
+              "unit": "px",
+              "size": 8,
+              "sizes": []
+            }
+          },
+          "elements": [
+            {
+              "id": "0000001",
+              "elType": "widget",
+              "widgetType": "heading",
+              "settings": {
+                "title": "Satu Jenama Herba, Untuk Mak, Ayah, Suami & Diri Sendiri",
+                "header_size": "h1",
+                "align": "center",
+                "title_color": "#FFFFFF",
+                "typography_font_weight": "700",
+                "typography_font_size_tablet": {
+                  "unit": "px",
+                  "size": 36,
+                  "sizes": []
+                },
+                "typography_font_size_mobile": {
+                  "unit": "px",
+                  "size": 26,
+                  "sizes": []
+                },
+                "typography_line_height": {
+                  "unit": "em",
+                  "size": 1.2,
+                  "sizes": []
+                },
+                "_margin": {
+                  "unit": "px",
+                  "top": "16",
+                  "right": "0",
+                  "bottom": "0",
+                  "left": "0",
+                  "isLinked": false
+                },
+                "typography_typography": "custom",
+                "typography_font_family": "Cinzel",
+                "typography_font_size": {
+                  "unit": "px",
+                  "size": 32,
+                  "sizes": []
+                }
+              },
+              "elements": []
+            },
+            {
+              "id": "0000002",
+              "elType": "widget",
+              "widgetType": "text-editor",
+              "settings": {
+                "editor": "<p style=\"color:rgba(253,248,238,.85);font-size:16px;line-height:1.55;max-width:480px;margin:0 auto\">Dari sabun harian sampai minyak urutan dan teh herba — Herbalabz gabungkan amalan herba tradisi dengan cara guna yang mudah untuk gaya hidup masa kini.</p>",
+                "text_color": "rgba(253,248,238,.85)"
+              },
+              "elements": []
+            },
+            {
+              "id": "0000005",
+              "elType": "container",
+              "settings": {
+                "flex_direction": "row",
+                "flex_wrap": "wrap",
+                "flex_gap": {
+                  "column": "12",
+                  "row": "12",
+                  "isLinked": true,
+                  "unit": "px",
+                  "size": 12,
+                  "sizes": []
+                },
+                "flex_align_items": "center",
+                "flex_justify_content": "center",
+                "_margin": {
+                  "unit": "px",
+                  "top": "20",
+                  "right": "0",
+                  "bottom": "0",
+                  "left": "0",
+                  "isLinked": false
+                }
+              },
+              "elements": [
+                {
+                  "id": "0000003",
+                  "elType": "widget",
+                  "widgetType": "button",
+                  "settings": {
+                    "text": "Tanya di WhatsApp — 011-56980854",
+                    "link": {
+                      "url": "https://wa.me/601156980854?text=Assalamualaikum%20Herbalabz%2C%20saya%20nak%20tanya%20tentang%20produk%20herba%20untuk%20keluarga",
+                      "is_external": "",
+                      "nofollow": ""
+                    },
+                    "align": "center",
+                    "background_color": "#25D366",
+                    "button_text_color": "#FFFFFF",
+                    "hover_color": "#FFFFFF",
+                    "button_background_hover_color": "#128C7E",
+                    "border_radius": {
+                      "unit": "px",
+                      "top": "9999",
+                      "right": "9999",
+                      "bottom": "9999",
+                      "left": "9999",
+                      "isLinked": false
+                    },
+                    "text_padding": {
+                      "unit": "px",
+                      "top": "14",
+                      "right": "32",
+                      "bottom": "14",
+                      "left": "32",
+                      "isLinked": false
+                    },
+                    "typography_typography": "custom",
+                    "typography_font_family": "Plus Jakarta Sans",
+                    "typography_font_size": {
+                      "unit": "px",
+                      "size": 15,
+                      "sizes": []
+                    },
+                    "typography_font_weight": "600",
+                    "_margin": {
+                      "unit": "px",
+                      "top": "0",
+                      "right": "8",
+                      "bottom": "0",
+                      "left": "0",
+                      "isLinked": false
+                    }
+                  },
+                  "elements": []
+                },
+                {
+                  "id": "0000004",
+                  "elType": "widget",
+                  "widgetType": "button",
+                  "settings": {
+                    "text": "Tengok 6 Produk ↓",
+                    "link": {
+                      "url": "#produk",
+                      "is_external": "",
+                      "nofollow": ""
+                    },
+                    "align": "center",
+                    "background_color": "transparent",
+                    "button_text_color": "#FFFFFF",
+                    "border_color": "#FFFFFF",
+                    "border_width": {
+                      "unit": "px",
+                      "top": "1.5",
+                      "right": "1.5",
+                      "bottom": "1.5",
+                      "left": "1.5",
+                      "isLinked": false
+                    },
+                    "border_radius": {
+                      "unit": "px",
+                      "top": "9999",
+                      "right": "9999",
+                      "bottom": "9999",
+                      "left": "9999",
+                      "isLinked": false
+                    },
+                    "text_padding": {
+                      "unit": "px",
+                      "top": "14",
+                      "right": "32",
+                      "bottom": "14",
+                      "left": "32",
+                      "isLinked": false
+                    },
+                    "typography_typography": "custom",
+                    "typography_font_family": "Plus Jakarta Sans",
+                    "typography_font_size": {
+                      "unit": "px",
+                      "size": 15,
+                      "sizes": []
+                    },
+                    "typography_font_weight": "600",
+                    "_margin": {
+                      "unit": "px",
+                      "top": "0",
+                      "right": "0",
+                      "bottom": "0",
+                      "left": "8",
+                      "isLinked": false
+                    }
+                  },
+                  "elements": []
+                }
+              ],
+              "isInner": true
+            },
+            {
+              "id": "0000006",
+              "elType": "widget",
+              "widgetType": "text-editor",
+              "settings": {
+                "editor": "<ul style=\"display:flex;flex-wrap:wrap;justify-content:center;gap:20px;list-style:none;margin:0;padding:0\"><li style=\"color:#3A7D44;font-weight:600;font-size:14px\">&#10003; Guna harian</li><li style=\"color:#3A7D44;font-weight:600;font-size:14px\">&#10003; Mudah dibawa</li><li style=\"color:#3A7D44;font-weight:600;font-size:14px\">&#10003; Sesuai seisi keluarga</li></ul>",
+                "text_color": "#3A7D44"
+              },
+              "elements": []
+            }
+          ],
+          "isInner": true
+        }
+      ],
+      "isInner": false
+    },
+    {
+      "id": "000001a",
+      "elType": "container",
+      "settings": {
+        "layout": "full-width",
+        "css_id": "masalah",
+        "padding": {
+          "unit": "px",
+          "top": "80",
+          "right": "24",
+          "bottom": "80",
+          "left": "24",
+          "isLinked": false
+        },
+        "background_background": "classic",
+        "background_color": "#FAF4E6",
+        "border_top": {
+          "unit": "px",
+          "top": "1",
+          "right": "0",
+          "bottom": "1",
+          "left": "0",
+          "isLinked": false
+        },
+        "border_color": "#EFE5D0"
+      },
+      "elements": [
+        {
+          "id": "0000019",
+          "elType": "container",
+          "settings": {
+            "layout": "boxed",
+            "content_width": {
+              "unit": "px",
+              "size": 1120,
+              "sizes": []
+            },
+            "flex_direction": "column",
+            "flex_gap": {
+              "column": "40",
+              "row": "40",
+              "isLinked": true,
+              "unit": "px",
+              "size": 40,
+              "sizes": []
+            }
+          },
+          "elements": [
+            {
+              "id": "0000009",
+              "elType": "widget",
+              "widgetType": "heading",
+              "settings": {
+                "title": "Kami Faham, Penat Jaga Semua Orang",
+                "header_size": "h2",
+                "align": "center",
+                "title_color": "#0C382E",
+                "typography_font_weight": "700",
+                "typography_font_size_tablet": {
+                  "unit": "px",
+                  "size": 28,
+                  "sizes": []
+                },
+                "typography_font_size_mobile": {
+                  "unit": "px",
+                  "size": 22,
+                  "sizes": []
+                },
+                "_margin": {
+                  "unit": "px",
+                  "top": "0",
+                  "right": "0",
+                  "bottom": "16",
+                  "left": "0",
+                  "isLinked": false
+                },
+                "typography_typography": "custom",
+                "typography_font_family": "Cinzel",
+                "typography_font_size": {
+                  "unit": "px",
+                  "size": 26,
+                  "sizes": []
+                }
+              },
+              "elements": []
+            },
+            {
+              "id": "000000a",
+              "elType": "widget",
+              "widgetType": "text-editor",
+              "settings": {
+                "editor": "<p style=\"text-align:center;color:#1F2937;font-size:15px;line-height:1.55;max-width:560px;margin:0 auto\">Anda yang selalu fikirkan orang lain dulu — kulit sendiri kusam pun tak sempat peduli, mak ayah mengadu lenguh, suami balik kerja nampak letih. Nak cari herba yang selamat, tapi takut tersalah pilih.</p>",
+                "text_color": "#1F2937"
+              },
+              "elements": []
+            },
+            {
+              "id": "0000017",
+              "elType": "container",
+              "settings": {
+                "flex_direction": "row",
+                "flex_wrap": "wrap",
+                "flex_gap": {
+                  "column": "24",
+                  "row": "24",
+                  "isLinked": true,
+                  "unit": "px",
+                  "size": 24,
+                  "sizes": []
+                },
+                "flex_align_items": "stretch"
+              },
+              "elements": [
+                {
+                  "id": "000000e",
+                  "elType": "container",
+                  "settings": {
+                    "width": {
+                      "unit": "%",
+                      "size": 33,
+                      "sizes": []
+                    },
+                    "width_tablet": {
+                      "unit": "%",
+                      "size": 47,
+                      "sizes": []
+                    },
+                    "width_mobile": {
+                      "unit": "%",
+                      "size": 100,
+                      "sizes": []
+                    },
+                    "flex_direction": "column",
+                    "flex_gap": {
+                      "column": "12",
+                      "row": "12",
+                      "isLinked": true,
+                      "unit": "px",
+                      "size": 12,
+                      "sizes": []
+                    },
+                    "background_background": "classic",
+                    "background_color": "#FFFFFF",
+                    "border_border": "solid",
+                    "border_width": {
+                      "unit": "px",
+                      "top": "1",
+                      "right": "1",
+                      "bottom": "1",
+                      "left": "1",
+                      "isLinked": false
+                    },
+                    "border_color": "#EFE5D0",
+                    "border_radius": {
+                      "unit": "px",
+                      "top": "20",
+                      "right": "20",
+                      "bottom": "20",
+                      "left": "20",
+                      "isLinked": false
+                    },
+                    "padding": {
+                      "unit": "px",
+                      "top": "24",
+                      "right": "undefined",
+                      "bottom": "undefined",
+                      "left": "undefined",
+                      "isLinked": false
+                    }
+                  },
+                  "elements": [
+                    {
+                      "id": "000000b",
+                      "elType": "widget",
+                      "widgetType": "text-editor",
+                      "settings": {
+                        "editor": "<p style=\"font-size:32px;margin:0;text-align:center\">🌿</p>",
+                        "text_color": "#0C382E"
+                      },
+                      "elements": []
+                    },
+                    {
+                      "id": "000000c",
+                      "elType": "widget",
+                      "widgetType": "heading",
+                      "settings": {
+                        "title": "Untuk diri sendiri",
+                        "header_size": "h3",
+                        "align": "center",
+                        "title_color": "#0C382E",
+                        "typography_typography": "custom",
+                        "typography_font_family": "Plus Jakarta Sans",
+                        "typography_font_size": {
+                          "unit": "px",
+                          "size": 17,
+                          "sizes": []
+                        }
+                      },
+                      "elements": []
+                    },
+                    {
+                      "id": "000000d",
+                      "elType": "widget",
+                      "widgetType": "text-editor",
+                      "settings": {
+                        "editor": "<p style=\"text-align:center;color:#1F2937;font-size:14px;line-height:1.55;margin:0\">Kulit rasa tak segar, kering dan kusam lepas seharian. Nak sabun herba yang lembut untuk guna hari-hari.</p>",
+                        "text_color": "#1F2937"
+                      },
+                      "elements": []
+                    }
+                  ],
+                  "isInner": true
+                },
+                {
+                  "id": "0000012",
+                  "elType": "container",
+                  "settings": {
+                    "width": {
+                      "unit": "%",
+                      "size": 33,
+                      "sizes": []
+                    },
+                    "width_tablet": {
+                      "unit": "%",
+                      "size": 47,
+                      "sizes": []
+                    },
+                    "width_mobile": {
+                      "unit": "%",
+                      "size": 100,
+                      "sizes": []
+                    },
+                    "flex_direction": "column",
+                    "flex_gap": {
+                      "column": "12",
+                      "row": "12",
+                      "isLinked": true,
+                      "unit": "px",
+                      "size": 12,
+                      "sizes": []
+                    },
+                    "background_background": "classic",
+                    "background_color": "#FFFFFF",
+                    "border_border": "solid",
+                    "border_width": {
+                      "unit": "px",
+                      "top": "1",
+                      "right": "1",
+                      "bottom": "1",
+                      "left": "1",
+                      "isLinked": false
+                    },
+                    "border_color": "#EFE5D0",
+                    "border_radius": {
+                      "unit": "px",
+                      "top": "20",
+                      "right": "20",
+                      "bottom": "20",
+                      "left": "20",
+                      "isLinked": false
+                    },
+                    "padding": {
+                      "unit": "px",
+                      "top": "24",
+                      "right": "undefined",
+                      "bottom": "undefined",
+                      "left": "undefined",
+                      "isLinked": false
+                    }
+                  },
+                  "elements": [
+                    {
+                      "id": "000000f",
+                      "elType": "widget",
+                      "widgetType": "text-editor",
+                      "settings": {
+                        "editor": "<p style=\"font-size:32px;margin:0;text-align:center\">🤲</p>",
+                        "text_color": "#0C382E"
+                      },
+                      "elements": []
+                    },
+                    {
+                      "id": "0000010",
+                      "elType": "widget",
+                      "widgetType": "heading",
+                      "settings": {
+                        "title": "Untuk mak ayah",
+                        "header_size": "h3",
+                        "align": "center",
+                        "title_color": "#0C382E",
+                        "typography_typography": "custom",
+                        "typography_font_family": "Plus Jakarta Sans",
+                        "typography_font_size": {
+                          "unit": "px",
+                          "size": 17,
+                          "sizes": []
+                        }
+                      },
+                      "elements": []
+                    },
+                    {
+                      "id": "0000011",
+                      "elType": "widget",
+                      "widgetType": "text-editor",
+                      "settings": {
+                        "editor": "<p style=\"text-align:center;color:#1F2937;font-size:14px;line-height:1.55;margin:0\">Selalu sebut sengal dan lenguh lepas buat kerja rumah atau kebun. Nak minyak urutan yang cepat meresap, tak melekit.</p>",
+                        "text_color": "#1F2937"
+                      },
+                      "elements": []
+                    }
+                  ],
+                  "isInner": true
+                },
+                {
+                  "id": "0000016",
+                  "elType": "container",
+                  "settings": {
+                    "width": {
+                      "unit": "%",
+                      "size": 33,
+                      "sizes": []
+                    },
+                    "width_tablet": {
+                      "unit": "%",
+                      "size": 47,
+                      "sizes": []
+                    },
+                    "width_mobile": {
+                      "unit": "%",
+                      "size": 100,
+                      "sizes": []
+                    },
+                    "flex_direction": "column",
+                    "flex_gap": {
+                      "column": "12",
+                      "row": "12",
+                      "isLinked": true,
+                      "unit": "px",
+                      "size": 12,
+                      "sizes": []
+                    },
+                    "background_background": "classic",
+                    "background_color": "#FFFFFF",
+                    "border_border": "solid",
+                    "border_width": {
+                      "unit": "px",
+                      "top": "1",
+                      "right": "1",
+                      "bottom": "1",
+                      "left": "1",
+                      "isLinked": false
+                    },
+                    "border_color": "#EFE5D0",
+                    "border_radius": {
+                      "unit": "px",
+                      "top": "20",
+                      "right": "20",
+                      "bottom": "20",
+                      "left": "20",
+                      "isLinked": false
+                    },
+                    "padding": {
+                      "unit": "px",
+                      "top": "24",
+                      "right": "undefined",
+                      "bottom": "undefined",
+                      "left": "undefined",
+                      "isLinked": false
+                    }
+                  },
+                  "elements": [
+                    {
+                      "id": "0000013",
+                      "elType": "widget",
+                      "widgetType": "text-editor",
+                      "settings": {
+                        "editor": "<p style=\"font-size:32px;margin:0;text-align:center\">💪</p>",
+                        "text_color": "#0C382E"
+                      },
+                      "elements": []
+                    },
+                    {
+                      "id": "0000014",
+                      "elType": "widget",
+                      "widgetType": "heading",
+                      "settings": {
+                        "title": "Untuk suami &amp; keluarga",
+                        "header_size": "h3",
+                        "align": "center",
+                        "title_color": "#0C382E",
+                        "typography_typography": "custom",
+                        "typography_font_family": "Plus Jakarta Sans",
+                        "typography_font_size": {
+                          "unit": "px",
+                          "size": 17,
+                          "sizes": []
+                        }
+                      },
+                      "elements": []
+                    },
+                    {
+                      "id": "0000015",
+                      "elType": "widget",
+                      "widgetType": "text-editor",
+                      "settings": {
+                        "editor": "<p style=\"text-align:center;color:#1F2937;font-size:14px;line-height:1.55;margin:0\">Badan rasa kurang cergas, susah nak kekal aktif. Nak ikhtiar herba yang mudah — bancuh, minum atau bawa ke mana-mana.</p>",
+                        "text_color": "#1F2937"
+                      },
+                      "elements": []
+                    }
+                  ],
+                  "isInner": true
+                }
+              ],
+              "isInner": true
+            },
+            {
+              "id": "0000018",
+              "elType": "widget",
+              "widgetType": "text-editor",
+              "settings": {
+                "editor": "<p style=\"text-align:center;color:#0C382E;font-size:15px;font-weight:600;margin:0\">Sebab tu Herbalabz wujud — herba tradisi, disediakan cara moden supaya senang anda guna setiap hari.</p>",
+                "text_color": "#0C382E"
+              },
+              "elements": []
+            }
+          ],
+          "isInner": true
+        }
+      ],
+      "isInner": false
+    },
+    {
+      "id": "000002c",
+      "elType": "container",
+      "settings": {
+        "layout": "full-width",
+        "css_id": "kenapa",
+        "padding": {
+          "unit": "px",
+          "top": "80",
+          "right": "24",
+          "bottom": "80",
+          "left": "24",
+          "isLinked": false
+        },
+        "background_background": "classic",
+        "background_color": "#FDF8EE"
+      },
+      "elements": [
+        {
+          "id": "000002b",
+          "elType": "container",
+          "settings": {
+            "layout": "boxed",
+            "content_width": {
+              "unit": "px",
+              "size": 1120,
+              "sizes": []
+            },
+            "flex_direction": "column",
+            "flex_gap": {
+              "column": "32",
+              "row": "32",
+              "isLinked": true,
+              "unit": "px",
+              "size": 32,
+              "sizes": []
+            }
+          },
+          "elements": [
+            {
+              "id": "000001b",
+              "elType": "widget",
+              "widgetType": "heading",
+              "settings": {
+                "title": "Herba Tradisi, Pilihan Masa Kini",
+                "header_size": "h2",
+                "align": "center",
+                "title_color": "#0C382E",
+                "typography_font_weight": "700",
+                "typography_font_size_tablet": {
+                  "unit": "px",
+                  "size": 28,
+                  "sizes": []
+                },
+                "typography_font_size_mobile": {
+                  "unit": "px",
+                  "size": 22,
+                  "sizes": []
+                },
+                "_margin": {
+                  "unit": "px",
+                  "top": "0",
+                  "right": "0",
+                  "bottom": "24",
+                  "left": "0",
+                  "isLinked": false
+                },
+                "typography_typography": "custom",
+                "typography_font_family": "Cinzel",
+                "typography_font_size": {
+                  "unit": "px",
+                  "size": 26,
+                  "sizes": []
+                }
+              },
+              "elements": []
+            },
+            {
+              "id": "000001d",
+              "elType": "container",
+              "settings": {
+                "flex_direction": "row",
+                "flex_wrap": "wrap",
+                "flex_gap": {
+                  "column": "20",
+                  "row": "20",
+                  "isLinked": true,
+                  "unit": "px",
+                  "size": 20,
+                  "sizes": []
+                },
+                "flex_align_items": "stretch"
+              },
+              "elements": [
+                {
+                  "id": "000001c",
+                  "elType": "widget",
+                  "widgetType": "icon-list",
+                  "settings": {
+                    "icon_list": [
+                      {
+                        "_id": "k1",
+                        "text": "<strong>Lengkap untuk keluarga:</strong> 6 produk — dari penjagaan kulit, urutan, makanan tambahan herba sampai teh harian.",
+                        "selected_icon": {
+                          "value": "fas fa-check",
+                          "library": "fa-solid"
+                        },
+                        "link": {
+                          "url": "",
+                          "is_external": "",
+                          "nofollow": ""
+                        }
+                      }
+                    ],
+                    "space_between": {
+                      "unit": "px",
+                      "size": 20,
+                      "sizes": []
+                    },
+                    "icon_color": "#3A7D44",
+                    "text_color": "#1F2937",
+                    "icon_size": {
+                      "unit": "px",
+                      "size": 18,
+                      "sizes": []
+                    },
+                    "text_indent": {
+                      "unit": "px",
+                      "size": 12,
+                      "sizes": []
+                    },
+                    "icon_typography_typography": "custom",
+                    "icon_typography_font_family": "Plus Jakarta Sans",
+                    "icon_typography_font_size": {
+                      "unit": "px",
+                      "size": 15,
+                      "sizes": []
+                    },
+                    "icon_typography_line_height": {
+                      "unit": "em",
+                      "size": 1.55,
+                      "sizes": []
+                    },
+                    "css_classes": "reveal-group"
+                  },
+                  "elements": []
+                }
+              ],
+              "isInner": true
+            },
+            {
+              "id": "000002a",
+              "elType": "container",
+              "settings": {
+                "flex_direction": "row",
+                "flex_wrap": "wrap",
+                "flex_gap": {
+                  "column": "20",
+                  "row": "20",
+                  "isLinked": true,
+                  "unit": "px",
+                  "size": 20,
+                  "sizes": []
+                },
+                "flex_align_items": "stretch",
+                "css_classes": "reveal-group"
+              },
+              "elements": [
+                {
+                  "id": "0000020",
+                  "elType": "container",
+                  "settings": {
+                    "width": {
+                      "unit": "%",
+                      "size": 50,
+                      "sizes": []
+                    },
+                    "width_tablet": {
+                      "unit": "%",
+                      "size": 50,
+                      "sizes": []
+                    },
+                    "width_mobile": {
+                      "unit": "%",
+                      "size": 100,
+                      "sizes": []
+                    },
+                    "flex_direction": "column",
+                    "flex_gap": {
+                      "column": "12",
+                      "row": "12",
+                      "isLinked": true,
+                      "unit": "px",
+                      "size": 12,
+                      "sizes": []
+                    },
+                    "padding": {
+                      "unit": "px",
+                      "top": "24",
+                      "right": "undefined",
+                      "bottom": "undefined",
+                      "left": "undefined",
+                      "isLinked": false
+                    },
+                    "background_background": "classic",
+                    "background_color": "#FFFFFF",
+                    "border_border": "solid",
+                    "border_width": {
+                      "unit": "px",
+                      "top": "1",
+                      "right": "1",
+                      "bottom": "1",
+                      "left": "1",
+                      "isLinked": false
+                    },
+                    "border_color": "#EFE5D0",
+                    "border_radius": {
+                      "unit": "px",
+                      "top": "20",
+                      "right": "20",
+                      "bottom": "20",
+                      "left": "20",
+                      "isLinked": false
+                    }
+                  },
+                  "elements": [
+                    {
+                      "id": "000001e",
+                      "elType": "widget",
+                      "widgetType": "text-editor",
+                      "settings": {
+                        "editor": "<p style=\"font-weight:600;color:#0C382E;margin:0;font-size:15px\"><span style=\"color:#3A7D44\">&#10003;</span> Mudah guna</p>",
+                        "text_color": "#1F2937"
+                      },
+                      "elements": []
+                    },
+                    {
+                      "id": "000001f",
+                      "elType": "widget",
+                      "widgetType": "text-editor",
+                      "settings": {
+                        "editor": "<p style=\"color:#1F2937;margin:0;font-size:14px;line-height:1.55\">Sabun untuk mandian harian, minyak untuk urutan, uncang bancuh &amp; minum, teh untuk bila-bila masa.</p>",
+                        "text_color": "#1F2937"
+                      },
+                      "elements": []
+                    }
+                  ],
+                  "isInner": true
+                },
+                {
+                  "id": "0000023",
+                  "elType": "container",
+                  "settings": {
+                    "width": {
+                      "unit": "%",
+                      "size": 50,
+                      "sizes": []
+                    },
+                    "width_tablet": {
+                      "unit": "%",
+                      "size": 50,
+                      "sizes": []
+                    },
+                    "width_mobile": {
+                      "unit": "%",
+                      "size": 100,
+                      "sizes": []
+                    },
+                    "flex_direction": "column",
+                    "flex_gap": {
+                      "column": "12",
+                      "row": "12",
+                      "isLinked": true,
+                      "unit": "px",
+                      "size": 12,
+                      "sizes": []
+                    },
+                    "padding": {
+                      "unit": "px",
+                      "top": "24",
+                      "right": "undefined",
+                      "bottom": "undefined",
+                      "left": "undefined",
+                      "isLinked": false
+                    },
+                    "background_background": "classic",
+                    "background_color": "#FFFFFF",
+                    "border_border": "solid",
+                    "border_width": {
+                      "unit": "px",
+                      "top": "1",
+                      "right": "1",
+                      "bottom": "1",
+                      "left": "1",
+                      "isLinked": false
+                    },
+                    "border_color": "#EFE5D0",
+                    "border_radius": {
+                      "unit": "px",
+                      "top": "20",
+                      "right": "20",
+                      "bottom": "20",
+                      "left": "20",
+                      "isLinked": false
+                    }
+                  },
+                  "elements": [
+                    {
+                      "id": "0000021",
+                      "elType": "widget",
+                      "widgetType": "text-editor",
+                      "settings": {
+                        "editor": "<p style=\"font-weight:600;color:#0C382E;margin:0;font-size:15px\"><span style=\"color:#3A7D44\">&#10003;</span> Rutin yang realistik</p>",
+                        "text_color": "#1F2937"
+                      },
+                      "elements": []
+                    },
+                    {
+                      "id": "0000022",
+                      "elType": "widget",
+                      "widgetType": "text-editor",
+                      "settings": {
+                        "editor": "<p style=\"color:#1F2937;margin:0;font-size:14px;line-height:1.55\">Tak perlu ubah hidup 360°. Selit dalam rutin sedia ada — pagi, petang, malam.</p>",
+                        "text_color": "#1F2937"
+                      },
+                      "elements": []
+                    }
+                  ],
+                  "isInner": true
+                },
+                {
+                  "id": "0000026",
+                  "elType": "container",
+                  "settings": {
+                    "width": {
+                      "unit": "%",
+                      "size": 50,
+                      "sizes": []
+                    },
+                    "width_tablet": {
+                      "unit": "%",
+                      "size": 50,
+                      "sizes": []
+                    },
+                    "width_mobile": {
+                      "unit": "%",
+                      "size": 100,
+                      "sizes": []
+                    },
+                    "flex_direction": "column",
+                    "flex_gap": {
+                      "column": "12",
+                      "row": "12",
+                      "isLinked": true,
+                      "unit": "px",
+                      "size": 12,
+                      "sizes": []
+                    },
+                    "padding": {
+                      "unit": "px",
+                      "top": "24",
+                      "right": "undefined",
+                      "bottom": "undefined",
+                      "left": "undefined",
+                      "isLinked": false
+                    },
+                    "background_background": "classic",
+                    "background_color": "#FFFFFF",
+                    "border_border": "solid",
+                    "border_width": {
+                      "unit": "px",
+                      "top": "1",
+                      "right": "1",
+                      "bottom": "1",
+                      "left": "1",
+                      "isLinked": false
+                    },
+                    "border_color": "#EFE5D0",
+                    "border_radius": {
+                      "unit": "px",
+                      "top": "20",
+                      "right": "20",
+                      "bottom": "20",
+                      "left": "20",
+                      "isLinked": false
+                    }
+                  },
+                  "elements": [
+                    {
+                      "id": "0000024",
+                      "elType": "widget",
+                      "widgetType": "text-editor",
+                      "settings": {
+                        "editor": "<p style=\"font-weight:600;color:#0C382E;margin:0;font-size:15px\"><span style=\"color:#3A7D44\">&#10003;</span> Senang nak tanya</p>",
+                        "text_color": "#1F2937"
+                      },
+                      "elements": []
+                    },
+                    {
+                      "id": "0000025",
+                      "elType": "widget",
+                      "widgetType": "text-editor",
+                      "settings": {
+                        "editor": "<p style=\"color:#1F2937;margin:0;font-size:14px;line-height:1.55\">Terus WhatsApp 011-56980854 atau DM @Herbalabz di TikTok / Facebook.</p>",
+                        "text_color": "#1F2937"
+                      },
+                      "elements": []
+                    }
+                  ],
+                  "isInner": true
+                },
+                {
+                  "id": "0000029",
+                  "elType": "container",
+                  "settings": {
+                    "width": {
+                      "unit": "%",
+                      "size": 50,
+                      "sizes": []
+                    },
+                    "width_tablet": {
+                      "unit": "%",
+                      "size": 50,
+                      "sizes": []
+                    },
+                    "width_mobile": {
+                      "unit": "%",
+                      "size": 100,
+                      "sizes": []
+                    },
+                    "flex_direction": "column",
+                    "flex_gap": {
+                      "column": "12",
+                      "row": "12",
+                      "isLinked": true,
+                      "unit": "px",
+                      "size": 12,
+                      "sizes": []
+                    },
+                    "padding": {
+                      "unit": "px",
+                      "top": "24",
+                      "right": "undefined",
+                      "bottom": "undefined",
+                      "left": "undefined",
+                      "isLinked": false
+                    },
+                    "background_background": "classic",
+                    "background_color": "#FFFFFF",
+                    "border_border": "solid",
+                    "border_width": {
+                      "unit": "px",
+                      "top": "1",
+                      "right": "1",
+                      "bottom": "1",
+                      "left": "1",
+                      "isLinked": false
+                    },
+                    "border_color": "#EFE5D0",
+                    "border_radius": {
+                      "unit": "px",
+                      "top": "20",
+                      "right": "20",
+                      "bottom": "20",
+                      "left": "20",
+                      "isLinked": false
+                    }
+                  },
+                  "elements": [
+                    {
+                      "id": "0000027",
+                      "elType": "widget",
+                      "widgetType": "text-editor",
+                      "settings": {
+                        "editor": "<p style=\"font-weight:600;color:#0C382E;margin:0;font-size:15px\"><span style=\"color:#3A7D44\">&#10003;</span> Pilihan masa kini</p>",
+                        "text_color": "#1F2937"
+                      },
+                      "elements": []
+                    },
+                    {
+                      "id": "0000028",
+                      "elType": "widget",
+                      "widgetType": "text-editor",
+                      "settings": {
+                        "editor": "<p style=\"color:#1F2937;margin:0;font-size:14px;line-height:1.55\">Herba tradisi Nusantara, disediakan ikut cara guna harian keluarga moden.</p>",
+                        "text_color": "#1F2937"
+                      },
+                      "elements": []
+                    }
+                  ],
+                  "isInner": true
+                }
+              ],
+              "isInner": true
+            }
+          ],
+          "isInner": true
+        }
+      ],
+      "isInner": false
+    },
+    {
+      "id": "000005b",
+      "elType": "container",
+      "settings": {
+        "layout": "full-width",
+        "css_id": "produk",
+        "padding": {
+          "unit": "px",
+          "top": "80",
+          "right": "24",
+          "bottom": "80",
+          "left": "24",
+          "isLinked": false
+        },
+        "background_background": "classic",
+        "background_color": "#FAF4E6",
+        "border_top": {
+          "unit": "px",
+          "top": "1",
+          "right": "0",
+          "bottom": "1",
+          "left": "0",
+          "isLinked": false
+        },
+        "border_color": "#EFE5D0"
+      },
+      "elements": [
+        {
+          "id": "000005a",
+          "elType": "container",
+          "settings": {
+            "layout": "boxed",
+            "content_width": {
+              "unit": "px",
+              "size": 1200,
+              "sizes": []
+            },
+            "flex_direction": "column",
+            "flex_gap": {
+              "column": "32",
+              "row": "32",
+              "isLinked": true,
+              "unit": "px",
+              "size": 32,
+              "sizes": []
+            }
+          },
+          "elements": [
+            {
+              "id": "0000057",
+              "elType": "widget",
+              "widgetType": "heading",
+              "settings": {
+                "title": "Pilih Ikut Keperluan Keluarga Anda",
+                "header_size": "h2",
+                "align": "center",
+                "title_color": "#0C382E",
+                "typography_font_weight": "700",
+                "typography_font_size_tablet": {
+                  "unit": "px",
+                  "size": 28,
+                  "sizes": []
+                },
+                "typography_font_size_mobile": {
+                  "unit": "px",
+                  "size": 22,
+                  "sizes": []
+                },
+                "_margin": {
+                  "unit": "px",
+                  "top": "0",
+                  "right": "0",
+                  "bottom": "8",
+                  "left": "0",
+                  "isLinked": false
+                },
+                "typography_typography": "custom",
+                "typography_font_family": "Cinzel",
+                "typography_font_size": {
+                  "unit": "px",
+                  "size": 26,
+                  "sizes": []
+                }
+              },
+              "elements": []
+            },
+            {
+              "id": "0000058",
+              "elType": "widget",
+              "widgetType": "text-editor",
+              "settings": {
+                "editor": "<p style=\"text-align:center;color:#1F2937;font-size:14px;margin:0\">Tak perlu pening. Baca ikut siapa yang nak guna.</p>",
+                "text_color": "#1F2937"
+              },
+              "elements": []
+            },
+            {
+              "id": "0000059",
+              "elType": "container",
+              "settings": {
+                "flex_direction": "row",
+                "flex_wrap": "wrap",
+                "flex_gap": {
+                  "column": "20",
+                  "row": "20",
+                  "isLinked": true,
+                  "unit": "px",
+                  "size": 20,
+                  "sizes": []
+                },
+                "flex_align_items": "stretch",
+                "css_classes": "reveal-group"
+              },
+              "elements": {
+                "id": "0000033",
+                "elType": "container",
+                "settings": {
+                  "width": {
+                    "unit": "%",
+                    "size": 33,
+                    "sizes": []
+                  },
+                  "width_tablet": {
+                    "unit": "%",
+                    "size": 47,
+                    "sizes": []
+                  },
+                  "width_mobile": {
+                    "unit": "%",
+                    "size": 100,
+                    "sizes": []
+                  },
+                  "flex_direction": "column",
+                  "flex_gap": {
+                    "column": "0",
+                    "row": "0",
+                    "isLinked": true,
+                    "unit": "px",
+                    "size": 0,
+                    "sizes": []
+                  },
+                  "background_background": "classic",
+                  "background_color": "#FFFFFF",
+                  "border_border": "solid",
+                  "border_width": {
+                    "unit": "px",
+                    "top": "1",
+                    "right": "1",
+                    "bottom": "1",
+                    "left": "1",
+                    "isLinked": false
+                  },
+                  "border_color": "#EFE5D0",
+                  "border_radius": {
+                    "unit": "px",
+                    "top": "20",
+                    "right": "20",
+                    "bottom": "20",
+                    "left": "20",
+                    "isLinked": false
+                  },
+                  "overflow": "hidden",
+                  "css_classes": "reveal"
+                },
+                "elements": [
+                  {
+                    "id": "0000032",
+                    "elType": "container",
+                    "settings": {
+                      "flex_direction": "column",
+                      "flex_gap": {
+                        "column": "0",
+                        "row": "0",
+                        "isLinked": true,
+                        "unit": "px",
+                        "size": 0,
+                        "sizes": []
+                      },
+                      "padding": {
+                        "unit": "px",
+                        "top": "20",
+                        "right": "undefined",
+                        "bottom": "undefined",
+                        "left": "undefined",
+                        "isLinked": false
+                      }
+                    },
+                    "elements": [
+                      {
+                        "id": "000002d",
+                        "elType": "widget",
+                        "widgetType": "text-editor",
+                        "settings": {
+                          "editor": "<span style=\"display:inline-block;font-size:10px;font-weight:600;letter-spacing:0.08em;text-transform:uppercase;background:#FDF8EE;border:1px solid #EFE5D0;border-radius:8px;padding:4px 8px;color:#0C382E\">Untuk Dia · Harian</span>",
+                          "text_color": "#0C382E"
+                        },
+                        "elements": []
+                      },
+                      {
+                        "id": "000002e",
+                        "elType": "widget",
+                        "widgetType": "heading",
+                        "settings": {
+                          "title": "Kemuning Glow Soap",
+                          "header_size": "h3",
+                          "align": "left",
+                          "title_color": "#0C382E",
+                          "typography_typography": "custom",
+                          "typography_font_family": "Cinzel",
+                          "typography_font_size": {
+                            "unit": "px",
+                            "size": 17,
+                            "sizes": []
+                          }
+                        },
+                        "elements": []
+                      },
+                      {
+                        "id": "000002f",
+                        "elType": "widget",
+                        "widgetType": "text-editor",
+                        "settings": {
+                          "editor": "<p style=\"color:#1F2937;font-size:12px;line-height:1.4;margin:4px 0 0\">Sabun herba ekstrak kemuning untuk mandian harian.",
+                          "text_color": "#1F2937"
+                        },
+                        "elements": []
+                      },
+                      {
+                        "id": "0000030",
+                        "elType": "widget",
+                        "widgetType": "text-editor",
+                        "settings": {
+                          "editor": "<ul style=\"list-style:none;padding:0;margin:8px 0 0\"><li style=\"color:#3A7D44;font-size:12px;font-weight:500;margin:4px 0\">&#10003; Membersih dengan lembut</li><li style=\"color:#3A7D44;font-size:12px;font-weight:500;margin:4px 0\">&#10003; Sesuai kegunaan harian</li><li style=\"color:#3A7D44;font-size:12px;font-weight:500;margin:4px 0\">&#10003; Mudah dibawa</li></ul>",
+                          "text_color": "#3A7D44"
+                        },
+                        "elements": []
+                      },
+                      {
+                        "id": "0000031",
+                        "elType": "widget",
+                        "widgetType": "button",
+                        "settings": {
+                          "text": "Tanya Kemuning Glow Soap",
+                          "link": {
+                            "url": "https://wa.me/601156980854?text=Assalamualaikum%20Herbalabz%2C%20saya%20nak%20tanya%20tentang%20Sabun Kemuning Glow",
+                            "is_external": "",
+                            "nofollow": ""
+                          },
+                          "align": "stretch",
+                          "background_color": "#0C382E",
+                          "button_text_color": "#FFFFFF",
+                          "hover_color": "#FFFFFF",
+                          "button_background_hover_color": "#154B3E",
+                          "border_radius": {
+                            "unit": "px",
+                            "top": "9999",
+                            "right": "9999",
+                            "bottom": "9999",
+                            "left": "9999",
+                            "isLinked": false
+                          },
+                          "text_padding": {
+                            "unit": "px",
+                            "top": "10",
+                            "right": "20",
+                            "bottom": "10",
+                            "left": "20",
+                            "isLinked": false
+                          },
+                          "typography_typography": "custom",
+                          "typography_font_family": "Plus Jakarta Sans",
+                          "typography_font_size": {
+                            "unit": "px",
+                            "size": 13,
+                            "sizes": []
+                          },
+                          "typography_font_weight": "600",
+                          "_margin": {
+                            "unit": "px",
+                            "top": "12",
+                            "right": "0",
+                            "bottom": "0",
+                            "left": "0",
+                            "isLinked": false
+                          }
+                        },
+                        "elements": []
+                      }
+                    ],
+                    "isInner": true
+                  }
+                ],
+                "isInner": true
+              },
+              "isInner": true
+            }
+          ],
+          "isInner": true
+        }
+      ],
+      "isInner": false
+    },
+    {
+      "id": "0000071",
+      "elType": "container",
+      "settings": {
+        "layout": "full-width",
+        "css_id": "panduan",
+        "padding": {
+          "unit": "px",
+          "top": "80",
+          "right": "24",
+          "bottom": "80",
+          "left": "24",
+          "isLinked": false
+        },
+        "background_background": "classic",
+        "background_color": "#FDF8EE"
+      },
+      "elements": [
+        {
+          "id": "0000070",
+          "elType": "container",
+          "settings": {
+            "layout": "boxed",
+            "content_width": {
+              "unit": "px",
+              "size": 1120,
+              "sizes": []
+            },
+            "flex_direction": "column",
+            "flex_gap": {
+              "column": "32",
+              "row": "32",
+              "isLinked": true,
+              "unit": "px",
+              "size": 32,
+              "sizes": []
+            }
+          },
+          "elements": [
+            {
+              "id": "000005c",
+              "elType": "widget",
+              "widgetType": "heading",
+              "settings": {
+                "title": "Tak Pasti Nak Mula Mana? Ikut Ni:",
+                "header_size": "h2",
+                "align": "center",
+                "title_color": "#0C382E",
+                "typography_font_weight": "700",
+                "typography_font_size_tablet": {
+                  "unit": "px",
+                  "size": 28,
+                  "sizes": []
+                },
+                "typography_font_size_mobile": {
+                  "unit": "px",
+                  "size": 22,
+                  "sizes": []
+                },
+                "_margin": {
+                  "unit": "px",
+                  "top": "0",
+                  "right": "0",
+                  "bottom": "24",
+                  "left": "0",
+                  "isLinked": false
+                },
+                "typography_typography": "custom",
+                "typography_font_family": "Cinzel",
+                "typography_font_size": {
+                  "unit": "px",
+                  "size": 26,
+                  "sizes": []
+                }
+              },
+              "elements": []
+            },
+            {
+              "id": "0000060",
+              "elType": "container",
+              "settings": {
+                "flex_direction": "row",
+                "flex_wrap": "wrap",
+                "flex_gap": {
+                  "column": "12",
+                  "row": "12",
+                  "isLinked": true,
+                  "unit": "px",
+                  "size": 12,
+                  "sizes": []
+                },
+                "flex_align_items": "center",
+                "flex_justify_content": "center"
+              },
+              "elements": [
+                {
+                  "id": "000005d",
+                  "elType": "widget",
+                  "widgetType": "button",
+                  "settings": {
+                    "text": "A. Untuk Diri",
+                    "align": "center",
+                    "background_color": "#0C382E",
+                    "button_text_color": "#FFFFFF",
+                    "border_color": "#0C382E",
+                    "border_width": {
+                      "unit": "px",
+                      "top": "1.5",
+                      "right": "1.5",
+                      "bottom": "1.5",
+                      "left": "1.5",
+                      "isLinked": false
+                    },
+                    "border_radius": {
+                      "unit": "px",
+                      "top": "9999",
+                      "right": "9999",
+                      "bottom": "9999",
+                      "left": "9999",
+                      "isLinked": false
+                    },
+                    "text_padding": {
+                      "unit": "px",
+                      "top": "12",
+                      "right": "24",
+                      "bottom": "12",
+                      "left": "24",
+                      "isLinked": false
+                    },
+                    "typography_typography": "custom",
+                    "typography_font_family": "Plus Jakarta Sans",
+                    "typography_font_size": {
+                      "unit": "px",
+                      "size": 14,
+                      "sizes": []
+                    },
+                    "typography_font_weight": "600",
+                    "css_classes": "tab-btn",
+                    "_margin": {
+                      "unit": "px",
+                      "top": "0",
+                      "right": "4",
+                      "bottom": "0",
+                      "left": "0",
+                      "isLinked": false
+                    }
+                  },
+                  "elements": []
+                },
+                {
+                  "id": "000005e",
+                  "elType": "widget",
+                  "widgetType": "button",
+                  "settings": {
+                    "text": "B. Untuk Suami",
+                    "align": "center",
+                    "background_color": "#FDF8EE",
+                    "button_text_color": "#0C382E",
+                    "border_color": "#0C382E",
+                    "border_width": {
+                      "unit": "px",
+                      "top": "1.5",
+                      "right": "1.5",
+                      "bottom": "1.5",
+                      "left": "1.5",
+                      "isLinked": false
+                    },
+                    "border_radius": {
+                      "unit": "px",
+                      "top": "9999",
+                      "right": "9999",
+                      "bottom": "9999",
+                      "left": "9999",
+                      "isLinked": false
+                    },
+                    "text_padding": {
+                      "unit": "px",
+                      "top": "12",
+                      "right": "24",
+                      "bottom": "12",
+                      "left": "24",
+                      "isLinked": false
+                    },
+                    "typography_typography": "custom",
+                    "typography_font_family": "Plus Jakarta Sans",
+                    "typography_font_size": {
+                      "unit": "px",
+                      "size": 14,
+                      "sizes": []
+                    },
+                    "typography_font_weight": "600",
+                    "css_classes": "tab-btn",
+                    "_margin": {
+                      "unit": "px",
+                      "top": "0",
+                      "right": "4",
+                      "bottom": "0",
+                      "left": "0",
+                      "isLinked": false
+                    }
+                  },
+                  "elements": []
+                },
+                {
+                  "id": "000005f",
+                  "elType": "widget",
+                  "widgetType": "button",
+                  "settings": {
+                    "text": "C. Untuk Mak Ayah",
+                    "align": "center",
+                    "background_color": "#FDF8EE",
+                    "button_text_color": "#0C382E",
+                    "border_color": "#0C382E",
+                    "border_width": {
+                      "unit": "px",
+                      "top": "1.5",
+                      "right": "1.5",
+                      "bottom": "1.5",
+                      "left": "1.5",
+                      "isLinked": false
+                    },
+                    "border_radius": {
+                      "unit": "px",
+                      "top": "9999",
+                      "right": "9999",
+                      "bottom": "9999",
+                      "left": "9999",
+                      "isLinked": false
+                    },
+                    "text_padding": {
+                      "unit": "px",
+                      "top": "12",
+                      "right": "24",
+                      "bottom": "12",
+                      "left": "24",
+                      "isLinked": false
+                    },
+                    "typography_typography": "custom",
+                    "typography_font_family": "Plus Jakarta Sans",
+                    "typography_font_size": {
+                      "unit": "px",
+                      "size": 14,
+                      "sizes": []
+                    },
+                    "typography_font_weight": "600",
+                    "css_classes": "tab-btn",
+                    "_margin": {
+                      "unit": "px",
+                      "top": "0",
+                      "right": "4",
+                      "bottom": "0",
+                      "left": "0",
+                      "isLinked": false
+                    }
+                  },
+                  "elements": []
+                }
+              ],
+              "isInner": true
+            },
+            {
+              "id": "000006d",
+              "elType": "container",
+              "settings": {
+                "flex_direction": "column",
+                "flex_gap": {
+                  "column": "20",
+                  "row": "20",
+                  "isLinked": true,
+                  "unit": "px",
+                  "size": 20,
+                  "sizes": []
+                },
+                "css_classes": "reveal"
+              },
+              "elements": [
+                {
+                  "id": "0000064",
+                  "elType": "container",
+                  "settings": {
+                    "css_id": "panel-a",
+                    "layout": "boxed",
+                    "content_width": {
+                      "unit": "px",
+                      "size": 900,
+                      "sizes": []
+                    },
+                    "flex_direction": "column",
+                    "flex_align_items": "center",
+                    "flex_gap": {
+                      "column": "16",
+                      "row": "16",
+                      "isLinked": true,
+                      "unit": "px",
+                      "size": 16,
+                      "sizes": []
+                    },
+                    "padding": {
+                      "unit": "px",
+                      "top": "40",
+                      "right": "undefined",
+                      "bottom": "undefined",
+                      "left": "undefined",
+                      "isLinked": false
+                    },
+                    "background_background": "classic",
+                    "background_color": "#FFFFFF",
+                    "border_border": "solid",
+                    "border_width": {
+                      "unit": "px",
+                      "top": "1",
+                      "right": "1",
+                      "bottom": "1",
+                      "left": "1",
+                      "isLinked": false
+                    },
+                    "border_color": "#EFE5D0",
+                    "border_radius": {
+                      "unit": "px",
+                      "top": "20",
+                      "right": "20",
+                      "bottom": "20",
+                      "left": "20",
+                      "isLinked": false
+                    }
+                  },
+                  "elements": [
+                    {
+                      "id": "0000061",
+                      "elType": "widget",
+                      "widgetType": "heading",
+                      "settings": {
+                        "title": "A. Untuk diri sendiri (wanita)",
+                        "header_size": "h3",
+                        "align": "center",
+                        "title_color": "#0C382E",
+                        "typography_typography": "custom",
+                        "typography_font_family": "Plus Jakarta Sans",
+                        "typography_font_size": {
+                          "unit": "px",
+                          "size": 17,
+                          "sizes": []
+                        }
+                      },
+                      "elements": []
+                    },
+                    {
+                      "id": "0000062",
+                      "elType": "widget",
+                      "widgetType": "text-editor",
+                      "settings": {
+                        "editor": "<p style=\"text-align:center;color:#1F2937;font-size:15px;margin:0\">Mula dengan → <strong>Kemuning Glow Soap + Teh Herba Osmanthus</strong></p>",
+                        "text_color": "#1F2937"
+                      },
+                      "elements": []
+                    },
+                    {
+                      "id": "0000063",
+                      "elType": "widget",
+                      "widgetType": "text-editor",
+                      "settings": {
+                        "editor": "<p style=\"text-align:center;color:#9CA3AF;font-size:13px;margin:0\"><em>Sebab: lembut, harian, paling mudah serasi.</em></p>",
+                        "text_color": "#9CA3AF"
+                      },
+                      "elements": []
+                    }
+                  ],
+                  "isInner": true
+                },
+                {
+                  "id": "0000068",
+                  "elType": "container",
+                  "settings": {
+                    "css_id": "panel-b",
+                    "layout": "boxed",
+                    "content_width": {
+                      "unit": "px",
+                      "size": 900,
+                      "sizes": []
+                    },
+                    "flex_direction": "column",
+                    "flex_align_items": "center",
+                    "flex_gap": {
+                      "column": "16",
+                      "row": "16",
+                      "isLinked": true,
+                      "unit": "px",
+                      "size": 16,
+                      "sizes": []
+                    },
+                    "padding": {
+                      "unit": "px",
+                      "top": "40",
+                      "right": "undefined",
+                      "bottom": "undefined",
+                      "left": "undefined",
+                      "isLinked": false
+                    },
+                    "background_background": "classic",
+                    "background_color": "#FFFFFF",
+                    "border_border": "solid",
+                    "border_width": {
+                      "unit": "px",
+                      "top": "1",
+                      "right": "1",
+                      "bottom": "1",
+                      "left": "1",
+                      "isLinked": false
+                    },
+                    "border_color": "#EFE5D0",
+                    "border_radius": {
+                      "unit": "px",
+                      "top": "20",
+                      "right": "20",
+                      "bottom": "20",
+                      "left": "20",
+                      "isLinked": false
+                    },
+                    "hidden": "true"
+                  },
+                  "elements": [
+                    {
+                      "id": "0000065",
+                      "elType": "widget",
+                      "widgetType": "heading",
+                      "settings": {
+                        "title": "B. Untuk suami",
+                        "header_size": "h3",
+                        "align": "center",
+                        "title_color": "#0C382E",
+                        "typography_typography": "custom",
+                        "typography_font_family": "Plus Jakarta Sans",
+                        "typography_font_size": {
+                          "unit": "px",
+                          "size": 17,
+                          "sizes": []
+                        }
+                      },
+                      "elements": []
+                    },
+                    {
+                      "id": "0000066",
+                      "elType": "widget",
+                      "widgetType": "text-editor",
+                      "settings": {
+                        "editor": "<p style=\"text-align:center;color:#1F2937;font-size:15px;margin:0\">Pilih ikut keselesaan → <strong>Minyak Raja Perkasa</strong> (luaran) / <strong>Uncang Herba</strong> (dalaman) / <strong>Maajun Tok Urat</strong> (cergas)</p>",
+                        "text_color": "#1F2937"
+                      },
+                      "elements": []
+                    },
+                    {
+                      "id": "0000067",
+                      "elType": "widget",
+                      "widgetType": "text-editor",
+                      "settings": {
+                        "editor": "<p style=\"text-align:center;color:#9CA3AF;font-size:13px;margin:0\"><em>Sebab: ikut rutin dia — suka urut atau suka bancuh minum?</em></p>",
+                        "text_color": "#9CA3AF"
+                      },
+                      "elements": []
+                    }
+                  ],
+                  "isInner": true
+                },
+                {
+                  "id": "000006c",
+                  "elType": "container",
+                  "settings": {
+                    "css_id": "panel-c",
+                    "layout": "boxed",
+                    "content_width": {
+                      "unit": "px",
+                      "size": 900,
+                      "sizes": []
+                    },
+                    "flex_direction": "column",
+                    "flex_align_items": "center",
+                    "flex_gap": {
+                      "column": "16",
+                      "row": "16",
+                      "isLinked": true,
+                      "unit": "px",
+                      "size": 16,
+                      "sizes": []
+                    },
+                    "padding": {
+                      "unit": "px",
+                      "top": "40",
+                      "right": "undefined",
+                      "bottom": "undefined",
+                      "left": "undefined",
+                      "isLinked": false
+                    },
+                    "background_background": "classic",
+                    "background_color": "#FFFFFF",
+                    "border_border": "solid",
+                    "border_width": {
+                      "unit": "px",
+                      "top": "1",
+                      "right": "1",
+                      "bottom": "1",
+                      "left": "1",
+                      "isLinked": false
+                    },
+                    "border_color": "#EFE5D0",
+                    "border_radius": {
+                      "unit": "px",
+                      "top": "20",
+                      "right": "20",
+                      "bottom": "20",
+                      "left": "20",
+                      "isLinked": false
+                    },
+                    "hidden": "true"
+                  },
+                  "elements": [
+                    {
+                      "id": "0000069",
+                      "elType": "widget",
+                      "widgetType": "heading",
+                      "settings": {
+                        "title": "C. Untuk mak ayah",
+                        "header_size": "h3",
+                        "align": "center",
+                        "title_color": "#0C382E",
+                        "typography_typography": "custom",
+                        "typography_font_family": "Plus Jakarta Sans",
+                        "typography_font_size": {
+                          "unit": "px",
+                          "size": 17,
+                          "sizes": []
+                        }
+                      },
+                      "elements": []
+                    },
+                    {
+                      "id": "000006a",
+                      "elType": "widget",
+                      "widgetType": "text-editor",
+                      "settings": {
+                        "editor": "<p style=\"text-align:center;color:#1F2937;font-size:15px;margin:0\">Ambil → <strong>Minyak Sendicare Plus + Teh Herba Osmanthus</strong></p>",
+                        "text_color": "#1F2937"
+                      },
+                      "elements": []
+                    },
+                    {
+                      "id": "000006b",
+                      "elType": "widget",
+                      "widgetType": "text-editor",
+                      "settings": {
+                        "editor": "<p style=\"text-align:center;color:#9CA3AF;font-size:13px;margin:0\"><em>Sebab: urutan harian yang tak melekit + minuman tenang petang-petang.</em></p>",
+                        "text_color": "#9CA3AF"
+                      },
+                      "elements": []
+                    }
+                  ],
+                  "isInner": true
+                }
+              ],
+              "isInner": true
+            },
+            {
+              "id": "000006e",
+              "elType": "widget",
+              "widgetType": "text-editor",
+              "settings": {
+                "editor": "<p style=\"text-align:center;color:#1F2937;font-size:15px;margin:0\">Masih tak pasti? Cerita sikit siapa nak guna — kami tolong pilihkan.</p>",
+                "text_color": "#1F2937"
+              },
+              "elements": []
+            },
+            {
+              "id": "000006f",
+              "elType": "widget",
+              "widgetType": "button",
+              "settings": {
+                "text": "WhatsApp Kami Sekarang",
+                "link": {
+                  "url": "https://wa.me/601156980854?text=Assalamualaikum%20Herbalabz%2C%20saya%20nak%20tanya%20tentang%20produk%20herba%20untuk%20keluarga",
+                  "is_external": "",
+                  "nofollow": ""
+                },
+                "align": "center",
+                "background_color": "#25D366",
+                "button_text_color": "#FFFFFF",
+                "hover_color": "#FFFFFF",
+                "button_background_hover_color": "#128C7E",
+                "border_radius": {
+                  "unit": "px",
+                  "top": "9999",
+                  "right": "9999",
+                  "bottom": "9999",
+                  "left": "9999",
+                  "isLinked": false
+                },
+                "text_padding": {
+                  "unit": "px",
+                  "top": "16",
+                  "right": "40",
+                  "bottom": "16",
+                  "left": "40",
+                  "isLinked": false
+                },
+                "typography_typography": "custom",
+                "typography_font_family": "Plus Jakarta Sans",
+                "typography_font_size": {
+                  "unit": "px",
+                  "size": 16,
+                  "sizes": []
+                },
+                "typography_font_weight": "600",
+                "_margin": {
+                  "unit": "px",
+                  "top": "24",
+                  "right": "0",
+                  "bottom": "0",
+                  "left": "0",
+                  "isLinked": false
+                }
+              },
+              "elements": []
+            }
+          ],
+          "isInner": true
+        }
+      ],
+      "isInner": false
+    },
+    {
+      "id": "000008e",
+      "elType": "container",
+      "settings": {
+        "layout": "full-width",
+        "css_id": "testimoni",
+        "padding": {
+          "unit": "px",
+          "top": "80",
+          "right": "24",
+          "bottom": "80",
+          "left": "24",
+          "isLinked": false
+        },
+        "background_background": "classic",
+        "background_color": "#14191F"
+      },
+      "elements": [
+        {
+          "id": "000008d",
+          "elType": "container",
+          "settings": {
+            "layout": "boxed",
+            "content_width": {
+              "unit": "px",
+              "size": 1120,
+              "sizes": []
+            },
+            "flex_direction": "column",
+            "flex_gap": {
+              "column": "32",
+              "row": "32",
+              "isLinked": true,
+              "unit": "px",
+              "size": 32,
+              "sizes": []
+            }
+          },
+          "elements": [
+            {
+              "id": "0000072",
+              "elType": "widget",
+              "widgetType": "heading",
+              "settings": {
+                "title": "Ikut Keperluan, Ikut Segmen Keluarga",
+                "header_size": "h2",
+                "align": "center",
+                "title_color": "#FFFFFF",
+                "typography_font_weight": "700",
+                "typography_font_size_tablet": {
+                  "unit": "px",
+                  "size": 28,
+                  "sizes": []
+                },
+                "typography_font_size_mobile": {
+                  "unit": "px",
+                  "size": 22,
+                  "sizes": []
+                },
+                "_margin": {
+                  "unit": "px",
+                  "top": "0",
+                  "right": "0",
+                  "bottom": "8",
+                  "left": "0",
+                  "isLinked": false
+                },
+                "typography_typography": "custom",
+                "typography_font_family": "Cinzel",
+                "typography_font_size": {
+                  "unit": "px",
+                  "size": 26,
+                  "sizes": []
+                }
+              },
+              "elements": []
+            },
+            {
+              "id": "0000073",
+              "elType": "widget",
+              "widgetType": "text-editor",
+              "settings": {
+                "editor": "<p style=\"text-align:center;color:#9CA3AF;font-size:14px;margin:0\">Setiap segmen ada padanan produk yang paling sesuai.</p>",
+                "text_color": "#9CA3AF"
+              },
+              "elements": []
+            },
+            {
+              "id": "000008c",
+              "elType": "container",
+              "settings": {
+                "flex_direction": "row",
+                "flex_wrap": "wrap",
+                "flex_gap": {
+                  "column": "20",
+                  "row": "20",
+                  "isLinked": true,
+                  "unit": "px",
+                  "size": 20,
+                  "sizes": []
+                },
+                "flex_align_items": "stretch",
+                "css_classes": "reveal-group"
+              },
+              "elements": [
+                {
+                  "id": "0000079",
+                  "elType": "container",
+                  "settings": {
+                    "width": {
+                      "unit": "%",
+                      "size": 50,
+                      "sizes": []
+                    },
+                    "width_tablet": {
+                      "unit": "%",
+                      "size": 50,
+                      "sizes": []
+                    },
+                    "width_mobile": {
+                      "unit": "%",
+                      "size": 100,
+                      "sizes": []
+                    },
+                    "flex_direction": "row",
+                    "flex_gap": {
+                      "column": "16",
+                      "row": "16",
+                      "isLinked": true,
+                      "unit": "px",
+                      "size": 16,
+                      "sizes": []
+                    },
+                    "padding": {
+                      "unit": "px",
+                      "top": "24",
+                      "right": "undefined",
+                      "bottom": "undefined",
+                      "left": "undefined",
+                      "isLinked": false
+                    },
+                    "background_background": "classic",
+                    "background_color": "#1F2937",
+                    "border_border": "solid",
+                    "border_width": {
+                      "unit": "px",
+                      "top": "1",
+                      "right": "1",
+                      "bottom": "1",
+                      "left": "1",
+                      "isLinked": false
+                    },
+                    "border_color": "#EFE5D0",
+                    "border_radius": {
+                      "unit": "px",
+                      "top": "20",
+                      "right": "20",
+                      "bottom": "20",
+                      "left": "20",
+                      "isLinked": false
+                    }
+                  },
+                  "elements": [
+                    {
+                      "id": "0000074",
+                      "elType": "widget",
+                      "widgetType": "image",
+                      "settings": {
+                        "image": {
+                          "url": "https://herbalabz.local/wp-content/uploads/herbalabz-wordpress-v1/testimoni-diri.webp",
+                          "id": ""
+                        },
+                        "image_size": "full",
+                        "align": "center",
+                        "hover_animation": "grow",
+                        "css_classes": "testimoni-img"
+                      },
+                      "elements": []
+                    },
+                    {
+                      "id": "0000078",
+                      "elType": "container",
+                      "settings": {
+                        "flex_direction": "column",
+                        "flex_gap": {
+                          "column": "8",
+                          "row": "8",
+                          "isLinked": true,
+                          "unit": "px",
+                          "size": 8,
+                          "sizes": []
+                        }
+                      },
+                      "elements": [
+                        {
+                          "id": "0000075",
+                          "elType": "widget",
+                          "widgetType": "text-editor",
+                          "settings": {
+                            "editor": "<span style=\"font-size:10px;font-weight:600;letter-spacing:0.08em;text-transform:uppercase;color:#C6A24B\">Diri Sendiri</span>",
+                            "text_color": "#C6A24B"
+                          },
+                          "elements": []
+                        },
+                        {
+                          "id": "0000076",
+                          "elType": "widget",
+                          "widgetType": "heading",
+                          "settings": {
+                            "title": "Rutin segar harian",
+                            "header_size": "h3",
+                            "align": "center",
+                            "title_color": "#FFFFFF",
+                            "typography_typography": "custom",
+                            "typography_font_family": "Plus Jakarta Sans",
+                            "typography_font_size": {
+                              "unit": "px",
+                              "size": 15,
+                              "sizes": []
+                            }
+                          },
+                          "elements": []
+                        },
+                        {
+                          "id": "0000077",
+                          "elType": "widget",
+                          "widgetType": "text-editor",
+                          "settings": {
+                            "editor": "<p style=\"color:#E2E8F0;font-size:13px;line-height:1.55;margin:0\">Padanan: Kemuning Glow Soap & Teh Herba Osmanthus — lembut untuk guna hari-hari.</p>",
+                            "text_color": "#E2E8F0"
+                          },
+                          "elements": []
+                        }
+                      ],
+                      "isInner": true
+                    }
+                  ],
+                  "isInner": true
+                },
+                {
+                  "id": "000007f",
+                  "elType": "container",
+                  "settings": {
+                    "width": {
+                      "unit": "%",
+                      "size": 50,
+                      "sizes": []
+                    },
+                    "width_tablet": {
+                      "unit": "%",
+                      "size": 50,
+                      "sizes": []
+                    },
+                    "width_mobile": {
+                      "unit": "%",
+                      "size": 100,
+                      "sizes": []
+                    },
+                    "flex_direction": "row",
+                    "flex_gap": {
+                      "column": "16",
+                      "row": "16",
+                      "isLinked": true,
+                      "unit": "px",
+                      "size": 16,
+                      "sizes": []
+                    },
+                    "padding": {
+                      "unit": "px",
+                      "top": "24",
+                      "right": "undefined",
+                      "bottom": "undefined",
+                      "left": "undefined",
+                      "isLinked": false
+                    },
+                    "background_background": "classic",
+                    "background_color": "#1F2937",
+                    "border_border": "solid",
+                    "border_width": {
+                      "unit": "px",
+                      "top": "1",
+                      "right": "1",
+                      "bottom": "1",
+                      "left": "1",
+                      "isLinked": false
+                    },
+                    "border_color": "#EFE5D0",
+                    "border_radius": {
+                      "unit": "px",
+                      "top": "20",
+                      "right": "20",
+                      "bottom": "20",
+                      "left": "20",
+                      "isLinked": false
+                    }
+                  },
+                  "elements": [
+                    {
+                      "id": "000007a",
+                      "elType": "widget",
+                      "widgetType": "image",
+                      "settings": {
+                        "image": {
+                          "url": "https://herbalabz.local/wp-content/uploads/herbalabz-wordpress-v1/testimoni-mak.webp",
+                          "id": ""
+                        },
+                        "image_size": "full",
+                        "align": "center",
+                        "hover_animation": "grow",
+                        "css_classes": "testimoni-img"
+                      },
+                      "elements": []
+                    },
+                    {
+                      "id": "000007e",
+                      "elType": "container",
+                      "settings": {
+                        "flex_direction": "column",
+                        "flex_gap": {
+                          "column": "8",
+                          "row": "8",
+                          "isLinked": true,
+                          "unit": "px",
+                          "size": 8,
+                          "sizes": []
+                        }
+                      },
+                      "elements": [
+                        {
+                          "id": "000007b",
+                          "elType": "widget",
+                          "widgetType": "text-editor",
+                          "settings": {
+                            "editor": "<span style=\"font-size:10px;font-weight:600;letter-spacing:0.08em;text-transform:uppercase;color:#C6A24B\">Mak</span>",
+                            "text_color": "#C6A24B"
+                          },
+                          "elements": []
+                        },
+                        {
+                          "id": "000007c",
+                          "elType": "widget",
+                          "widgetType": "heading",
+                          "settings": {
+                            "title": "Keselesaan harian mak",
+                            "header_size": "h3",
+                            "align": "center",
+                            "title_color": "#FFFFFF",
+                            "typography_typography": "custom",
+                            "typography_font_family": "Plus Jakarta Sans",
+                            "typography_font_size": {
+                              "unit": "px",
+                              "size": 15,
+                              "sizes": []
+                            }
+                          },
+                          "elements": []
+                        },
+                        {
+                          "id": "000007d",
+                          "elType": "widget",
+                          "widgetType": "text-editor",
+                          "settings": {
+                            "editor": "<p style=\"color:#E2E8F0;font-size:13px;line-height:1.55;margin:0\">Padanan: Teh Herba Osmanthus & Minyak Sendicare Plus — urutan tak melekit + minuman tenang.</p>",
+                            "text_color": "#E2E8F0"
+                          },
+                          "elements": []
+                        }
+                      ],
+                      "isInner": true
+                    }
+                  ],
+                  "isInner": true
+                },
+                {
+                  "id": "0000085",
+                  "elType": "container",
+                  "settings": {
+                    "width": {
+                      "unit": "%",
+                      "size": 50,
+                      "sizes": []
+                    },
+                    "width_tablet": {
+                      "unit": "%",
+                      "size": 50,
+                      "sizes": []
+                    },
+                    "width_mobile": {
+                      "unit": "%",
+                      "size": 100,
+                      "sizes": []
+                    },
+                    "flex_direction": "row",
+                    "flex_gap": {
+                      "column": "16",
+                      "row": "16",
+                      "isLinked": true,
+                      "unit": "px",
+                      "size": 16,
+                      "sizes": []
+                    },
+                    "padding": {
+                      "unit": "px",
+                      "top": "24",
+                      "right": "undefined",
+                      "bottom": "undefined",
+                      "left": "undefined",
+                      "isLinked": false
+                    },
+                    "background_background": "classic",
+                    "background_color": "#1F2937",
+                    "border_border": "solid",
+                    "border_width": {
+                      "unit": "px",
+                      "top": "1",
+                      "right": "1",
+                      "bottom": "1",
+                      "left": "1",
+                      "isLinked": false
+                    },
+                    "border_color": "#EFE5D0",
+                    "border_radius": {
+                      "unit": "px",
+                      "top": "20",
+                      "right": "20",
+                      "bottom": "20",
+                      "left": "20",
+                      "isLinked": false
+                    }
+                  },
+                  "elements": [
+                    {
+                      "id": "0000080",
+                      "elType": "widget",
+                      "widgetType": "image",
+                      "settings": {
+                        "image": {
+                          "url": "https://herbalabz.local/wp-content/uploads/herbalabz-wordpress-v1/testimoni-suami.webp",
+                          "id": ""
+                        },
+                        "image_size": "full",
+                        "align": "center",
+                        "hover_animation": "grow",
+                        "css_classes": "testimoni-img"
+                      },
+                      "elements": []
+                    },
+                    {
+                      "id": "0000084",
+                      "elType": "container",
+                      "settings": {
+                        "flex_direction": "column",
+                        "flex_gap": {
+                          "column": "8",
+                          "row": "8",
+                          "isLinked": true,
+                          "unit": "px",
+                          "size": 8,
+                          "sizes": []
+                        }
+                      },
+                      "elements": [
+                        {
+                          "id": "0000081",
+                          "elType": "widget",
+                          "widgetType": "text-editor",
+                          "settings": {
+                            "editor": "<span style=\"font-size:10px;font-weight:600;letter-spacing:0.08em;text-transform:uppercase;color:#C6A24B\">Suami</span>",
+                            "text_color": "#C6A24B"
+                          },
+                          "elements": []
+                        },
+                        {
+                          "id": "0000082",
+                          "elType": "widget",
+                          "widgetType": "heading",
+                          "settings": {
+                            "title": "Kekal aktif & yakin",
+                            "header_size": "h3",
+                            "align": "center",
+                            "title_color": "#FFFFFF",
+                            "typography_typography": "custom",
+                            "typography_font_family": "Plus Jakarta Sans",
+                            "typography_font_size": {
+                              "unit": "px",
+                              "size": 15,
+                              "sizes": []
+                            }
+                          },
+                          "elements": []
+                        },
+                        {
+                          "id": "0000083",
+                          "elType": "widget",
+                          "widgetType": "text-editor",
+                          "settings": {
+                            "editor": "<p style=\"color:#E2E8F0;font-size:13px;line-height:1.55;margin:0\">Padanan: Uncang Herba Raja Perkasa & Maajun Tok Urat — ikut rutin dia.</p>",
+                            "text_color": "#E2E8F0"
+                          },
+                          "elements": []
+                        }
+                      ],
+                      "isInner": true
+                    }
+                  ],
+                  "isInner": true
+                },
+                {
+                  "id": "000008b",
+                  "elType": "container",
+                  "settings": {
+                    "width": {
+                      "unit": "%",
+                      "size": 50,
+                      "sizes": []
+                    },
+                    "width_tablet": {
+                      "unit": "%",
+                      "size": 50,
+                      "sizes": []
+                    },
+                    "width_mobile": {
+                      "unit": "%",
+                      "size": 100,
+                      "sizes": []
+                    },
+                    "flex_direction": "row",
+                    "flex_gap": {
+                      "column": "16",
+                      "row": "16",
+                      "isLinked": true,
+                      "unit": "px",
+                      "size": 16,
+                      "sizes": []
+                    },
+                    "padding": {
+                      "unit": "px",
+                      "top": "24",
+                      "right": "undefined",
+                      "bottom": "undefined",
+                      "left": "undefined",
+                      "isLinked": false
+                    },
+                    "background_background": "classic",
+                    "background_color": "#1F2937",
+                    "border_border": "solid",
+                    "border_width": {
+                      "unit": "px",
+                      "top": "1",
+                      "right": "1",
+                      "bottom": "1",
+                      "left": "1",
+                      "isLinked": false
+                    },
+                    "border_color": "#EFE5D0",
+                    "border_radius": {
+                      "unit": "px",
+                      "top": "20",
+                      "right": "20",
+                      "bottom": "20",
+                      "left": "20",
+                      "isLinked": false
+                    }
+                  },
+                  "elements": [
+                    {
+                      "id": "0000086",
+                      "elType": "widget",
+                      "widgetType": "image",
+                      "settings": {
+                        "image": {
+                          "url": "https://herbalabz.local/wp-content/uploads/herbalabz-wordpress-v1/testimoni-ayah.webp",
+                          "id": ""
+                        },
+                        "image_size": "full",
+                        "align": "center",
+                        "hover_animation": "grow",
+                        "css_classes": "testimoni-img"
+                      },
+                      "elements": []
+                    },
+                    {
+                      "id": "000008a",
+                      "elType": "container",
+                      "settings": {
+                        "flex_direction": "column",
+                        "flex_gap": {
+                          "column": "8",
+                          "row": "8",
+                          "isLinked": true,
+                          "unit": "px",
+                          "size": 8,
+                          "sizes": []
+                        }
+                      },
+                      "elements": [
+                        {
+                          "id": "0000087",
+                          "elType": "widget",
+                          "widgetType": "text-editor",
+                          "settings": {
+                            "editor": "<span style=\"font-size:10px;font-weight:600;letter-spacing:0.08em;text-transform:uppercase;color:#C6A24B\">Ayah</span>",
+                            "text_color": "#C6A24B"
+                          },
+                          "elements": []
+                        },
+                        {
+                          "id": "0000088",
+                          "elType": "widget",
+                          "widgetType": "heading",
+                          "settings": {
+                            "title": "Cergas di usia emas",
+                            "header_size": "h3",
+                            "align": "center",
+                            "title_color": "#FFFFFF",
+                            "typography_typography": "custom",
+                            "typography_font_family": "Plus Jakarta Sans",
+                            "typography_font_size": {
+                              "unit": "px",
+                              "size": 15,
+                              "sizes": []
+                            }
+                          },
+                          "elements": []
+                        },
+                        {
+                          "id": "0000089",
+                          "elType": "widget",
+                          "widgetType": "text-editor",
+                          "settings": {
+                            "editor": "<p style=\"color:#E2E8F0;font-size:13px;line-height:1.55;margin:0\">Padanan: Minyak Sendicare Plus & Minyak Raja Perkasa — untuk otot dan sendi.</p>",
+                            "text_color": "#E2E8F0"
+                          },
+                          "elements": []
+                        }
+                      ],
+                      "isInner": true
+                    }
+                  ],
+                  "isInner": true
+                }
+              ],
+              "isInner": true
+            }
+          ],
+          "isInner": true
+        }
+      ],
+      "isInner": false
+    },
+    {
+      "id": "00000a2",
+      "elType": "container",
+      "settings": {
+        "layout": "full-width",
+        "css_id": "order",
+        "padding": {
+          "unit": "px",
+          "top": "80",
+          "right": "24",
+          "bottom": "80",
+          "left": "24",
+          "isLinked": false
+        },
+        "background_background": "classic",
+        "background_color": "#FDF8EE",
+        "border_top": {
+          "unit": "px",
+          "top": "1",
+          "right": "0",
+          "bottom": "1",
+          "left": "0",
+          "isLinked": false
+        },
+        "border_color": "#EFE5D0"
+      },
+      "elements": [
+        {
+          "id": "00000a1",
+          "elType": "container",
+          "settings": {
+            "layout": "boxed",
+            "content_width": {
+              "unit": "px",
+              "size": 1120,
+              "sizes": []
+            },
+            "flex_direction": "column",
+            "flex_gap": {
+              "column": "40",
+              "row": "40",
+              "isLinked": true,
+              "unit": "px",
+              "size": 40,
+              "sizes": []
+            }
+          },
+          "elements": [
+            {
+              "id": "000008f",
+              "elType": "widget",
+              "widgetType": "heading",
+              "settings": {
+                "title": "Cara Nak Dapatkan Herbalabz",
+                "header_size": "h2",
+                "align": "center",
+                "title_color": "#0C382E",
+                "typography_font_weight": "700",
+                "typography_font_size_tablet": {
+                  "unit": "px",
+                  "size": 28,
+                  "sizes": []
+                },
+                "typography_font_size_mobile": {
+                  "unit": "px",
+                  "size": 22,
+                  "sizes": []
+                },
+                "_margin": {
+                  "unit": "px",
+                  "top": "0",
+                  "right": "0",
+                  "bottom": "32",
+                  "left": "0",
+                  "isLinked": false
+                },
+                "typography_typography": "custom",
+                "typography_font_family": "Cinzel",
+                "typography_font_size": {
+                  "unit": "px",
+                  "size": 26,
+                  "sizes": []
+                }
+              },
+              "elements": []
+            },
+            {
+              "id": "000009c",
+              "elType": "container",
+              "settings": {
+                "flex_direction": "row",
+                "flex_wrap": "wrap",
+                "flex_gap": {
+                  "column": "24",
+                  "row": "24",
+                  "isLinked": true,
+                  "unit": "px",
+                  "size": 24,
+                  "sizes": []
+                },
+                "flex_align_items": "stretch",
+                "css_classes": "reveal-group"
+              },
+              "elements": [
+                {
+                  "id": "0000093",
+                  "elType": "container",
+                  "settings": {
+                    "width": {
+                      "unit": "%",
+                      "size": 33,
+                      "sizes": []
+                    },
+                    "width_tablet": {
+                      "unit": "%",
+                      "size": 47,
+                      "sizes": []
+                    },
+                    "width_mobile": {
+                      "unit": "%",
+                      "size": 100,
+                      "sizes": []
+                    },
+                    "flex_direction": "column",
+                    "flex_align_items": "center",
+                    "flex_gap": {
+                      "column": "12",
+                      "row": "12",
+                      "isLinked": true,
+                      "unit": "px",
+                      "size": 12,
+                      "sizes": []
+                    },
+                    "padding": {
+                      "unit": "px",
+                      "top": "32",
+                      "right": "undefined",
+                      "bottom": "undefined",
+                      "left": "undefined",
+                      "isLinked": false
+                    },
+                    "background_background": "classic",
+                    "background_color": "#0C382E",
+                    "border_radius": {
+                      "unit": "px",
+                      "top": "20",
+                      "right": "20",
+                      "bottom": "20",
+                      "left": "20",
+                      "isLinked": false
+                    },
+                    "text_align": "center"
+                  },
+                  "elements": [
+                    {
+                      "id": "0000090",
+                      "elType": "widget",
+                      "widgetType": "text-editor",
+                      "settings": {
+                        "editor": "<span style=\"font-family:Cinzel,serif;font-size:48px;font-weight:700;color:#C6A24B;line-height:1\">1</span>",
+                        "text_color": "#C6A24B"
+                      },
+                      "elements": []
+                    },
+                    {
+                      "id": "0000091",
+                      "elType": "widget",
+                      "widgetType": "heading",
+                      "settings": {
+                        "title": "WhatsApp / DM",
+                        "header_size": "h3",
+                        "align": "center",
+                        "title_color": "#FFFFFF",
+                        "typography_typography": "custom",
+                        "typography_font_family": "Plus Jakarta Sans",
+                        "typography_font_size": {
+                          "unit": "px",
+                          "size": 17,
+                          "sizes": []
+                        }
+                      },
+                      "elements": []
+                    },
+                    {
+                      "id": "0000092",
+                      "elType": "widget",
+                      "widgetType": "text-editor",
+                      "settings": {
+                        "editor": "<p style=\"color:rgba(253,248,238,.8);font-size:14px;line-height:1.55;margin:0\">Tekan butang WhatsApp atau DM @Herbalabz di TikTok / FB.</p>",
+                        "text_color": "rgba(253,248,238,.8)"
+                      },
+                      "elements": []
+                    }
+                  ],
+                  "isInner": true
+                },
+                {
+                  "id": "0000097",
+                  "elType": "container",
+                  "settings": {
+                    "width": {
+                      "unit": "%",
+                      "size": 33,
+                      "sizes": []
+                    },
+                    "width_tablet": {
+                      "unit": "%",
+                      "size": 47,
+                      "sizes": []
+                    },
+                    "width_mobile": {
+                      "unit": "%",
+                      "size": 100,
+                      "sizes": []
+                    },
+                    "flex_direction": "column",
+                    "flex_align_items": "center",
+                    "flex_gap": {
+                      "column": "12",
+                      "row": "12",
+                      "isLinked": true,
+                      "unit": "px",
+                      "size": 12,
+                      "sizes": []
+                    },
+                    "padding": {
+                      "unit": "px",
+                      "top": "32",
+                      "right": "undefined",
+                      "bottom": "undefined",
+                      "left": "undefined",
+                      "isLinked": false
+                    },
+                    "background_background": "classic",
+                    "background_color": "#0C382E",
+                    "border_radius": {
+                      "unit": "px",
+                      "top": "20",
+                      "right": "20",
+                      "bottom": "20",
+                      "left": "20",
+                      "isLinked": false
+                    },
+                    "text_align": "center"
+                  },
+                  "elements": [
+                    {
+                      "id": "0000094",
+                      "elType": "widget",
+                      "widgetType": "text-editor",
+                      "settings": {
+                        "editor": "<span style=\"font-family:Cinzel,serif;font-size:48px;font-weight:700;color:#C6A24B;line-height:1\">2</span>",
+                        "text_color": "#C6A24B"
+                      },
+                      "elements": []
+                    },
+                    {
+                      "id": "0000095",
+                      "elType": "widget",
+                      "widgetType": "heading",
+                      "settings": {
+                        "title": "Cerita keperluan",
+                        "header_size": "h3",
+                        "align": "center",
+                        "title_color": "#FFFFFF",
+                        "typography_typography": "custom",
+                        "typography_font_family": "Plus Jakarta Sans",
+                        "typography_font_size": {
+                          "unit": "px",
+                          "size": 17,
+                          "sizes": []
+                        }
+                      },
+                      "elements": []
+                    },
+                    {
+                      "id": "0000096",
+                      "elType": "widget",
+                      "widgetType": "text-editor",
+                      "settings": {
+                        "editor": "<p style=\"color:rgba(253,248,238,.8);font-size:14px;line-height:1.55;margin:0\">Untuk siapa, umur berapa, nak ikhtiar apa.</p>",
+                        "text_color": "rgba(253,248,238,.8)"
+                      },
+                      "elements": []
+                    }
+                  ],
+                  "isInner": true
+                },
+                {
+                  "id": "000009b",
+                  "elType": "container",
+                  "settings": {
+                    "width": {
+                      "unit": "%",
+                      "size": 33,
+                      "sizes": []
+                    },
+                    "width_tablet": {
+                      "unit": "%",
+                      "size": 47,
+                      "sizes": []
+                    },
+                    "width_mobile": {
+                      "unit": "%",
+                      "size": 100,
+                      "sizes": []
+                    },
+                    "flex_direction": "column",
+                    "flex_align_items": "center",
+                    "flex_gap": {
+                      "column": "12",
+                      "row": "12",
+                      "isLinked": true,
+                      "unit": "px",
+                      "size": 12,
+                      "sizes": []
+                    },
+                    "padding": {
+                      "unit": "px",
+                      "top": "32",
+                      "right": "undefined",
+                      "bottom": "undefined",
+                      "left": "undefined",
+                      "isLinked": false
+                    },
+                    "background_background": "classic",
+                    "background_color": "#0C382E",
+                    "border_radius": {
+                      "unit": "px",
+                      "top": "20",
+                      "right": "20",
+                      "bottom": "20",
+                      "left": "20",
+                      "isLinked": false
+                    },
+                    "text_align": "center"
+                  },
+                  "elements": [
+                    {
+                      "id": "0000098",
+                      "elType": "widget",
+                      "widgetType": "text-editor",
+                      "settings": {
+                        "editor": "<span style=\"font-family:Cinzel,serif;font-size:48px;font-weight:700;color:#C6A24B;line-height:1\">3</span>",
+                        "text_color": "#C6A24B"
+                      },
+                      "elements": []
+                    },
+                    {
+                      "id": "0000099",
+                      "elType": "widget",
+                      "widgetType": "heading",
+                      "settings": {
+                        "title": "Kami cadangkan",
+                        "header_size": "h3",
+                        "align": "center",
+                        "title_color": "#FFFFFF",
+                        "typography_typography": "custom",
+                        "typography_font_family": "Plus Jakarta Sans",
+                        "typography_font_size": {
+                          "unit": "px",
+                          "size": 17,
+                          "sizes": []
+                        }
+                      },
+                      "elements": []
+                    },
+                    {
+                      "id": "000009a",
+                      "elType": "widget",
+                      "widgetType": "text-editor",
+                      "settings": {
+                        "editor": "<p style=\"color:rgba(253,248,238,.8);font-size:14px;line-height:1.55;margin:0\">Kami suggest produk + cara guna yang sesuai.</p>",
+                        "text_color": "rgba(253,248,238,.8)"
+                      },
+                      "elements": []
+                    }
+                  ],
+                  "isInner": true
+                }
+              ],
+              "isInner": true
+            },
+            {
+              "id": "00000a0",
+              "elType": "container",
+              "settings": {
+                "flex_direction": "column",
+                "flex_align_items": "center",
+                "flex_gap": {
+                  "column": "16",
+                  "row": "16",
+                  "isLinked": true,
+                  "unit": "px",
+                  "size": 16,
+                  "sizes": []
+                },
+                "css_classes": "reveal"
+              },
+              "elements": [
+                {
+                  "id": "000009d",
+                  "elType": "widget",
+                  "widgetType": "text-editor",
+                  "settings": {
+                    "editor": "<p style=\"text-align:center;color:#1F2937;font-size:15px;margin:0\">Tak perlu beli semua. Pilih satu yang paling dekat dengan keperluan keluarga anda hari ni.</p>",
+                    "text_color": "#1F2937"
+                  },
+                  "elements": []
+                },
+                {
+                  "id": "000009e",
+                  "elType": "widget",
+                  "widgetType": "button",
+                  "settings": {
+                    "text": "Chat 011-56980854 Sekarang",
+                    "link": {
+                      "url": "https://wa.me/601156980854?text=Assalamualaikum%20Herbalabz%2C%20saya%20nak%20tanya%20tentang%20produk%20herba%20untuk%20keluarga",
+                      "is_external": "",
+                      "nofollow": ""
+                    },
+                    "align": "center",
+                    "background_color": "#C6A24B",
+                    "button_text_color": "#FFFFFF",
+                    "hover_color": "#FFFFFF",
+                    "button_background_hover_color": "#B08A3E",
+                    "border_radius": {
+                      "unit": "px",
+                      "top": "9999",
+                      "right": "9999",
+                      "bottom": "9999",
+                      "left": "9999",
+                      "isLinked": false
+                    },
+                    "text_padding": {
+                      "unit": "px",
+                      "top": "18",
+                      "right": "44",
+                      "bottom": "18",
+                      "left": "44",
+                      "isLinked": false
+                    },
+                    "typography_typography": "custom",
+                    "typography_font_family": "Plus Jakarta Sans",
+                    "typography_font_size": {
+                      "unit": "px",
+                      "size": 16,
+                      "sizes": []
+                    },
+                    "typography_font_weight": "600"
+                  },
+                  "elements": []
+                },
+                {
+                  "id": "000009f",
+                  "elType": "widget",
+                  "widgetType": "text-editor",
+                  "settings": {
+                    "editor": "<p style=\"text-align:center;color:#9CA3AF;font-size:13px;margin:0\">Balas mesra, tiada paksaan beli. Tanya dulu pun boleh.</p>",
+                    "text_color": "#9CA3AF"
+                  },
+                  "elements": []
+                }
+              ],
+              "isInner": true
+            }
+          ],
+          "isInner": true
+        }
+      ],
+      "isInner": false
+    },
+    {
+      "id": "00000be",
+      "elType": "container",
+      "settings": {
+        "layout": "full-width",
+        "css_id": "faq",
+        "padding": {
+          "unit": "px",
+          "top": "80",
+          "right": "24",
+          "bottom": "80",
+          "left": "24",
+          "isLinked": false
+        },
+        "background_background": "classic",
+        "background_color": "#FAF4E6",
+        "border_top": {
+          "unit": "px",
+          "top": "1",
+          "right": "0",
+          "bottom": "1",
+          "left": "0",
+          "isLinked": false
+        },
+        "border_color": "#EFE5D0"
+      },
+      "elements": [
+        {
+          "id": "00000bd",
+          "elType": "container",
+          "settings": {
+            "layout": "boxed",
+            "content_width": {
+              "unit": "px",
+              "size": 1120,
+              "sizes": []
+            },
+            "flex_direction": "column",
+            "flex_gap": {
+              "column": "32",
+              "row": "32",
+              "isLinked": true,
+              "unit": "px",
+              "size": 32,
+              "sizes": []
+            }
+          },
+          "elements": [
+            {
+              "id": "00000a3",
+              "elType": "widget",
+              "widgetType": "heading",
+              "settings": {
+                "title": "Soalan Yang Selalu Ditanya",
+                "header_size": "h2",
+                "align": "center",
+                "title_color": "#0C382E",
+                "typography_font_weight": "700",
+                "typography_font_size_tablet": {
+                  "unit": "px",
+                  "size": 28,
+                  "sizes": []
+                },
+                "typography_font_size_mobile": {
+                  "unit": "px",
+                  "size": 22,
+                  "sizes": []
+                },
+                "_margin": {
+                  "unit": "px",
+                  "top": "0",
+                  "right": "0",
+                  "bottom": "32",
+                  "left": "0",
+                  "isLinked": false
+                },
+                "typography_typography": "custom",
+                "typography_font_family": "Cinzel",
+                "typography_font_size": {
+                  "unit": "px",
+                  "size": 26,
+                  "sizes": []
+                }
+              },
+              "elements": []
+            },
+            {
+              "id": "00000bc",
+              "elType": "container",
+              "settings": {
+                "flex_direction": "column",
+                "flex_gap": {
+                  "column": "12",
+                  "row": "12",
+                  "isLinked": true,
+                  "unit": "px",
+                  "size": 12,
+                  "sizes": []
+                },
+                "css_classes": "reveal-group"
+              },
+              "elements": {
+                "id": "00000a7",
+                "elType": "container",
+                "settings": {
+                  "flex_direction": "column",
+                  "flex_gap": {
+                    "column": "0",
+                    "row": "0",
+                    "isLinked": true,
+                    "unit": "px",
+                    "size": 0,
+                    "sizes": []
+                  },
+                  "background_background": "classic",
+                  "background_color": "#FFFFFF",
+                  "border_border": "solid",
+                  "border_width": {
+                    "unit": "px",
+                    "top": "1",
+                    "right": "1",
+                    "bottom": "1",
+                    "left": "1",
+                    "isLinked": false
+                  },
+                  "border_color": "#EFE5D0",
+                  "border_radius": {
+                    "unit": "px",
+                    "top": "20",
+                    "right": "20",
+                    "bottom": "20",
+                    "left": "20",
+                    "isLinked": false
+                  },
+                  "overflow": "hidden",
+                  "css_classes": "reveal"
+                },
+                "elements": [
+                  {
+                    "id": "00000a4",
+                    "elType": "widget",
+                    "widgetType": "button",
+                    "settings": {
+                      "text": "Produk Herbalabz untuk lelaki atau perempuan?",
+                      "align": "left",
+                      "css_classes": "faq-btn",
+                      "background_background": "classic",
+                      "background_color": "#FFFFFF",
+                      "button_text_color": "#0C382E",
+                      "typography_typography": "custom",
+                      "typography_font_family": "Plus Jakarta Sans",
+                      "typography_font_size": {
+                        "unit": "px",
+                        "size": 14,
+                        "sizes": []
+                      },
+                      "typography_font_weight": "600",
+                      "text_padding": {
+                        "unit": "px",
+                        "top": "16",
+                        "right": "20",
+                        "bottom": "16",
+                        "left": "20",
+                        "isLinked": false
+                      },
+                      "border_radius": {
+                        "unit": "px",
+                        "top": "0",
+                        "right": "0",
+                        "bottom": "0",
+                        "left": "0",
+                        "isLinked": false
+                      },
+                      "_margin": {
+                        "unit": "px",
+                        "top": "0",
+                        "right": "0",
+                        "bottom": "0",
+                        "left": "0",
+                        "isLinked": false
+                      },
+                      "_border_border": "solid",
+                      "_border_width": {
+                        "unit": "px",
+                        "top": "0",
+                        "right": "0",
+                        "bottom": "0",
+                        "left": "0",
+                        "isLinked": false
+                      },
+                      "full_width": "true",
+                      "_css_classes": ""
+                    },
+                    "elements": []
+                  },
+                  {
+                    "id": "00000a6",
+                    "elType": "container",
+                    "settings": {
+                      "css_id": "faq-p1",
+                      "layout": "boxed",
+                      "content_width": {
+                        "unit": "px",
+                        "size": 900,
+                        "sizes": []
+                      },
+                      "flex_direction": "column",
+                      "flex_gap": {
+                        "column": "12",
+                        "row": "12",
+                        "isLinked": true,
+                        "unit": "px",
+                        "size": 12,
+                        "sizes": []
+                      },
+                      "padding": {
+                        "unit": "px",
+                        "top": "0",
+                        "right": "20",
+                        "bottom": "20",
+                        "left": "20",
+                        "isLinked": false
+                      },
+                      "hidden": "true"
+                    },
+                    "elements": [
+                      {
+                        "id": "00000a5",
+                        "elType": "widget",
+                        "widgetType": "text-editor",
+                        "settings": {
+                          "editor": "<p style=\"color:#1F2937;font-size:14px;line-height:1.55;margin:0\">Keduanya boleh. Contoh: sabun dan teh sesuai seisi keluarga. Minyak Raja Perkasa, Uncang dan Maajun lebih fokus untuk lelaki, tapi Maajun juga sesuai untuk wanita yang aktif. Tak pasti, tanya kami dulu.</p>",
+                          "text_color": "#1F2937"
+                        },
+                        "elements": []
+                      }
+                    ],
+                    "isInner": true
+                  }
+                ],
+                "isInner": true
+              },
+              "isInner": true
+            }
+          ],
+          "isInner": true
+        }
+      ],
+      "isInner": false
+    },
+    {
+      "id": "00000cb",
+      "elType": "container",
+      "settings": {
+        "layout": "full-width",
+        "css_id": "hubungi",
+        "padding": {
+          "unit": "px",
+          "top": "80",
+          "right": "24",
+          "bottom": "60",
+          "left": "24",
+          "isLinked": false
+        },
+        "background_background": "classic",
+        "background_color": "#0C382E",
+        "border_top": {
+          "unit": "px",
+          "top": "1",
+          "right": "0",
+          "bottom": "1",
+          "left": "0",
+          "isLinked": false
+        },
+        "border_color": "#C6A24B"
+      },
+      "elements": [
+        {
+          "id": "00000ca",
+          "elType": "container",
+          "settings": {
+            "layout": "boxed",
+            "content_width": {
+              "unit": "px",
+              "size": 1120,
+              "sizes": []
+            },
+            "flex_direction": "column",
+            "flex_align_items": "center",
+            "flex_gap": {
+              "column": "32",
+              "row": "32",
+              "isLinked": true,
+              "unit": "px",
+              "size": 32,
+              "sizes": []
+            }
+          },
+          "elements": [
+            {
+              "id": "00000bf",
+              "elType": "widget",
+              "widgetType": "heading",
+              "settings": {
+                "title": "Jom Mula Dengan Satu Produk Dulu",
+                "header_size": "h2",
+                "align": "center",
+                "title_color": "#FFFFFF",
+                "typography_font_weight": "700",
+                "typography_font_size_tablet": {
+                  "unit": "px",
+                  "size": 28,
+                  "sizes": []
+                },
+                "typography_font_size_mobile": {
+                  "unit": "px",
+                  "size": 22,
+                  "sizes": []
+                },
+                "_margin": {
+                  "unit": "px",
+                  "top": "0",
+                  "right": "0",
+                  "bottom": "16",
+                  "left": "0",
+                  "isLinked": false
+                },
+                "typography_typography": "custom",
+                "typography_font_family": "Cinzel",
+                "typography_font_size": {
+                  "unit": "px",
+                  "size": 26,
+                  "sizes": []
+                }
+              },
+              "elements": []
+            },
+            {
+              "id": "00000c0",
+              "elType": "widget",
+              "widgetType": "text-editor",
+              "settings": {
+                "editor": "<p style=\"text-align:center;color:rgba(253,248,238,.8);font-size:15px;margin:0\">Tak perlu beli semua. Pilih satu yang paling dekat dengan keperluan keluarga anda hari ni.</p>",
+                "text_color": "rgba(253,248,238,.8)"
+              },
+              "elements": []
+            },
+            {
+              "id": "00000c4",
+              "elType": "container",
+              "settings": {
+                "flex_direction": "column",
+                "flex_align_items": "center",
+                "flex_gap": {
+                  "column": "24",
+                  "row": "24",
+                  "isLinked": true,
+                  "unit": "px",
+                  "size": 24,
+                  "sizes": []
+                },
+                "css_classes": "reveal"
+              },
+              "elements": [
+                {
+                  "id": "00000c2",
+                  "elType": "container",
+                  "settings": {
+                    "flex_direction": "column",
+                    "flex_gap": {
+                      "column": "16",
+                      "row": "16",
+                      "isLinked": true,
+                      "unit": "px",
+                      "size": 16,
+                      "sizes": []
+                    },
+                    "padding": {
+                      "unit": "px",
+                      "top": "32",
+                      "right": "undefined",
+                      "bottom": "undefined",
+                      "left": "undefined",
+                      "isLinked": false
+                    },
+                    "background_background": "classic",
+                    "background_color": "rgba(255,255,255,.05)",
+                    "border_border": "solid",
+                    "border_width": {
+                      "unit": "px",
+                      "top": "1",
+                      "right": "1",
+                      "bottom": "1",
+                      "left": "1",
+                      "isLinked": false
+                    },
+                    "border_color": "rgba(198,162,75,.25)",
+                    "border_radius": {
+                      "unit": "px",
+                      "top": "20",
+                      "right": "20",
+                      "bottom": "20",
+                      "left": "20",
+                      "isLinked": false
+                    },
+                    "css_classes": "reveal"
+                  },
+                  "elements": [
+                    {
+                      "id": "00000c1",
+                      "elType": "widget",
+                      "widgetType": "text-editor",
+                      "settings": {
+                        "editor": "<p style=\"color:#FFFFFF;font-size:15px;margin:0\"><strong>📱</strong> Telefon / WhatsApp: <a href=\"https://wa.me/601156980854\" style=\"color:#C6A24B;font-weight:600;text-decoration:none\">011-56980854</a></p><p style=\"color:#C6A24B;font-size:14px;margin:8px 0 0\"><strong>📘 Facebook:</strong> <span style=\"font-weight:600\">@Herbalabz</span></p><p style=\"color:#C6A24B;font-size:14px;margin:4px 0 0\"><strong>🎵 TikTok:</strong> <span style=\"font-weight:600\">@Herbalabz</span></p><p style=\"color:#C6A24B;font-family:Cinzel,serif;letter-spacing:2px;margin:16px 0 0;font-size:14px\">Herba Tradisi, Pilihan Masa Kini</p>",
+                        "text_color": "#FFFFFF"
+                      },
+                      "elements": []
+                    }
+                  ],
+                  "isInner": true
+                },
+                {
+                  "id": "00000c3",
+                  "elType": "widget",
+                  "widgetType": "button",
+                  "settings": {
+                    "text": "WhatsApp Herbalabz",
+                    "link": {
+                      "url": "https://wa.me/601156980854?text=Assalamualaikum%20Herbalabz%2C%20saya%20nak%20tanya%20tentang%20produk%20herba%20untuk%20keluarga",
+                      "is_external": "",
+                      "nofollow": ""
+                    },
+                    "align": "center",
+                    "background_color": "#25D366",
+                    "button_text_color": "#FFFFFF",
+                    "hover_color": "#FFFFFF",
+                    "button_background_hover_color": "#128C7E",
+                    "border_radius": {
+                      "unit": "px",
+                      "top": "9999",
+                      "right": "9999",
+                      "bottom": "9999",
+                      "left": "9999",
+                      "isLinked": false
+                    },
+                    "text_padding": {
+                      "unit": "px",
+                      "top": "18",
+                      "right": "44",
+                      "bottom": "18",
+                      "left": "44",
+                      "isLinked": false
+                    },
+                    "typography_typography": "custom",
+                    "typography_font_family": "Plus Jakarta Sans",
+                    "typography_font_size": {
+                      "unit": "px",
+                      "size": 16,
+                      "sizes": []
+                    },
+                    "typography_font_weight": "600"
+                  },
+                  "elements": []
+                }
+              ],
+              "isInner": true
+            },
+            {
+              "id": "00000c5",
+              "elType": "widget",
+              "widgetType": "text-editor",
+              "settings": {
+                "editor": "<p style=\"text-align:center;color:rgba(253,248,238,.6);font-size:11px;line-height:1.5;margin:0\">Produk herba tradisional untuk kegunaan harian. Bukan ubat dan bukan untuk mendiagnosis, merawat atau menyembuhkan penyakit. Hasil mungkin berbeza ikut individu. Rujuk profesional kesihatan jika perlu.</p>",
+                "text_color": "rgba(253,248,238,.6)"
+              },
+              "elements": []
+            },
+            {
+              "id": "00000c6",
+              "elType": "widget",
+              "widgetType": "text-editor",
+              "settings": {
+                "editor": "<p style=\"text-align:center;color:rgba(253,248,238,.7);font-size:12px;margin:8px 0 0\">&copy; <span id=\"hbYear\">2026</span> Herbalabz. Hak cipta terpelihara.</p>",
+                "text_color": "rgba(253,248,238,.7)"
+              },
+              "elements": []
+            },
+            {
+              "id": "00000c7",
+              "elType": "widget",
+              "widgetType": "html",
+              "settings": {
+                "html": "<script>(function(){var e=document.getElementById(\"hbYear\");if(e)e.textContent=new Date().getFullYear();})();</script>"
+              },
+              "elements": []
+            },
+            {
+              "id": "00000c8",
+              "elType": "widget",
+              "widgetType": "html",
+              "settings": {
+                "html": ":root { --ease-out: cubic-bezier(0.23, 1, 0.32, 1); --ease-in-out: cubic-bezier(0.77, 0, 0.175, 1); }\n.hero-enter > * { opacity:0; transform:translateY(14px); animation: heroRise 550ms var(--ease-out) forwards; }\n.hero-enter > :nth-child(1) { animation-delay:20ms; } .hero-enter > :nth-child(2) { animation-delay:90ms; }\n.hero-enter > :nth-child(3) { animation-delay:160ms; } .hero-enter > :nth-child(4) { animation-delay:230ms; }\n.hero-enter > :nth-child(5) { animation-delay:300ms; } .hero-enter > :nth-child(6) { animation-delay:370ms; }\n@keyframes heroRise { to { opacity:1; transform:translateY(0); } }\n.hero-enter .hero-img img { transform:scale(1.06); animation: heroSettle 1100ms var(--ease-out) 150ms forwards; }\n@keyframes heroSettle { to { transform:scale(1); } }\n.reveal { opacity:0; transform:translateY(18px); transition: opacity 500ms var(--ease-out), transform 500ms var(--ease-out); }\n.reveal.is-visible { opacity:1; transform:translateY(0); }\n.reveal-group > * { opacity:0; transform:translateY(18px); transition: opacity 450ms var(--ease-out), transform 450ms var(--ease-out); }\n.reveal-group.is-visible > * { opacity:1; transform:translateY(0); }\n.reveal-group.is-visible > :nth-child(1) { transition-delay:0ms; } .reveal-group.is-visible > :nth-child(2) { transition-delay:60ms; }\n.reveal-group.is-visible > :nth-child(3) { transition-delay:120ms; } .reveal-group.is-visible > :nth-child(4) { transition-delay:180ms; }\n.reveal-group.is-visible > :nth-child(5) { transition-delay:240ms; } .reveal-group.is-visible > :nth-child(6) { transition-delay:300ms; }\na[class*=\"rounded-full\"], .tab-btn { transition: transform 160ms var(--ease-out), background-color 180ms ease, color 180ms ease, border-color 180ms ease; }\na[class*=\"rounded-full\"]:active, .tab-btn:active { transform:scale(0.97); }\n#produk picture img, #testimoni picture img { transition: transform 250ms ease; }\n@media (hover: hover) and (pointer: fine) { .tab-btn:hover { transform:translateY(-1px); } #produk article:hover picture img, #testimoni figure:hover picture img { transform:scale(1.05); } }\nheader[role=\"banner\"] { transition: box-shadow 200ms ease; } header[role=\"banner\"].is-scrolled { box-shadow: 0 12px 32px -8px rgba(8,42,35,0.5); }\n#sticky-bar { animation: barUp 450ms var(--ease-out) 300ms both; }\n@keyframes barUp { from { opacity:0; transform:translateY(100%); } to { opacity:1; transform:translateY(0); } }\n.tab-panel.panel-in { animation: panelIn 220ms var(--ease-out); }\n@keyframes panelIn { from { opacity:0; transform:translateY(6px); } to { opacity:1; transform:translateY(0); } }\n@media (prefers-reduced-motion: reduce) { .hero-enter > *, .hero-enter .hero-img img, .reveal, .reveal.is-visible, .reveal-group > *, .reveal-group.is-visible > * { opacity:1 !important; transform:none !important; animation:none !important; } }"
+              },
+              "elements": []
+            },
+            {
+              "id": "00000c9",
+              "elType": "widget",
+              "widgetType": "html",
+              "settings": {
+                "html": "<script>(function(){\n  document.documentElement.classList.add('js');\n  var rm=window.matchMedia('(prefers-reduced-motion: reduce)').matches;\n  var hdr=document.querySelector('header[role=\"banner\"]');\n  window.addEventListener('scroll',function(){hdr.classList.toggle('is-scrolled',window.scrollY>8)},{passive:true});\n  if(hdr){hdr.classList.toggle('is-scrolled',window.scrollY>8);}\n  function activateTab(btn){\n    var all=document.querySelectorAll('.tab-btn');\n    all.forEach(function(b){var a=b===btn;b.setAttribute('aria-selected',a?'true':'false');b.setAttribute('tabindex',a?'0':'-1');b.classList.toggle('bg-herba',a);b.classList.toggle('text-white',a);b.classList.toggle('bg-cream',!a);b.classList.toggle('border',!a);b.classList.toggle('border-sand',!a);});\n    var panels=document.querySelectorAll('.tab-panel');\n    panels.forEach(function(p){var s=p.id===btn.getAttribute('data-tab');p.hidden=!s;if(s&&!rm){p.classList.remove('panel-in');void p.offsetWidth;p.classList.add('panel-in');}});\n  }\n  document.querySelectorAll('.tab-btn').forEach(function(btn){\n    btn.addEventListener('click',function(){activateTab(btn);});\n    btn.addEventListener('keydown',function(e){var idx=null;if(e.key==='ArrowRight')idx=(tabBtns.indexOf(btn)+1)%tabBtns.length;if(e.key==='ArrowLeft')idx=(tabBtns.indexOf(btn)-1+tabBtns.length)%tabBtns.length;if(idx!==null){e.preventDefault();tabBtns[idx].focus();activateTab(tabBtns[idx]);}});\n  });\n  var tabBtns=Array.prototype.slice.call(document.querySelectorAll('.tab-btn'));\n  document.querySelectorAll('main section h2').forEach(function(h){if(!h.classList.contains('reveal'))h.classList.add('reveal');});\n  var revealEls=Array.prototype.slice.call(document.querySelectorAll('.reveal,.reveal-group'));\n  if(!rm&&'IntersectionObserver' in window){\n    var io=new IntersectionObserver(function(entries){entries.forEach(function(en){if(en.isIntersecting){en.target.classList.add('is-visible');io.unobserve(en.target);}})},{threshold:0.12,rootMargin:'0px 0px -6% 0px'});\n    revealEls.forEach(function(el){io.observe(el);});\n  } else { revealEls.forEach(function(el){el.classList.add('is-visible');}); }\n  var faqBtns=Array.prototype.slice.call(document.querySelectorAll('.faq-btn'));\n  function fh(panel,open){var c=btn=>{var x=btn.querySelector('.faq-chevron');if(x)x.style.transform=open?'rotate(180deg)':'';};var done=function(e){if(e&&e.propertyName&&e.propertyName!=='height')return;panel.classList.remove('animating');panel.style.height='';panel.style.opacity='';panel.style.paddingBottom='';panel.removeEventListener('transitionend',done);};\n    if(open){panel.hidden=false;panel.classList.add('animating');var fh2=panel.scrollHeight;panel.style.height='0px';panel.style.opacity='0';requestAnimationFrame(function(){requestAnimationFrame(function(){panel.style.height=fh2+'px';panel.style.opacity='1';});});setTimeout(function(){if(panel.classList.contains('animating'))done();},300);}\n    else{panel.style.height=panel.offsetHeight+'px';panel.classList.add('animating');requestAnimationFrame(function(){requestAnimationFrame(function(){panel.style.height='0px';panel.style.opacity='0';});});setTimeout(function(){if(panel.classList.contains('animating'))done();},300);}\n  }\n  faqBtns.forEach(function(btn){btn.addEventListener('click',function(){var willOpen=document.getElementById(btn.getAttribute('aria-controls')).hidden;fh(document.getElementById(btn.getAttribute('aria-controls')),willOpen);});});\n})();</script>"
+              },
+              "elements": []
+            }
+          ],
+          "isInner": true
+        }
+      ],
+      "isInner": false
+    }
+  ],
+  "page_settings": {
+    "template": "elementor_header_footer"
+  }
+}

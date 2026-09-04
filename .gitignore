@@ -1,0 +1,7 @@
+.env
+
+# Herbalabz: PNG asal berat (~15MB), boleh regenerate dari assets-v2
+website/herbalabz/assets-v1/
+website/herbalabz/stitch assets/
+# Herbalabz WordPress: zip ialah build artifact, regenerate dari folder
+website/herbalabz-wordpress-v1.zip

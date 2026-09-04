@@ -1,0 +1,586 @@
+<!DOCTYPE html>
+<html lang="ms">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Herbalabz — Herba Tradisi, Pilihan Masa Kini | Untuk Seisi Keluarga</title>
+  <meta name="description" content="Herbalabz — pilihan herba untuk kesejahteraan seisi keluarga. Sabun Kemuning Glow, Minyak Sendicare Plus, Minyak Raja Perkasa, Maajun Tok Urat, Uncang Herba & Teh Osmanthus. Hubungi 011-56980854.">
+  <meta property="og:title" content="Herbalabz — Herba Tradisi, Pilihan Masa Kini">
+  <meta property="og:description" content="Satu jenama herba, untuk Mak, Ayah, Suami & diri sendiri. Tanya di WhatsApp 011-56980854.">
+  <meta property="og:type" content="website">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@600;700&family=Plus+Jakarta+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            herba: '#0C382E',
+            herbaDark: '#082A23',
+            gold: '#C6A24B',
+            cream: '#FDF8EE',
+            ivory: '#FAF4E6',
+            leaf: '#3A7D44',
+            charcoal: '#1F2937',
+            sand: '#EFE5D0',
+            wa: '#25D366',
+            waDark: '#128C7E'
+          },
+          fontFamily: {
+            display: ['Cinzel', 'Georgia', 'serif'],
+            body: ['"Plus Jakarta Sans"', 'Inter', 'sans-serif']
+          },
+          boxShadow: {
+            card: '0 8px 24px -4px rgba(12, 56, 46, 0.08)',
+            sticky: '0 10px 25px -3px rgba(37, 211, 102, 0.35)'
+          }
+        }
+      }
+    };
+  </script>
+  <style>
+    html { scroll-behavior: smooth; }
+    body { font-family: 'Plus Jakarta Sans', Inter, sans-serif; }
+    section { scroll-margin-top: 84px; }
+    .skip-link {
+      position: absolute; top: -100%; left: 0;
+      background: #0C382E; color: #fff;
+      padding: 8px 16px; z-index: 100; border-radius: 0 0 8px 0;
+    }
+    .skip-link:focus { top: 0; }
+    .gold-hairline { border-top: 1px solid #C6A24B; }
+    .faq-panel { transition: max-height 0.25s ease-out, opacity 0.2s ease-out; overflow: hidden; }
+    .faq-panel[hidden] { display: none; }
+    .tab-panel[hidden] { display: none; }
+    a:focus-visible, button:focus-visible {
+      outline: 3px solid #C6A24B; outline-offset: 2px; border-radius: 6px;
+    }
+    @media (prefers-reduced-motion: reduce) {
+      html { scroll-behavior: auto; }
+      *, *::before, *::after { animation: none !important; transition: none !important; }
+    }
+    @media print {
+      header nav, #sticky-bar, .no-print { display: none !important; }
+    }
+  </style>
+  <noscript>
+    <style>.tab-panel[hidden], .faq-panel[hidden] { display: block !important; }</style>
+  </noscript>
+</head>
+<body class="bg-cream text-charcoal font-body antialiased pb-24 md:pb-0">
+
+  <a href="#utama" class="skip-link">Langkau ke kandungan utama</a>
+
+  <!-- ===== HEADER ===== -->
+  <header role="banner" class="sticky top-0 z-50 bg-herba text-white shadow-card">
+    <div class="max-w-[480px] lg:max-w-5xl mx-auto px-4 py-3 flex items-center justify-between gap-3">
+      <a href="#utama" class="flex items-center gap-2" aria-label="Herbalabz — laman utama">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 120" width="120" height="36" fill="none" role="img" aria-label="Logo Herbalabz">
+          <g transform="translate(40, 20)">
+            <path d="M40 50 C25 50 15 65 15 75 C15 82 25 88 40 88 C55 88 65 82 65 75 C65 65 55 50 40 50 Z" fill="#FDF8EE"/>
+            <path d="M40 45 C45 35 52 28 60 22 C62 20 65 22 64 25 C58 35 50 45 42 55" stroke="#C6A24B" stroke-width="4" stroke-linecap="round"/>
+            <path d="M30 35 C25 25 35 15 45 18 C48 28 38 38 30 35 Z" fill="#3A7D44"/>
+            <path d="M50 32 C58 24 68 28 65 38 C55 40 48 35 50 32 Z" fill="#C6A24B"/>
+          </g>
+          <text x="130" y="68" font-family="Cinzel, Georgia, serif" font-size="34" font-weight="700" letter-spacing="4" fill="#FFFFFF">HERBALABZ</text>
+          <text x="132" y="88" font-family="'Plus Jakarta Sans', sans-serif" font-size="11" font-weight="600" letter-spacing="3" fill="#C6A24B">PILIHAN HERBA SEISI KELUARGA</text>
+        </svg>
+      </a>
+      <nav role="navigation" aria-label="Menu utama" class="hidden lg:flex items-center gap-6 text-sm">
+        <a href="#produk" class="hover:text-gold">Produk</a>
+        <a href="#panduan" class="hover:text-gold">Panduan</a>
+        <a href="#testimoni" class="hover:text-gold">Testimoni</a>
+        <a href="#faq" class="hover:text-gold">FAQ</a>
+      </nav>
+      <a href="https://wa.me/601156980854?text=Assalamualaikum%20Herbalabz%2C%20saya%20nak%20tanya%20tentang%20produk%20herba%20untuk%20keluarga"
+         class="no-print shrink-0 inline-flex items-center gap-2 bg-gold text-white text-sm font-semibold rounded-full px-5 py-2.5 hover:brightness-110 min-h-[44px]">
+        <span aria-hidden="true">💬</span> Tanya di WhatsApp
+      </a>
+    </div>
+    <div class="gold-hairline" aria-hidden="true"></div>
+  </header>
+
+  <main id="utama" role="main" class="max-w-[480px] lg:max-w-5xl mx-auto bg-cream lg:shadow-card">
+
+    <!-- ===== 1. HERO ===== -->
+    <section aria-labelledby="hero-title" class="px-4 pt-6 pb-10 text-center">
+      <p class="text-[11px] font-bold tracking-[0.12em] text-gold uppercase">Herbalabz — Pilihan Herba Untuk Seisi Keluarga</p>
+      <h1 id="hero-title" class="font-display text-[28px] lg:text-4xl leading-[1.2] font-bold text-herba mt-3">
+        Satu Jenama Herba, Untuk Mak, Ayah, Suami &amp; Diri Sendiri
+      </h1>
+      <p class="text-[14px] lg:text-base leading-[1.55] mt-3 max-w-md mx-auto">
+        Dari sabun harian sampai minyak urutan dan teh herba — Herbalabz gabungkan amalan herba tradisi dengan cara guna yang mudah untuk gaya hidup masa kini.
+      </p>
+      <div class="mt-5 rounded-[20px] overflow-hidden border border-sand shadow-card">
+        <picture>
+          <source type="image/webp" srcset="assets-v2/hero-480.webp 480w, assets-v2/hero-800.webp 800w, assets-v2/hero-1200.webp 1200w" sizes="(max-width: 520px) 480px, 960px">
+          <img src="assets-v1/hero.png" alt="Banner herba Herbalabz — lesung kayu, halia, kayu manis dan rangkaian produk herba" width="1376" height="768" fetchpriority="high" class="w-full h-auto object-cover"
+               onerror="this.style.display='none'">
+        </picture>
+      </div>
+      <div class="mt-5 flex flex-col sm:flex-row gap-3 justify-center">
+        <a href="https://wa.me/601156980854?text=Assalamualaikum%20Herbalabz%2C%20saya%20nak%20tanya%20tentang%20produk%20herba%20untuk%20keluarga"
+           class="inline-flex items-center justify-center gap-2 bg-wa text-white font-semibold rounded-full px-7 py-3.5 min-h-[48px] shadow-sticky hover:bg-waDark">
+          <span aria-hidden="true">💬</span> Tanya di WhatsApp — 011-56980854
+        </a>
+        <a href="#produk" class="inline-flex items-center justify-center gap-2 border-[1.5px] border-herba text-herba font-semibold rounded-full px-7 py-3.5 min-h-[48px] hover:bg-herba hover:text-white">
+          Tengok 6 Produk ↓
+        </a>
+      </div>
+      <ul class="mt-4 flex flex-wrap justify-center gap-x-5 gap-y-1 text-[13px] font-medium" aria-label="Kelebihan ringkas">
+        <li><span class="text-leaf font-bold" aria-hidden="true">✓</span> Guna harian</li>
+        <li><span class="text-leaf font-bold" aria-hidden="true">✓</span> Mudah dibawa</li>
+        <li><span class="text-leaf font-bold" aria-hidden="true">✓</span> Sesuai seisi keluarga</li>
+      </ul>
+    </section>
+
+    <!-- ===== 2. MASALAH ===== -->
+    <section aria-labelledby="masalah-title" class="px-4 py-10 bg-ivory border-y border-sand">
+      <h2 id="masalah-title" class="font-display text-[22px] lg:text-3xl font-bold text-herba text-center leading-[1.25]">Kami Faham, Penat Jaga Semua Orang</h2>
+      <p class="text-[14px] lg:text-[15px] leading-[1.55] mt-3 text-center max-w-lg mx-auto">
+        Anda yang selalu fikirkan orang lain dulu — kulit sendiri kusam pun tak sempat peduli, mak ayah mengadu lenguh, suami balik kerja nampak letih. Nak cari herba yang selamat, tapi takut tersalah pilih.
+      </p>
+      <div class="mt-6 grid gap-4 lg:grid-cols-3">
+        <div class="bg-white rounded-[20px] border border-sand shadow-card p-5">
+          <p class="text-2xl" aria-hidden="true">🌿</p>
+          <h3 class="font-semibold text-[17px] mt-2 text-herba">Untuk diri sendiri</h3>
+          <p class="text-[14px] leading-[1.55] mt-1">Kulit rasa tak segar, kering dan kusam lepas seharian. Nak sabun herba yang lembut untuk guna hari-hari.</p>
+        </div>
+        <div class="bg-white rounded-[20px] border border-sand shadow-card p-5">
+          <p class="text-2xl" aria-hidden="true">🤲</p>
+          <h3 class="font-semibold text-[17px] mt-2 text-herba">Untuk mak ayah</h3>
+          <p class="text-[14px] leading-[1.55] mt-1">Selalu sebut sengal dan lenguh lepas buat kerja rumah atau kebun. Nak minyak urutan yang cepat meresap, tak melekit.</p>
+        </div>
+        <div class="bg-white rounded-[20px] border border-sand shadow-card p-5">
+          <p class="text-2xl" aria-hidden="true">💪</p>
+          <h3 class="font-semibold text-[17px] mt-2 text-herba">Untuk suami &amp; keluarga</h3>
+          <p class="text-[14px] leading-[1.55] mt-1">Badan rasa kurang cergas, susah nak kekal aktif. Nak ikhtiar herba yang mudah — bancuh, minum atau bawa ke mana-mana.</p>
+        </div>
+      </div>
+      <p class="text-center text-[14px] mt-6 font-medium text-herba">Sebab tu Herbalabz wujud — herba tradisi, disediakan cara moden supaya senang anda guna setiap hari.</p>
+    </section>
+
+    <!-- ===== 3. KENAPA HERBALABZ ===== -->
+    <section aria-labelledby="kenapa-title" class="px-4 py-10">
+      <h2 id="kenapa-title" class="font-display text-[22px] lg:text-3xl font-bold text-herba text-center leading-[1.25]">Herba Tradisi, Pilihan Masa Kini</h2>
+      <ul class="mt-6 grid gap-4 lg:grid-cols-2 max-w-3xl mx-auto">
+        <li class="flex gap-3 bg-white rounded-2xl border border-sand shadow-card p-4">
+          <span class="shrink-0 w-8 h-8 rounded-full bg-leaf text-white flex items-center justify-center font-bold" aria-hidden="true">✓</span>
+          <p class="text-[14px] leading-[1.55]"><strong>Lengkap untuk keluarga:</strong> 6 produk — dari penjagaan kulit, urutan, makanan tambahan herba sampai teh harian.</p>
+        </li>
+        <li class="flex gap-3 bg-white rounded-2xl border border-sand shadow-card p-4">
+          <span class="shrink-0 w-8 h-8 rounded-full bg-leaf text-white flex items-center justify-center font-bold" aria-hidden="true">✓</span>
+          <p class="text-[14px] leading-[1.55]"><strong>Mudah guna:</strong> sabun untuk mandian harian, minyak untuk urutan, uncang bancuh &amp; minum, teh untuk bila-bila masa.</p>
+        </li>
+        <li class="flex gap-3 bg-white rounded-2xl border border-sand shadow-card p-4">
+          <span class="shrink-0 w-8 h-8 rounded-full bg-leaf text-white flex items-center justify-center font-bold" aria-hidden="true">✓</span>
+          <p class="text-[14px] leading-[1.55]"><strong>Rutin yang realistik:</strong> tak perlu ubah hidup 360°. Selit dalam rutin sedia ada — pagi, petang, malam.</p>
+        </li>
+        <li class="flex gap-3 bg-white rounded-2xl border border-sand shadow-card p-4">
+          <span class="shrink-0 w-8 h-8 rounded-full bg-leaf text-white flex items-center justify-center font-bold" aria-hidden="true">✓</span>
+          <p class="text-[14px] leading-[1.55]"><strong>Senang nak tanya:</strong> terus WhatsApp 011-56980854 atau DM @Herbalabz di TikTok / Facebook.</p>
+        </li>
+      </ul>
+    </section>
+
+    <!-- ===== 4. PRODUK (6) ===== -->
+    <section id="produk" aria-labelledby="produk-title" class="px-4 py-10 bg-ivory border-y border-sand">
+      <h2 id="produk-title" class="font-display text-[22px] lg:text-3xl font-bold text-herba text-center leading-[1.25]">Pilih Ikut Keperluan Keluarga Anda</h2>
+      <p class="text-center text-[14px] mt-2">Tak perlu pening. Baca ikut siapa yang nak guna.</p>
+
+      <div class="mt-6 grid grid-cols-2 lg:grid-cols-3 gap-3 lg:gap-5">
+
+        <!-- 4.1 Sabun -->
+        <article class="bg-white rounded-[20px] border border-sand shadow-card overflow-hidden flex flex-col" aria-labelledby="p-sabun">
+          <picture>
+            <source type="image/webp" srcset="assets-v2/produk-sabun-400.webp 400w, assets-v2/produk-sabun-800.webp 800w" sizes="(max-width: 520px) 50vw, 320px">
+            <img src="assets-v1/produk-sabun.png" alt="Kemuning Glow Soap — sabun herba dalam pouch kraft hitam berlabel emas" width="1024" height="1024" loading="lazy" class="w-full aspect-square object-cover" onerror="this.style.display='none'">
+          </picture>
+          <div class="p-4 flex flex-col flex-1">
+            <span class="self-start text-[10px] font-semibold tracking-[0.08em] uppercase bg-cream border border-sand rounded-lg px-2 py-1">Untuk Dia / Harian</span>
+            <h3 id="p-sabun" class="font-display font-bold text-[17px] text-herba mt-2 leading-snug">Kemuning Glow Soap</h3>
+            <p class="text-[12px] mt-1">Sabun herba ekstrak kemuning untuk mandian harian.</p>
+            <ul class="text-[12px] mt-2 space-y-1">
+              <li><span class="text-leaf font-bold" aria-hidden="true">✓</span> Membersih dengan lembut</li>
+              <li><span class="text-leaf font-bold" aria-hidden="true">✓</span> Kulit rasa lebih segar</li>
+              <li><span class="text-leaf font-bold" aria-hidden="true">✓</span> Sesuai kegunaan harian</li>
+            </ul>
+            <p class="text-[11px] mt-2 text-charcoal/70">Untuk siapa: Diri sendiri / remaja / seisi keluarga</p>
+            <a href="https://wa.me/601156980854?text=Assalamualaikum%20Herbalabz%2C%20saya%20nak%20tanya%20tentang%20Sabun%20Kemuning%20Glow" class="mt-3 inline-flex items-center justify-center gap-1.5 bg-herba text-white text-[13px] font-semibold rounded-full px-4 py-2.5 min-h-[44px] hover:bg-herbaDark">Tanya tentang Sabun →</a>
+          </div>
+        </article>
+
+        <!-- 4.2 Sendicare -->
+        <article class="bg-white rounded-[20px] border border-sand shadow-card overflow-hidden flex flex-col" aria-labelledby="p-sendicare">
+          <picture>
+            <source type="image/webp" srcset="assets-v2/produk-sendicare-400.webp 400w, assets-v2/produk-sendicare-800.webp 800w" sizes="(max-width: 520px) 50vw, 320px">
+            <img src="assets-v1/produk-sendicare.png" alt="Minyak Sendicare Plus — botol pam kaca ambar untuk urutan" width="1024" height="1024" loading="lazy" class="w-full aspect-square object-cover" onerror="this.style.display='none'">
+          </picture>
+          <div class="p-4 flex flex-col flex-1">
+            <span class="self-start text-[10px] font-semibold tracking-[0.08em] uppercase bg-cream border border-sand rounded-lg px-2 py-1">Untuk Mak Ayah</span>
+            <h3 id="p-sendicare" class="font-display font-bold text-[17px] text-herba mt-2 leading-snug">Minyak Sendicare Plus</h3>
+            <p class="text-[12px] mt-1">Minyak herba pilihan untuk urutan harian.</p>
+            <ul class="text-[12px] mt-2 space-y-1">
+              <li><span class="text-leaf font-bold" aria-hidden="true">✓</span> Melegakan rasa sengal &amp; lenguh</li>
+              <li><span class="text-leaf font-bold" aria-hidden="true">✓</span> Untuk keselesaan otot &amp; sendi</li>
+              <li><span class="text-leaf font-bold" aria-hidden="true">✓</span> Cepat meresap &amp; tidak melekit</li>
+            </ul>
+            <p class="text-[11px] mt-2 text-charcoal/70">Untuk siapa: Mak ayah / yang aktif bekerja</p>
+            <a href="https://wa.me/601156980854?text=Assalamualaikum%20Herbalabz%2C%20saya%20nak%20tanya%20tentang%20Minyak%20Sendicare%20Plus" class="mt-3 inline-flex items-center justify-center gap-1.5 bg-herba text-white text-[13px] font-semibold rounded-full px-4 py-2.5 min-h-[44px] hover:bg-herbaDark">Tanya tentang Sendicare →</a>
+          </div>
+        </article>
+
+        <!-- 4.3 Raja Perkasa minyak -->
+        <article class="bg-white rounded-[20px] border border-sand shadow-card overflow-hidden flex flex-col" aria-labelledby="p-rp">
+          <picture>
+            <source type="image/webp" srcset="assets-v2/produk-raja-perkasa-minyak-400.webp 400w, assets-v2/produk-raja-perkasa-minyak-800.webp 800w" sizes="(max-width: 520px) 50vw, 320px">
+            <img src="assets-v1/produk-raja-perkasa-minyak.png" alt="Minyak Raja Perkasa — botol kaca jernih bertutup merah untuk urutan luaran" width="1024" height="1024" loading="lazy" class="w-full aspect-square object-cover" onerror="this.style.display='none'">
+          </picture>
+          <div class="p-4 flex flex-col flex-1">
+            <span class="self-start text-[10px] font-semibold tracking-[0.08em] uppercase bg-cream border border-sand rounded-lg px-2 py-1">Untuk Suami · Privasi</span>
+            <h3 id="p-rp" class="font-display font-bold text-[17px] text-herba mt-2 leading-snug">Minyak Raja Perkasa</h3>
+            <p class="text-[12px] mt-1">Minyak urutan herba khas untuk ketahanan lelaki. Kegunaan luaran sahaja.</p>
+            <ul class="text-[12px] mt-2 space-y-1">
+              <li><span class="text-leaf font-bold" aria-hidden="true">✓</span> Membantu keyakinan lelaki</li>
+              <li><span class="text-leaf font-bold" aria-hidden="true">✓</span> Untuk ketahanan &amp; prestasi</li>
+              <li><span class="text-leaf font-bold" aria-hidden="true">✓</span> Kegunaan luaran sahaja</li>
+            </ul>
+            <p class="text-[11px] mt-2 text-charcoal/70">Untuk siapa: Suami / lelaki dewasa. Malu nak tanya? WhatsApp saja — privasi.</p>
+            <a href="https://wa.me/601156980854?text=Assalamualaikum%20Herbalabz%2C%20saya%20nak%20tanya%20tentang%20Minyak%20Raja%20Perkasa" class="mt-3 inline-flex items-center justify-center gap-1.5 bg-herba text-white text-[13px] font-semibold rounded-full px-4 py-2.5 min-h-[44px] hover:bg-herbaDark">Tanya Privasi di WhatsApp →</a>
+          </div>
+        </article>
+
+        <!-- 4.4 Maajun -->
+        <article class="bg-white rounded-[20px] border border-sand shadow-card overflow-hidden flex flex-col" aria-labelledby="p-maajun">
+          <picture>
+            <source type="image/webp" srcset="assets-v2/produk-maajun-400.webp 400w, assets-v2/produk-maajun-800.webp 800w" sizes="(max-width: 520px) 50vw, 320px">
+            <img src="assets-v1/produk-maajun.png" alt="Maajun Tok Urat — pek stand-up pouch hitam berlakri emas" width="1024" height="1024" loading="lazy" class="w-full aspect-square object-cover" onerror="this.style.display='none'">
+          </picture>
+          <div class="p-4 flex flex-col flex-1">
+            <span class="self-start text-[10px] font-semibold tracking-[0.08em] uppercase bg-cream border border-sand rounded-lg px-2 py-1">Untuk Suami &amp; Isteri</span>
+            <h3 id="p-maajun" class="font-display font-bold text-[17px] text-herba mt-2 leading-snug">Maajun Tok Urat</h3>
+            <p class="text-[12px] mt-1">Makanan tambahan herba tradisional untuk lelaki dan wanita.</p>
+            <ul class="text-[12px] mt-2 space-y-1">
+              <li><span class="text-leaf font-bold" aria-hidden="true">✓</span> Kecergasan badan harian</li>
+              <li><span class="text-leaf font-bold" aria-hidden="true">✓</span> Sesuai individu aktif</li>
+              <li><span class="text-leaf font-bold" aria-hidden="true">✓</span> Mudah dibawa ke mana-mana</li>
+            </ul>
+            <p class="text-[11px] mt-2 text-charcoal/70">Untuk siapa: Suami &amp; isteri yang aktif</p>
+            <a href="https://wa.me/601156980854?text=Assalamualaikum%20Herbalabz%2C%20saya%20nak%20tanya%20tentang%20Maajun%20Tok%20Urat" class="mt-3 inline-flex items-center justify-center gap-1.5 bg-herba text-white text-[13px] font-semibold rounded-full px-4 py-2.5 min-h-[44px] hover:bg-herbaDark">Tanya tentang Maajun →</a>
+          </div>
+        </article>
+
+        <!-- 4.5 Uncang -->
+        <article class="bg-white rounded-[20px] border border-sand shadow-card overflow-hidden flex flex-col" aria-labelledby="p-uncang">
+          <picture>
+            <source type="image/webp" srcset="assets-v2/produk-uncang-400.webp 400w, assets-v2/produk-uncang-800.webp 800w" sizes="(max-width: 520px) 50vw, 320px">
+            <img src="assets-v1/produk-uncang.png" alt="Uncang Herba Raja Perkasa — kotak hijau gelap berkaligrafi emas" width="1024" height="1024" loading="lazy" class="w-full aspect-square object-cover" onerror="this.style.display='none'">
+          </picture>
+          <div class="p-4 flex flex-col flex-1">
+            <span class="self-start text-[10px] font-semibold tracking-[0.08em] uppercase bg-cream border border-sand rounded-lg px-2 py-1">Untuk Suami</span>
+            <h3 id="p-uncang" class="font-display font-bold text-[17px] text-herba mt-2 leading-snug">Uncang Herba Raja Perkasa</h3>
+            <p class="text-[12px] mt-1">Campuran herba tradisional dalam uncang, senang bancuh.</p>
+            <ul class="text-[12px] mt-2 space-y-1">
+              <li><span class="text-leaf font-bold" aria-hidden="true">✓</span> Herba untuk dalaman lelaki</li>
+              <li><span class="text-leaf font-bold" aria-hidden="true">✓</span> Mudah dibancuh &amp; diminum</li>
+              <li><span class="text-leaf font-bold" aria-hidden="true">✓</span> Herba tradisional terpilih</li>
+            </ul>
+            <p class="text-[11px] mt-2 text-charcoal/70">Untuk siapa: Lelaki yang nak jaga dalaman cara mudah</p>
+            <a href="https://wa.me/601156980854?text=Assalamualaikum%20Herbalabz%2C%20saya%20nak%20tanya%20tentang%20Uncang%20Herba%20Raja%20Perkasa" class="mt-3 inline-flex items-center justify-center gap-1.5 bg-herba text-white text-[13px] font-semibold rounded-full px-4 py-2.5 min-h-[44px] hover:bg-herbaDark">Tanya tentang Uncang →</a>
+          </div>
+        </article>
+
+        <!-- 4.6 Teh -->
+        <article class="bg-white rounded-[20px] border border-sand shadow-card overflow-hidden flex flex-col" aria-labelledby="p-teh">
+          <picture>
+            <source type="image/webp" srcset="assets-v2/produk-teh-400.webp 400w, assets-v2/produk-teh-800.webp 800w" sizes="(max-width: 520px) 50vw, 320px">
+            <img src="assets-v1/produk-teh.png" alt="Teh Herba Osmanthus — kotak kuning estetik bersama bunga osmanthus" width="1024" height="1024" loading="lazy" class="w-full aspect-square object-cover" onerror="this.style.display='none'">
+          </picture>
+          <div class="p-4 flex flex-col flex-1">
+            <span class="self-start text-[10px] font-semibold tracking-[0.08em] uppercase bg-cream border border-sand rounded-lg px-2 py-1">Seisi Keluarga</span>
+            <h3 id="p-teh" class="font-display font-bold text-[17px] text-herba mt-2 leading-snug">Teh Herba Osmanthus</h3>
+            <p class="text-[12px] mt-1">Minuman herba beraroma bunga Osmanthus yang harum dan menenangkan.</p>
+            <ul class="text-[12px] mt-2 space-y-1">
+              <li><span class="text-leaf font-bold" aria-hidden="true">✓</span> Aroma bunga menyenangkan</li>
+              <li><span class="text-leaf font-bold" aria-hidden="true">✓</span> Sesuai bila-bila masa</li>
+              <li><span class="text-leaf font-bold" aria-hidden="true">✓</span> Pilihan harian seisi keluarga</li>
+            </ul>
+            <p class="text-[11px] mt-2 text-charcoal/70">Untuk siapa: Seisi keluarga / starter paling selamat</p>
+            <a href="https://wa.me/601156980854?text=Assalamualaikum%20Herbalabz%2C%20saya%20nak%20tanya%20tentang%20Teh%20Herba%20Osmanthus" class="mt-3 inline-flex items-center justify-center gap-1.5 bg-herba text-white text-[13px] font-semibold rounded-full px-4 py-2.5 min-h-[44px] hover:bg-herbaDark">Tanya tentang Teh →</a>
+          </div>
+        </article>
+
+      </div>
+    </section>
+
+    <!-- ===== 5. PANDUAN PILIH ===== -->
+    <section id="panduan" aria-labelledby="panduan-title" class="px-4 py-10">
+      <h2 id="panduan-title" class="font-display text-[22px] lg:text-3xl font-bold text-herba text-center leading-[1.25]">Tak Pasti Nak Mula Mana? Ikut Ni:</h2>
+      <div class="mt-5 flex gap-2 justify-center flex-wrap" role="tablist" aria-label="Panduan memilih ikut keperluan">
+        <button role="tab" id="tab-a" aria-controls="panel-a" aria-selected="true" data-tab="panel-a" class="tab-btn rounded-full px-5 py-2.5 text-[13px] font-semibold min-h-[44px] bg-herba text-white">A. Untuk Diri</button>
+        <button role="tab" id="tab-b" aria-controls="panel-b" aria-selected="false" data-tab="panel-b" tabindex="-1" class="tab-btn rounded-full px-5 py-2.5 text-[13px] font-semibold min-h-[44px] bg-cream border border-sand">B. Untuk Suami</button>
+        <button role="tab" id="tab-c" aria-controls="panel-c" aria-selected="false" data-tab="panel-c" tabindex="-1" class="tab-btn rounded-full px-5 py-2.5 text-[13px] font-semibold min-h-[44px] bg-cream border border-sand">C. Untuk Mak Ayah</button>
+      </div>
+      <div class="mt-4 max-w-2xl mx-auto">
+        <div id="panel-a" role="tabpanel" aria-labelledby="tab-a" class="tab-panel bg-white rounded-[20px] border border-sand shadow-card p-5 text-center">
+          <h3 class="font-semibold text-herba">A. Untuk diri sendiri (wanita)</h3>
+          <p class="text-[14px] mt-2">Mula dengan → <strong>Kemuning Glow Soap + Teh Herba Osmanthus</strong></p>
+          <p class="text-[13px] mt-1 text-charcoal/70"><em>Sebab: lembut, harian, paling mudah serasi.</em></p>
+        </div>
+        <div id="panel-b" role="tabpanel" aria-labelledby="tab-b" class="tab-panel bg-white rounded-[20px] border border-sand shadow-card p-5 text-center" hidden>
+          <h3 class="font-semibold text-herba">B. Untuk suami</h3>
+          <p class="text-[14px] mt-2">Pilih ikut keselesaan → <strong>Minyak Raja Perkasa</strong> (luaran) / <strong>Uncang Herba</strong> (dalaman) / <strong>Maajun Tok Urat</strong> (cergas)</p>
+          <p class="text-[13px] mt-1 text-charcoal/70"><em>Sebab: ikut rutin dia — suka urut atau suka bancuh minum?</em></p>
+        </div>
+        <div id="panel-c" role="tabpanel" aria-labelledby="tab-c" class="tab-panel bg-white rounded-[20px] border border-sand shadow-card p-5 text-center" hidden>
+          <h3 class="font-semibold text-herba">C. Untuk mak ayah</h3>
+          <p class="text-[14px] mt-2">Ambil → <strong>Minyak Sendicare Plus + Teh Herba Osmanthus</strong></p>
+          <p class="text-[13px] mt-1 text-charcoal/70"><em>Sebab: urutan harian yang tak melekit + minuman tenang petang-petang.</em></p>
+        </div>
+      </div>
+      <p class="text-center text-[14px] mt-5">Masih tak pasti? Cerita sikit siapa nak guna — kami tolong pilihkan.</p>
+      <div class="text-center mt-3">
+        <a href="https://wa.me/601156980854?text=Assalamualaikum%20Herbalabz%2C%20saya%20nak%20tanya%20tentang%20produk%20herba%20untuk%20keluarga" class="inline-flex items-center justify-center gap-2 bg-wa text-white font-semibold rounded-full px-7 py-3 min-h-[48px] shadow-sticky hover:bg-waDark">WhatsApp Kami Sekarang</a>
+      </div>
+    </section>
+
+    <!-- ===== 6. TESTIMONI ===== -->
+    <section id="testimoni" aria-labelledby="testimoni-title" class="px-4 py-10 bg-ivory border-y border-sand">
+      <h2 id="testimoni-title" class="font-display text-[22px] lg:text-3xl font-bold text-herba text-center leading-[1.25]">Ikut Keperluan, Ikut Segmen Keluarga</h2>
+      <p class="text-center text-[14px] mt-2">Setiap segmen ada padanan produk yang paling sesuai.</p>
+      <div class="mt-6 grid gap-4 lg:grid-cols-2 max-w-3xl mx-auto">
+        <figure class="bg-white rounded-[20px] border border-sand shadow-card p-5 flex gap-4 items-start">
+          <picture class="shrink-0">
+            <source type="image/webp" srcset="assets-v2/testimoni-diri-160.webp 160w, assets-v2/testimoni-diri-320.webp 320w" sizes="80px">
+            <img src="assets-v1/testimoni-diri.png" alt="Potret pelanggan wanita muda" width="1024" height="1024" loading="lazy" class="w-20 h-20 rounded-full object-cover border-2 border-gold shrink-0" onerror="this.style.display='none'">
+          </picture>
+          <div>
+            <span class="text-[10px] font-semibold tracking-[0.08em] uppercase text-gold">Diri Sendiri</span>
+            <figcaption class="font-semibold text-[15px] text-herba mt-0.5">Rutin segar harian</figcaption>
+            <p class="text-[13px] mt-1">Padanan: Kemuning Glow Soap &amp; Teh Herba Osmanthus — lembut untuk guna hari-hari.</p>
+          </div>
+        </figure>
+        <figure class="bg-white rounded-[20px] border border-sand shadow-card p-5 flex gap-4 items-start">
+          <picture class="shrink-0">
+            <source type="image/webp" srcset="assets-v2/testimoni-mak-160.webp 160w, assets-v2/testimoni-mak-320.webp 320w" sizes="80px">
+            <img src="assets-v1/testimoni-mak.png" alt="Potret pelanggan warga emas wanita" width="1024" height="1024" loading="lazy" class="w-20 h-20 rounded-full object-cover border-2 border-gold shrink-0" onerror="this.style.display='none'">
+          </picture>
+          <div>
+            <span class="text-[10px] font-semibold tracking-[0.08em] uppercase text-gold">Mak</span>
+            <figcaption class="font-semibold text-[15px] text-herba mt-0.5">Keselesaan harian mak</figcaption>
+            <p class="text-[13px] mt-1">Padanan: Teh Herba Osmanthus &amp; Minyak Sendicare Plus — urutan tak melekit + minuman tenang.</p>
+          </div>
+        </figure>
+        <figure class="bg-white rounded-[20px] border border-sand shadow-card p-5 flex gap-4 items-start">
+          <picture class="shrink-0">
+            <source type="image/webp" srcset="assets-v2/testimoni-suami-160.webp 160w, assets-v2/testimoni-suami-320.webp 320w" sizes="80px">
+            <img src="assets-v1/testimoni-suami.png" alt="Potret pelanggan lelaki dewasa yang cergas" width="1024" height="1024" loading="lazy" class="w-20 h-20 rounded-full object-cover border-2 border-gold shrink-0" onerror="this.style.display='none'">
+          </picture>
+          <div>
+            <span class="text-[10px] font-semibold tracking-[0.08em] uppercase text-gold">Suami</span>
+            <figcaption class="font-semibold text-[15px] text-herba mt-0.5">Kekal aktif &amp; yakin</figcaption>
+            <p class="text-[13px] mt-1">Padanan: Uncang Herba Raja Perkasa &amp; Maajun Tok Urat — ikut rutin dia.</p>
+          </div>
+        </figure>
+        <figure class="bg-white rounded-[20px] border border-sand shadow-card p-5 flex gap-4 items-start">
+          <picture class="shrink-0">
+            <source type="image/webp" srcset="assets-v2/testimoni-ayah-160.webp 160w, assets-v2/testimoni-ayah-320.webp 320w" sizes="80px">
+            <img src="assets-v1/testimoni-ayah.png" alt="Potret pelanggan warga emas lelaki yang aktif" width="1024" height="1024" loading="lazy" class="w-20 h-20 rounded-full object-cover border-2 border-gold shrink-0" onerror="this.style.display='none'">
+          </picture>
+          <div>
+            <span class="text-[10px] font-semibold tracking-[0.08em] uppercase text-gold">Ayah</span>
+            <figcaption class="font-semibold text-[15px] text-herba mt-0.5">Cergas di usia emas</figcaption>
+            <p class="text-[13px] mt-1">Padanan: Minyak Sendicare Plus &amp; Minyak Raja Perkasa — untuk otot dan sendi.</p>
+          </div>
+        </figure>
+      </div>
+    </section>
+
+    <!-- ===== 7. CARA ORDER ===== -->
+    <section aria-labelledby="order-title" class="px-4 py-10">
+      <h2 id="order-title" class="font-display text-[22px] lg:text-3xl font-bold text-herba text-center leading-[1.25]">Cara Nak Dapatkan Herbalabz</h2>
+      <ol class="mt-6 grid gap-4 lg:grid-cols-3 max-w-3xl mx-auto list-none p-0">
+        <li class="bg-herba text-white rounded-[20px] p-5 text-center">
+          <span class="inline-flex w-10 h-10 rounded-full border-2 border-gold items-center justify-center font-display font-bold text-lg" aria-hidden="true">1</span>
+          <h3 class="font-semibold mt-2">WhatsApp / DM</h3>
+          <p class="text-[13px] mt-1 text-white/80">Tekan butang WhatsApp atau DM @Herbalabz di TikTok / FB.</p>
+        </li>
+        <li class="bg-herba text-white rounded-[20px] p-5 text-center">
+          <span class="inline-flex w-10 h-10 rounded-full border-2 border-gold items-center justify-center font-display font-bold text-lg" aria-hidden="true">2</span>
+          <h3 class="font-semibold mt-2">Cerita keperluan</h3>
+          <p class="text-[13px] mt-1 text-white/80">Untuk siapa, umur berapa, nak ikhtiar apa.</p>
+        </li>
+        <li class="bg-herba text-white rounded-[20px] p-5 text-center">
+          <span class="inline-flex w-10 h-10 rounded-full border-2 border-gold items-center justify-center font-display font-bold text-lg" aria-hidden="true">3</span>
+          <h3 class="font-semibold mt-2">Kami cadangkan</h3>
+          <p class="text-[13px] mt-1 text-white/80">Kami suggest produk + cara guna yang sesuai.</p>
+        </li>
+      </ol>
+      <div class="text-center mt-6">
+        <a href="https://wa.me/601156980854?text=Assalamualaikum%20Herbalabz%2C%20saya%20nak%20tanya%20tentang%20produk%20herba%20untuk%20keluarga" class="inline-flex items-center justify-center gap-2 bg-gold text-white font-semibold rounded-full px-8 py-4 min-h-[52px] text-[15px] hover:brightness-110">Chat 011-56980854 Sekarang</a>
+        <p class="text-[13px] mt-2 text-charcoal/70">Balas mesra, tiada paksaan beli. Tanya dulu pun boleh.</p>
+      </div>
+    </section>
+
+    <!-- ===== 8. FAQ ===== -->
+    <section id="faq" aria-labelledby="faq-title" class="px-4 py-10 bg-ivory border-y border-sand">
+      <h2 id="faq-title" class="font-display text-[22px] lg:text-3xl font-bold text-herba text-center leading-[1.25]">Soalan Yang Selalu Ditanya</h2>
+      <div class="mt-6 max-w-2xl mx-auto space-y-3" id="faq-list">
+
+        <div class="bg-white rounded-2xl border border-sand shadow-card overflow-hidden">
+          <button class="faq-btn w-full flex items-center justify-between gap-3 text-left font-semibold text-[14px] p-4 min-h-[52px]" aria-expanded="false" aria-controls="faq-1" id="faq-btn-1">
+            Produk Herbalabz untuk lelaki atau perempuan?
+            <span class="faq-chevron text-gold shrink-0 transition-transform" aria-hidden="true">▾</span>
+          </button>
+          <div id="faq-1" role="region" aria-labelledby="faq-btn-1" class="faq-panel px-4 pb-4 text-[13px] leading-[1.55]" hidden>
+            Keduanya boleh. Contoh: sabun dan teh sesuai seisi keluarga. Minyak Raja Perkasa, Uncang dan Maajun lebih fokus untuk lelaki, tapi Maajun juga sesuai untuk wanita yang aktif. Tak pasti, tanya kami dulu.
+          </div>
+        </div>
+
+        <div class="bg-white rounded-2xl border border-sand shadow-card overflow-hidden">
+          <button class="faq-btn w-full flex items-center justify-between gap-3 text-left font-semibold text-[14px] p-4 min-h-[52px]" aria-expanded="false" aria-controls="faq-2" id="faq-btn-2">
+            Cara guna susah tak?
+            <span class="faq-chevron text-gold shrink-0 transition-transform" aria-hidden="true">▾</span>
+          </button>
+          <div id="faq-2" role="region" aria-labelledby="faq-btn-2" class="faq-panel px-4 pb-4 text-[13px] leading-[1.55]" hidden>
+            Tak susah. Sabun guna masa mandi, minyak untuk urutan, uncang &amp; teh bancuh dengan air panas, maajun ikut arahan pada pek. Semua untuk rutin harian.
+          </div>
+        </div>
+
+        <div class="bg-white rounded-2xl border border-sand shadow-card overflow-hidden">
+          <button class="faq-btn w-full flex items-center justify-between gap-3 text-left font-semibold text-[14px] p-4 min-h-[52px]" aria-expanded="false" aria-controls="faq-3" id="faq-btn-3">
+            Minyak Raja Perkasa makan atau sapu?
+            <span class="faq-chevron text-gold shrink-0 transition-transform" aria-hidden="true">▾</span>
+          </button>
+          <div id="faq-3" role="region" aria-labelledby="faq-btn-3" class="faq-panel px-4 pb-4 text-[13px] leading-[1.55]" hidden>
+            Sapu — kegunaan luaran sahaja untuk urutan.
+          </div>
+        </div>
+
+        <div class="bg-white rounded-2xl border border-sand shadow-card overflow-hidden">
+          <button class="faq-btn w-full flex items-center justify-between gap-3 text-left font-semibold text-[14px] p-4 min-h-[52px]" aria-expanded="false" aria-controls="faq-4" id="faq-btn-4">
+            Boleh guna setiap hari?
+            <span class="faq-chevron text-gold shrink-0 transition-transform" aria-hidden="true">▾</span>
+          </button>
+          <div id="faq-4" role="region" aria-labelledby="faq-btn-4" class="faq-panel px-4 pb-4 text-[13px] leading-[1.55]" hidden>
+            Ya, direka untuk kegunaan harian. Contoh: sabun untuk mandian harian, minyak untuk urutan harian, teh untuk minuman harian. Ikut arahan pada label.
+          </div>
+        </div>
+
+        <div class="bg-white rounded-2xl border border-sand shadow-card overflow-hidden">
+          <button class="faq-btn w-full flex items-center justify-between gap-3 text-left font-semibold text-[14px] p-4 min-h-[52px]" aria-expanded="false" aria-controls="faq-5" id="faq-btn-5">
+            Macam mana nak order?
+            <span class="faq-chevron text-gold shrink-0 transition-transform" aria-hidden="true">▾</span>
+          </button>
+          <div id="faq-5" role="region" aria-labelledby="faq-btn-5" class="faq-panel px-4 pb-4 text-[13px] leading-[1.55]" hidden>
+            Paling cepat WhatsApp 011-56980854. Boleh juga DM Facebook / TikTok @Herbalabz. Beritahu nak produk mana atau untuk siapa — kami bantu.
+          </div>
+        </div>
+
+        <div class="bg-white rounded-2xl border border-sand shadow-card overflow-hidden">
+          <button class="faq-btn w-full flex items-center justify-between gap-3 text-left font-semibold text-[14px] p-4 min-h-[52px]" aria-expanded="false" aria-controls="faq-6" id="faq-btn-6">
+            Ada pantang atau kesan?
+            <span class="faq-chevron text-gold shrink-0 transition-transform" aria-hidden="true">▾</span>
+          </button>
+          <div id="faq-6" role="region" aria-labelledby="faq-btn-6" class="faq-panel px-4 pb-4 text-[13px] leading-[1.55]" hidden>
+            Setiap badan berbeza. Kalau ada alahan herba, mengandung, menyusu, atau ada rawatan doktor — maklumkan pada kami dan rujuk doktor dulu sebelum guna. Keselamatan dulu.
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- ===== 9. HUBUNGI + FOOTER ===== -->
+    <section id="hubungi" aria-labelledby="hubungi-title" class="bg-herba text-white px-4 pt-10 pb-8 text-center">
+      <div class="gold-hairline max-w-xs mx-auto mb-8" aria-hidden="true"></div>
+      <h2 id="hubungi-title" class="font-display text-[24px] lg:text-3xl font-bold leading-[1.25]">Jom Mula Dengan Satu Produk Dulu</h2>
+      <p class="text-[14px] mt-2 text-white/80">Tak perlu beli semua. Pilih satu yang paling dekat dengan keperluan keluarga anda hari ni.</p>
+      <div class="mt-5 bg-white/5 border border-gold/40 rounded-[20px] p-5 max-w-md mx-auto text-[14px] space-y-1.5">
+        <p>📱 Telefon / WhatsApp: <a href="https://wa.me/601156980854" class="text-gold font-semibold hover:underline">011-56980854</a></p>
+        <p>📘 Facebook: <span class="font-semibold">@Herbalabz</span></p>
+        <p>🎵 TikTok: <span class="font-semibold">@Herbalabz</span></p>
+        <p class="text-gold font-display tracking-wide pt-1">Herba Tradisi, Pilihan Masa Kini</p>
+      </div>
+      <div class="mt-6">
+        <a href="https://wa.me/601156980854?text=Assalamualaikum%20Herbalabz%2C%20saya%20nak%20tanya%20tentang%20produk%20herba%20untuk%20keluarga" class="inline-flex items-center justify-center gap-2 bg-wa text-white font-semibold rounded-full px-8 py-4 min-h-[52px] shadow-sticky hover:bg-waDark">WhatsApp Herbalabz</a>
+      </div>
+      <footer role="contentinfo" class="mt-8">
+        <p class="text-[11px] leading-relaxed text-white/60 max-w-lg mx-auto">Produk herba tradisional untuk kegunaan harian. Bukan ubat dan bukan untuk mendiagnosis, merawat atau menyembuhkan penyakit. Hasil mungkin berbeza ikut individu. Rujuk profesional kesihatan jika perlu.</p>
+        <p class="text-[12px] mt-3 text-white/70">&copy; <span id="tahun">2026</span> Herbalabz. Hak cipta terpelihara.</p>
+      </footer>
+    </section>
+
+  </main>
+
+  <!-- ===== STICKY WHATSAPP BAR (mobile) ===== -->
+  <div id="sticky-bar" class="no-print fixed bottom-0 inset-x-0 z-50 md:hidden" role="region" aria-label="Bar tindakan WhatsApp">
+    <div class="bg-herba border-t border-gold px-4 py-3 flex items-center gap-3 max-w-[480px] mx-auto">
+      <div class="flex-1 min-w-0">
+        <p class="text-white text-[13px] font-semibold leading-tight">Nak tanya dulu pun boleh</p>
+        <p class="text-gold text-[12px]">011-56980854 · Balas mesra</p>
+      </div>
+      <a href="https://wa.me/601156980854?text=Assalamualaikum%20Herbalabz%2C%20saya%20nak%20tanya%20tentang%20produk%20herba%20untuk%20keluarga"
+         class="shrink-0 inline-flex items-center gap-2 bg-wa text-white text-[14px] font-bold rounded-full px-6 py-3 min-h-[48px] shadow-sticky hover:bg-waDark">
+        <span aria-hidden="true">💬</span> Chat Sekarang
+      </a>
+    </div>
+  </div>
+
+  <script>
+    (function () {
+      // Tahun footer auto
+      document.getElementById('tahun').textContent = new Date().getFullYear();
+
+      // --- Tabs panduan ---
+      var tabBtns = Array.prototype.slice.call(document.querySelectorAll('.tab-btn'));
+      var panels = Array.prototype.slice.call(document.querySelectorAll('.tab-panel'));
+      function activateTab(btn) {
+        tabBtns.forEach(function (b) {
+          var active = b === btn;
+          b.setAttribute('aria-selected', active ? 'true' : 'false');
+          b.setAttribute('tabindex', active ? '0' : '-1');
+          b.classList.toggle('bg-herba', active);
+          b.classList.toggle('text-white', active);
+          b.classList.toggle('bg-cream', !active);
+          b.classList.toggle('border', !active);
+          b.classList.toggle('border-sand', !active);
+        });
+        panels.forEach(function (p) {
+          p.hidden = p.id !== btn.getAttribute('data-tab');
+        });
+      }
+      tabBtns.forEach(function (btn, i) {
+        btn.addEventListener('click', function () { activateTab(btn); });
+        btn.addEventListener('keydown', function (e) {
+          var idx = null;
+          if (e.key === 'ArrowRight') idx = (i + 1) % tabBtns.length;
+          if (e.key === 'ArrowLeft') idx = (i - 1 + tabBtns.length) % tabBtns.length;
+          if (idx !== null) { e.preventDefault(); tabBtns[idx].focus(); activateTab(tabBtns[idx]); }
+        });
+      });
+
+      // --- FAQ accordion (single-open) ---
+      var faqBtns = Array.prototype.slice.call(document.querySelectorAll('.faq-btn'));
+      faqBtns.forEach(function (btn) {
+        var panel = document.getElementById(btn.getAttribute('aria-controls'));
+        var chevron = btn.querySelector('.faq-chevron');
+        btn.addEventListener('click', function () {
+          var willOpen = panel.hidden;
+          faqBtns.forEach(function (other) {
+            var op = document.getElementById(other.getAttribute('aria-controls'));
+            op.hidden = true;
+            other.setAttribute('aria-expanded', 'false');
+            var oc = other.querySelector('.faq-chevron');
+            if (oc) oc.style.transform = '';
+          });
+          panel.hidden = !willOpen;
+          btn.setAttribute('aria-expanded', willOpen ? 'true' : 'false');
+          if (chevron) chevron.style.transform = willOpen ? 'rotate(180deg)' : '';
+        });
+      });
+    })();
+  </script>
+</body>
+</html>
