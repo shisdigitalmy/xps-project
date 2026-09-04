@@ -1,0 +1,562 @@
+# Barber One Page v2 Implementation Plan
+
+> **For agentic workers:** REQUIRED SUB-SKILL: Use superpowers:subagent-driven-development (recommended) or superpowers:executing-plans to implement this plan task-by-task. Steps use checkbox (`- [ ]`) syntax for tracking.
+
+**Goal:** Build `website/gentlemans-blade/index-v2.html` as a single-file HTML + Tailwind CDN + vanilla JS one-pager faithful to the Stitch reference.
+
+**Architecture:** One new HTML file only, reusing local `assets/images/`; Tailwind via CDN with inline config; all JS vanilla at end of body; no build step, no backend.
+
+**Tech Stack:** HTML5, Tailwind CSS (CDN play), Google Fonts (Cinzel + Montserrat), vanilla JS, local JPG assets.
+
+**Spec:** `docs/superpowers/specs/2026-09-04-barber-one-page-v2-design.md`
+
+## Global Constraints
+
+- DO NOT overwrite or delete `website/gentlemans-blade/index.html` — new file is `website/gentlemans-blade/index-v2.html` only.
+- Colors verbatim: bg-base `#14191F`, surface-dark `#1F2937`, surface-elevated `#253242`, copper `#B07851`, copper-hover `#C68A60`, gold `#E5A962`, green `#0A6221`, border `#2C3E50`, text-primary `#F3EFE0`, text-secondary `#94A3B8`, text-muted `#64748B`.
+- Fonts: display `'Cinzel', Georgia, serif`; body `'Montserrat', -apple-system, sans-serif`.
+- Max content width `1280px`; side padding `16px` mobile / `32px` desktop.
+- Radius: buttons/inputs `6px`, cards `8px`, badges `4px`.
+- No external image URLs — only relative `assets/images/*.jpg`; allowed externals: Google Fonts + `https://cdn.tailwindcss.com` only.
+- Contact field accepts phone OR email — no strict format validation, only non-empty check.
+- Respect `prefers-reduced-motion` and `@media print`; all images need descriptive `alt`; all inputs need bound `<label>`.
+- Communication with user in Bahasa Melayu Malaysia / English / Manglish sahaja.
+
+---
+
+### Task 1: Scaffold head + tokens + header/nav + drawer
+
+**Files:**
+- Create: `website/gentlemans-blade/index-v2.html`
+- Test: manual open + string checks (no test framework in this repo)
+
+**Interfaces:**
+- Consumes: nothing (first task)
+- Produces: DOM ids `#site-header`, `#menu-btn`, `#mobile-menu`, `#menu-icon-open`, `#menu-icon-close`; Tailwind config tokens `ink, navy, steel, bronze, gold, rust, cream, mist, mut`; JS fn `setMenu(open)`
+
+- [ ] **Step 1: Create file with head, Tailwind config, base styles, and header markup**
+
+Create `website/gentlemans-blade/index-v2.html` with exactly this head + header (rest of body added in later tasks — end the file after `</header>` + `<main>` opener + `</main></body></html>` placeholders so the file is valid):
+
+```html
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>The Gentleman's Blade | Metro Barbershop — Est. 2018</title>
+  <meta name="description" content="The Gentleman's Blade — upscale barbershop since 2018. Precision cuts, beard sculpting, straight-razor shaves and grooming treatments.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@600;700&family=Montserrat:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            ink: '#14191F', navy: '#1F2937', steel: '#2C3E50',
+            bronze: '#B07851', gold: '#E5A962', rust: '#C05621',
+            'rust-dark': '#9A4519', cream: '#F3EFE0', mist: '#E2E8F0', mut: '#94A3B8'
+          },
+          fontFamily: {
+            serif: ['Cinzel', 'Georgia', 'serif'],
+            body: ['Montserrat', '-apple-system', 'sans-serif']
+          },
+          maxWidth: { shell: '1280px' }
+        }
+      }
+    }
+  </script>
+  <style>
+    :root { color-scheme: dark; }
+    .reveal { opacity: 0; transform: translateY(24px); transition: opacity .7s ease, transform .7s ease; }
+    .reveal.in { opacity: 1; transform: none; }
+    .nav-link { position: relative; }
+    .nav-link::after { content: ''; position: absolute; left: 0; right: 100%; bottom: -6px; height: 2px; background: #B07851; transition: right .25s ease; }
+    .nav-link:hover::after, .nav-link.active::after { right: 0; }
+    ::-webkit-scrollbar { width: 10px; }
+    ::-webkit-scrollbar-track { background: #14191F; }
+    ::-webkit-scrollbar-thumb { background: #2C3E50; border-radius: 5px; }
+    @media (prefers-reduced-motion: reduce) {
+      html { scroll-behavior: auto; }
+      .reveal { opacity: 1; transform: none; transition: none; }
+      *, *::before, *::after { animation-duration: .01ms !important; transition-duration: .01ms !important; }
+    }
+    @media print { header, #lightbox { display: none !important; } body { background: #fff !important; color: #000 !important; } }
+  </style>
+</head>
+<body class="bg-navy font-body text-mist antialiased">
+  <a href="#home" class="sr-only focus:not-sr-only focus:fixed focus:top-2 focus:left-2 focus:z-[80] focus:bg-[#B07851] focus:text-white focus:px-4 focus:py-2 focus:rounded">Skip to content</a>
+  <header id="site-header" class="fixed top-0 inset-x-0 z-50 bg-ink/90 backdrop-blur border-b border-steel/60">
+    <div class="mx-auto max-w-shell px-4 sm:px-6 lg:px-8">
+      <div class="flex h-20 items-center justify-between">
+        <a href="#home" class="flex items-center gap-3" aria-label="The Gentleman's Blade — home">
+          <svg class="h-7 w-14 text-gold shrink-0" viewBox="-45 -20 90 40" aria-hidden="true"><path d="M-25,-5 Q0,-15 25,-5 L15,2 Q0,-5 -15,2 Z" fill="currentColor"/><path d="M-28,-2 L-38,12 C-35,15 -30,12 -28,5 Z" fill="currentColor" opacity=".65"/><circle cx="0" cy="-6" r="3" fill="currentColor"/></svg>
+          <span class="leading-none">
+            <span class="block text-[10px] tracking-[0.5em] text-mut">THE</span>
+            <span class="block font-serif text-base sm:text-lg font-bold tracking-[0.18em] text-gold leading-tight">GENTLEMAN&rsquo;S BLADE</span>
+            <span class="block text-[8px] tracking-[0.35em] text-bronze mt-0.5">EST. 2018 &bull; METRO BARBERSHOP</span>
+          </span>
+        </a>
+        <nav class="hidden lg:block" aria-label="Primary">
+          <ul class="flex items-center gap-8 text-sm tracking-[0.2em] font-semibold">
+            <li><a href="#home" class="nav-link active text-cream hover:text-gold transition-colors" data-spy="home">HOME</a></li>
+            <li><a href="#services" class="nav-link text-cream hover:text-gold transition-colors" data-spy="services">SERVICES</a></li>
+            <li><a href="#experience" class="nav-link text-cream hover:text-gold transition-colors" data-spy="experience">EXPERIENCE</a></li>
+            <li><a href="#gallery" class="nav-link text-cream hover:text-gold transition-colors" data-spy="gallery">GALLERY</a></li>
+            <li><a href="#booking" class="nav-link text-cream hover:text-gold transition-colors" data-spy="booking">BOOKING</a></li>
+            <li><a href="#visit" class="nav-link text-cream hover:text-gold transition-colors" data-spy="contact">VISIT</a></li>
+          </ul>
+        </nav>
+        <div class="flex items-center gap-3">
+          <a href="#booking" class="bg-bronze hover:bg-[#C68A60] text-ink font-semibold text-xs tracking-[0.15em] px-5 py-2.5 rounded-md transition-colors">BOOK APPOINTMENT</a>
+          <button id="menu-btn" class="lg:hidden inline-flex items-center justify-center h-10 w-10 rounded border border-steel text-cream" aria-expanded="false" aria-controls="mobile-menu" aria-label="Toggle navigation menu">
+            <svg id="menu-icon-open" class="h-5 w-5" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" aria-hidden="true"><path d="M4 6h16M4 12h16M4 18h16"/></svg>
+            <svg id="menu-icon-close" class="h-5 w-5 hidden" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" aria-hidden="true"><path d="M6 6l12 12M18 6L6 18"/></svg>
+          </button>
+        </div>
+      </div>
+    </div>
+    <nav id="mobile-menu" class="lg:hidden hidden border-t border-steel/60 bg-ink" aria-label="Mobile">
+      <ul class="px-4 py-4 space-y-1 text-sm tracking-[0.2em] font-semibold">
+        <li><a href="#home" class="block px-3 py-3 rounded text-cream hover:bg-navy hover:text-gold">HOME</a></li>
+        <li><a href="#services" class="block px-3 py-3 rounded text-cream hover:bg-navy hover:text-gold">SERVICES</a></li>
+        <li><a href="#experience" class="block px-3 py-3 rounded text-cream hover:bg-navy hover:text-gold">EXPERIENCE</a></li>
+        <li><a href="#gallery" class="block px-3 py-3 rounded text-cream hover:bg-navy hover:text-gold">GALLERY</a></li>
+        <li><a href="#booking" class="block px-3 py-3 rounded text-cream hover:bg-navy hover:text-gold">BOOKING</a></li>
+        <li><a href="#visit" class="block px-3 py-3 rounded text-cream hover:bg-navy hover:text-gold">VISIT</a></li>
+      </ul>
+    </nav>
+  </header>
+  <main>
+  </main>
+</body>
+</html>
+```
+
+- [ ] **Step 2: Verify file exists and header ids present**
+
+Run: `Test-Path -LiteralPath "website\gentlemans-blade\index-v2.html"; Select-String -LiteralPath "website\gentlemans-blade\index-v2.html" -Pattern "site-header|mobile-menu|menu-btn" | Select-Object LineNumber,Line`
+Expected: Test-Path True; 3+ matches. No `lh3.googleusercontent` matches.
+
+- [ ] **Step 3: Commit**
+
+```bash
+git add website/gentlemans-blade/index-v2.html
+git commit -m "feat: scaffold barber one page v2 header and tokens"
+```
+
+---
+
+### Task 2: Hero section (#home)
+
+**Files:**
+- Modify: `website/gentlemans-blade/index-v2.html` (insert inside `<main>`)
+- Test: string checks + visual open
+
+**Interfaces:**
+- Consumes: Tailwind tokens + `.reveal` from Task 1
+- Produces: DOM id `#home`; images `assets/images/hero.jpg`
+
+- [ ] **Step 1: Insert hero markup right after `<main>`**
+
+```html
+<section id="home" class="relative flex min-h-[92vh] items-center justify-center overflow-hidden scroll-mt-20">
+  <div class="absolute inset-0" aria-hidden="true">
+    <img src="assets/images/hero.jpg" alt="" class="h-full w-full object-cover"/>
+    <div class="absolute inset-0 bg-gradient-to-b from-ink/80 via-ink/60 to-ink/90"></div>
+  </div>
+  <div class="relative z-10 px-4 pt-24 pb-16 text-center">
+    <div class="reveal inline-flex items-center gap-2 px-3.5 py-1.5 rounded bg-navy/80 border border-steel mb-6">
+      <span class="w-2 h-2 rounded-full bg-gold animate-pulse"></span>
+      <span class="text-xs font-bold tracking-[0.2em] text-gold">EST. 2018 | METRO BARBERSHOP</span>
+    </div>
+    <p class="reveal text-xl sm:text-2xl tracking-[0.45em] text-cream/90">THE</p>
+    <h1 class="reveal mt-2 font-serif text-5xl sm:text-7xl lg:text-8xl font-bold uppercase leading-[1.05] tracking-wide text-cream">GENTLEMAN&rsquo;S<br/>BLADE</h1>
+    <p class="reveal mt-4 text-sm sm:text-base tracking-[0.25em] text-mut">MASTER HERITAGE BARBERING &amp; TIMELESS GROOMING</p>
+    <div class="reveal mt-10 flex flex-col sm:flex-row items-center justify-center gap-4">
+      <a href="#booking" class="bg-bronze hover:bg-[#C68A60] text-ink font-semibold text-sm tracking-[0.2em] px-10 py-4 rounded-md transition-colors">BOOK APPOINTMENT</a>
+      <a href="#services" class="border border-bronze text-cream hover:bg-bronze/15 hover:text-gold font-semibold text-sm tracking-[0.2em] px-10 py-4 rounded-md transition-colors">EXPLORE SERVICES</a>
+    </div>
+  </div>
+</section>
+```
+
+- [ ] **Step 2: Verify hero inserted with local image**
+
+Run: `Select-String -LiteralPath "website\gentlemans-blade\index-v2.html" -Pattern 'id="home"|assets/images/hero.jpg' | Select-Object Line`
+Expected: both patterns found; `Select-String -Pattern "googleusercontent|lh3\."` returns nothing.
+
+- [ ] **Step 3: Commit**
+
+```bash
+git add website/gentlemans-blade/index-v2.html
+git commit -m "feat: add v2 hero section"
+```
+
+---
+
+### Task 3: Services grid (#services)
+
+**Files:**
+- Modify: `website/gentlemans-blade/index-v2.html` (append after hero `</section>`)
+- Test: string checks
+
+**Interfaces:**
+- Consumes: `#home` anchor order from Task 2
+- Produces: DOM id `#services`, JS fn `selectService(value)` contract (defined in Task 6, but onclick attributes reference it now — keep exact option values below so Task 6 matches)
+
+- [ ] **Step 1: Insert services section with 4 cards and exact service values**
+
+Insert after hero section:
+
+```html
+<section id="services" class="scroll-mt-20 bg-navy py-20 lg:py-28">
+  <div class="mx-auto max-w-shell px-4 sm:px-6 lg:px-8">
+    <div class="reveal text-center">
+      <p class="text-xs font-bold tracking-[0.2em] text-gold">OUR REPERTOIRE</p>
+      <h2 class="mt-2 font-serif text-3xl sm:text-4xl tracking-[0.15em] text-cream">SIGNATURE SERVICES</h2>
+      <div class="mx-auto mt-4 h-0.5 w-16 bg-bronze" aria-hidden="true"></div>
+    </div>
+    <div class="mt-14 grid gap-8 sm:grid-cols-2 xl:grid-cols-4">
+      <article class="reveal group flex h-full flex-col border border-steel/70 bg-ink/40 rounded-lg overflow-hidden hover:border-bronze transition-colors">
+        <img src="assets/images/service-cuts.jpg" alt="Barber giving a precision gentleman haircut" loading="lazy" class="h-56 w-full object-cover group-hover:scale-105 transition-transform duration-500"/>
+        <div class="flex flex-1 flex-col p-6">
+          <h3 class="font-serif text-xl text-cream">Master Cut</h3>
+          <p class="mt-2 text-sm text-mut">Tailored scissor cuts, precision fades and textured styling.</p>
+          <p class="mt-4 font-bold text-lg text-gold">$15.00+</p>
+          <a href="#booking" onclick="selectService('Master Cut - $15.00+')" class="mt-4 inline-flex items-center justify-center gap-2 border border-steel hover:border-bronze rounded-md py-3 text-xs font-bold tracking-[0.15em] text-cream hover:bg-bronze/20 transition-colors">SELECT SERVICE</a>
+        </div>
+      </article>
+      <article class="reveal group flex h-full flex-col border border-steel/70 bg-ink/40 rounded-lg overflow-hidden hover:border-bronze transition-colors">
+        <img src="assets/images/service-beards.jpg" alt="Barber trimming and detailing a client beard" loading="lazy" class="h-56 w-full object-cover group-hover:scale-105 transition-transform duration-500"/>
+        <div class="flex flex-1 flex-col p-6">
+          <h3 class="font-serif text-xl text-cream">Beard Sculpt</h3>
+          <p class="mt-2 text-sm text-mut">Beard trim, hot-towel line refinement and oil hydration.</p>
+          <p class="mt-4 font-bold text-lg text-gold">$15.00+</p>
+          <a href="#booking" onclick="selectService('Beard Sculpt - $15.00+')" class="mt-4 inline-flex items-center justify-center gap-2 border border-steel hover:border-bronze rounded-md py-3 text-xs font-bold tracking-[0.15em] text-cream hover:bg-bronze/20 transition-colors">SELECT SERVICE</a>
+        </div>
+      </article>
+      <article class="reveal group flex h-full flex-col border border-steel/70 bg-ink/40 rounded-lg overflow-hidden hover:border-bronze transition-colors">
+        <img src="assets/images/service-shaves.jpg" alt="Traditional hot towel straight razor shave in progress" loading="lazy" class="h-56 w-full object-cover group-hover:scale-105 transition-transform duration-500"/>
+        <div class="flex flex-1 flex-col p-6">
+          <h3 class="font-serif text-xl text-cream">Royal Ritual</h3>
+          <p class="mt-2 text-sm text-mut">Multi-step hot-towel straight-razor shave with sandalwood lather.</p>
+          <p class="mt-4 font-bold text-lg text-gold">$25.00+</p>
+          <a href="#booking" onclick="selectService('Royal Ritual Shave - $25.00+')" class="mt-4 inline-flex items-center justify-center gap-2 border border-steel hover:border-bronze rounded-md py-3 text-xs font-bold tracking-[0.15em] text-cream hover:bg-bronze/20 transition-colors">SELECT SERVICE</a>
+        </div>
+      </article>
+      <article class="reveal group flex h-full flex-col border border-steel/70 bg-ink/40 rounded-lg overflow-hidden hover:border-bronze transition-colors">
+        <img src="assets/images/service-treatments.jpg" alt="Client receiving a relaxing head and scalp treatment" loading="lazy" class="h-56 w-full object-cover group-hover:scale-105 transition-transform duration-500"/>
+        <div class="flex flex-1 flex-col p-6">
+          <h3 class="font-serif text-xl text-cream">Scalp &amp; Relax</h3>
+          <p class="mt-2 text-sm text-mut">Scalp massage, botanical steam and clarifying mask.</p>
+          <p class="mt-4 font-bold text-lg text-gold">$28.00+</p>
+          <a href="#booking" onclick="selectService('Scalp & Relax Treatment - $28.00+')" class="mt-4 inline-flex items-center justify-center gap-2 border border-steel hover:border-bronze rounded-md py-3 text-xs font-bold tracking-[0.15em] text-cream hover:bg-bronze/20 transition-colors">SELECT SERVICE</a>
+        </div>
+      </article>
+    </div>
+  </div>
+</section>
+```
+
+Exact `<select>` values in Task 6 MUST be: `Master Cut - $15.00+`, `Beard Sculpt - $15.00+`, `Royal Ritual Shave - $25.00+`, `Scalp & Relax Treatment - $28.00+`, `Gentleman's Full Combo - $55.00+`.
+
+- [ ] **Step 2: Verify 4 cards and onclick values**
+
+Run: `Select-String -LiteralPath "website\gentlemans-blade\index-v2.html" -Pattern "selectService\(" | Measure-Object | Select-Object Count`
+Expected: Count = 4.
+
+- [ ] **Step 3: Commit**
+
+```bash
+git add website/gentlemans-blade/index-v2.html
+git commit -m "feat: add v2 services grid"
+```
+
+---
+
+### Task 4: Experience + Gallery + lightbox shell
+
+**Files:**
+- Modify: `website/gentlemans-blade/index-v2.html`
+- Test: string checks
+
+**Interfaces:**
+- Consumes: `.reveal`, grid tokens from Tasks 1–3
+- Produces: DOM ids `#experience`, `#gallery`, `#lightbox`, `#lb-img`, `#lb-cap`, `#lb-close`, `#lb-prev`, `#lb-next`; `data-lightbox` buttons (JS wired in Task 7)
+
+- [ ] **Step 1: Insert experience section after services**
+
+```html
+<section id="experience" class="bg-ink py-20 lg:py-28 border-y border-steel/60 scroll-mt-20">
+  <div class="mx-auto max-w-shell px-4 sm:px-6 lg:px-8 grid gap-12 lg:grid-cols-2 items-center">
+    <div>
+      <p class="reveal text-xs font-bold tracking-[0.2em] text-bronze">THE PHILOSOPHY</p>
+      <h2 class="reveal mt-2 font-serif text-3xl sm:text-4xl text-cream leading-tight">MORE THAN A HAIRCUT.<br/><span class="italic text-gold">IT&rsquo;S A RITUAL.</span></h2>
+      <p class="reveal mt-6 text-mut leading-relaxed">Since 2018, The Gentleman&rsquo;s Blade honours artisanal barbering — Japanese steel shears, steamed eucalyptus towels, custom sandalwood pomades.</p>
+      <ul class="reveal mt-8 space-y-4">
+        <li class="flex gap-4"><span class="text-gold font-bold">01</span><span class="text-sm text-mist"><strong class="text-cream">Artisan Blades &amp; Warm Towels</strong> — straight razors + botanical hot-towel ritual.</span></li>
+        <li class="flex gap-4"><span class="text-gold font-bold">02</span><span class="text-sm text-mist"><strong class="text-cream">Bespoke Apothecary</strong> — small-batch balms and oils tailored to your skin.</span></li>
+        <li class="flex gap-4"><span class="text-gold font-bold">03</span><span class="text-sm text-mist"><strong class="text-cream">Private Lounge</strong> — low amber light, vinyl selections, no rush.</span></li>
+      </ul>
+    </div>
+    <div class="space-y-4">
+      <img src="assets/images/experience-1.jpg" alt="Barbers at work inside the upscale boutique barbershop" loading="lazy" class="reveal h-72 lg:h-96 w-full rounded-lg object-cover border border-steel/50"/>
+      <div class="grid grid-cols-2 gap-4">
+        <img src="assets/images/experience-2.jpg" alt="Skilled barber styling and grooming a gentleman" loading="lazy" class="reveal h-48 w-full rounded-lg object-cover border border-steel/50"/>
+        <img src="assets/images/experience-3.jpg" alt="Modern gentleman receiving a low taper skin fade" loading="lazy" class="reveal h-48 w-full rounded-lg object-cover border border-steel/50"/>
+      </div>
+    </div>
+  </div>
+</section>
+```
+
+- [ ] **Step 2: Insert gallery + lightbox shell after experience**
+
+```html
+<section id="gallery" class="bg-navy py-20 lg:py-28 scroll-mt-20">
+  <div class="mx-auto max-w-shell px-4 sm:px-6 lg:px-8">
+    <div class="reveal text-center">
+      <p class="text-xs font-bold tracking-[0.2em] text-gold">LOOKBOOK</p>
+      <h2 class="mt-2 font-serif text-3xl sm:text-4xl tracking-[0.15em] text-cream">MASTER CRAFT GALLERY</h2>
+      <div class="mx-auto mt-4 h-0.5 w-16 bg-bronze" aria-hidden="true"></div>
+    </div>
+    <div class="reveal mt-12 grid grid-cols-2 md:grid-cols-4 gap-3">
+      <button type="button" data-lightbox aria-label="View photo: bearded gentleman portrait" class="group relative overflow-hidden rounded border border-steel/50 aspect-square"><img src="assets/images/gallery-2.jpg" alt="Front facing portrait of a bearded gentleman" loading="lazy" class="h-full w-full object-cover group-hover:scale-110 transition-transform duration-500"/></button>
+      <button type="button" data-lightbox aria-label="View photo: gentleman client portrait" class="group relative overflow-hidden rounded border border-steel/50 aspect-square"><img src="assets/images/gallery-1.jpg" alt="Gentleman client in the luxury vintage barbershop" loading="lazy" class="h-full w-full object-cover group-hover:scale-110 transition-transform duration-500"/></button>
+      <button type="button" data-lightbox aria-label="View photo: luxury barber tools" class="group relative overflow-hidden rounded border border-steel/50 aspect-square"><img src="assets/images/gallery-3.jpg" alt="Luxury barber tools on a dark rustic wooden counter" loading="lazy" class="h-full w-full object-cover group-hover:scale-110 transition-transform duration-500"/></button>
+      <button type="button" data-lightbox aria-label="View photo: barbershop interior" class="group relative overflow-hidden rounded border border-steel/50 aspect-square"><img src="assets/images/interior.jpg" alt="Moody vintage barbershop interior with Edison bulbs" loading="lazy" class="h-full w-full object-cover group-hover:scale-110 transition-transform duration-500"/></button>
+    </div>
+  </div>
+</section>
+<div id="lightbox" class="fixed inset-0 z-[70] hidden items-center justify-center bg-ink/95 p-4" role="dialog" aria-modal="true" aria-label="Image viewer">
+  <button id="lb-close" class="absolute top-4 right-4 h-11 w-11 rounded-full border border-steel text-cream" aria-label="Close image viewer">X</button>
+  <button id="lb-prev" class="absolute left-3 h-11 w-11 rounded-full border border-steel text-cream" aria-label="Previous image">&lt;</button>
+  <figure class="max-w-4xl text-center">
+    <img id="lb-img" src="" alt="" class="max-h-[80vh] w-auto rounded border border-bronze/40 object-contain"/>
+    <p id="lb-cap" class="mt-3 text-xs tracking-[0.25em] text-mut"></p>
+  </figure>
+  <button id="lb-next" class="absolute right-3 h-11 w-11 rounded-full border border-steel text-cream" aria-label="Next image">&gt;</button>
+</div>
+```
+
+- [ ] **Step 3: Verify ids and local images**
+
+Run: `Select-String -LiteralPath "website\gentlemans-blade\index-v2.html" -Pattern 'id="experience"|id="gallery"|id="lightbox"|data-lightbox' | Measure-Object | Select-Object Count`
+Expected: Count >= 7 (1 experience + 1 gallery + 1 lightbox + 4 buttons).
+
+- [ ] **Step 4: Commit**
+
+```bash
+git add website/gentlemans-blade/index-v2.html
+git commit -m "feat: add v2 experience and gallery"
+```
+
+---
+
+### Task 5: Booking + Visit + footer markup
+
+**Files:**
+- Modify: `website/gentlemans-blade/index-v2.html`
+- Test: string checks
+
+**Interfaces:**
+- Consumes: `selectService()` onclick values from Task 3
+- Produces: DOM ids `#booking`, `#bookingForm`, `#fullName`, `#contactInfo`, `#serviceSelect`, `#barberSelect`, `#bookingDate`, `#timeSlots`, `#specialNotes`, `#confirmationNotice`, `#visit`/`#contact`, `#year`
+
+- [ ] **Step 1: Insert booking, visit, footer before `</main>` (footer after `</main>`)**
+
+```html
+<section id="booking" class="bg-ink py-20 lg:py-28 border-t border-steel/60 scroll-mt-20">
+  <div class="mx-auto max-w-3xl px-4 sm:px-6">
+    <div class="reveal text-center">
+      <p class="text-xs font-bold tracking-[0.2em] text-gold">CONCIERGE DESK</p>
+      <h2 class="mt-2 font-serif text-3xl sm:text-4xl text-cream">RESERVE YOUR CHAIR</h2>
+    </div>
+    <form id="bookingForm" class="reveal mt-10 bg-navy border border-bronze/60 rounded-lg p-6 sm:p-10 space-y-6" novalidate>
+      <div class="grid gap-6 sm:grid-cols-2">
+        <div><label for="fullName" class="block text-xs font-bold tracking-[0.15em] text-mut mb-2">FULL NAME</label><input id="fullName" type="text" placeholder="e.g. Julian Montgomery" required class="w-full bg-ink border border-steel focus:border-bronze rounded-md px-4 py-3 text-sm text-cream placeholder:text-mut/60 focus:outline-none"/></div>
+        <div><label for="contactInfo" class="block text-xs font-bold tracking-[0.15em] text-mut mb-2">PHONE / EMAIL</label><input id="contactInfo" type="text" placeholder="e.g. +60 12-345 6789" required class="w-full bg-ink border border-steel focus:border-bronze rounded-md px-4 py-3 text-sm text-cream placeholder:text-mut/60 focus:outline-none"/></div>
+      </div>
+      <div class="grid gap-6 sm:grid-cols-2">
+        <div><label for="serviceSelect" class="block text-xs font-bold tracking-[0.15em] text-mut mb-2">SELECT SERVICE</label><select id="serviceSelect" required class="w-full bg-ink border border-steel focus:border-bronze rounded-md px-4 py-3 text-sm text-cream focus:outline-none"><option disabled selected value="">Choose a service...</option><option value="Master Cut - $15.00+">Master Cut ($15.00+)</option><option value="Beard Sculpt - $15.00+">Beard Sculpt ($15.00+)</option><option value="Royal Ritual Shave - $25.00+">Royal Ritual Shave ($25.00+)</option><option value="Scalp & Relax Treatment - $28.00+">Scalp &amp; Relax ($28.00+)</option><option value="Gentleman's Full Combo - $55.00+">Full Combo ($55.00+)</option></select></div>
+        <div><label for="barberSelect" class="block text-xs font-bold tracking-[0.15em] text-mut mb-2">PREFERRED BARBER</label><select id="barberSelect" class="w-full bg-ink border border-steel focus:border-bronze rounded-md px-4 py-3 text-sm text-cream focus:outline-none"><option>Any Available Master Barber</option><option>Marcus &quot;The Blade&quot; (Founder)</option><option>James Vance (Razor Specialist)</option><option>Leo Rossi (Beard Architect)</option></select></div>
+      </div>
+      <div><label for="bookingDate" class="block text-xs font-bold tracking-[0.15em] text-mut mb-2">DATE &amp; TIME SLOT</label><input id="bookingDate" type="date" required class="w-full bg-ink border border-steel focus:border-bronze rounded-md px-4 py-3 text-sm text-cream focus:outline-none"/><div id="timeSlots" class="mt-3 grid grid-cols-3 gap-2"><button type="button" class="time-slot-btn rounded bg-ink border border-steel text-mut py-3 text-xs" onclick="selectSlot(this)">10:00 AM</button><button type="button" class="time-slot-btn rounded bg-bronze text-ink border border-bronze font-semibold py-3 text-xs" onclick="selectSlot(this)">11:30 AM</button><button type="button" class="time-slot-btn rounded bg-ink border border-steel text-mut py-3 text-xs" onclick="selectSlot(this)">02:00 PM</button><button type="button" class="time-slot-btn rounded bg-ink border border-steel text-mut py-3 text-xs" onclick="selectSlot(this)">03:30 PM</button><button type="button" class="time-slot-btn rounded bg-ink border border-steel text-mut py-3 text-xs" onclick="selectSlot(this)">05:00 PM</button><button type="button" class="time-slot-btn rounded bg-ink border border-steel text-mut py-3 text-xs" onclick="selectSlot(this)">06:30 PM</button></div></div>
+      <div><label for="specialNotes" class="block text-xs font-bold tracking-[0.15em] text-mut mb-2">NOTES (OPTIONAL)</label><textarea id="specialNotes" rows="2" placeholder="Hot towel preference, beverage, style inspo..." class="w-full bg-ink border border-steel focus:border-bronze rounded-md px-4 py-3 text-sm text-cream placeholder:text-mut/60 focus:outline-none"></textarea></div>
+      <button type="submit" class="w-full bg-bronze hover:bg-[#C68A60] text-ink font-bold text-sm tracking-[0.2em] py-4 rounded-md transition-colors">CONFIRM APPOINTMENT</button>
+      <div id="confirmationNotice" class="hidden mt-4 rounded border border-green-700 bg-green-900/30 p-4 text-center"><p class="text-cream font-semibold">Appointment Request Received</p><p class="text-sm text-mut">Our concierge will confirm your slot shortly.</p></div>
+      <p id="formError" class="hidden mt-4 text-sm text-red-400" role="alert">Please fill in name, contact, service, date and pick a time slot.</p>
+    </form>
+  </div>
+</section>
+<section id="visit" class="bg-navy py-20 lg:py-28 scroll-mt-20">
+  <div class="mx-auto max-w-shell px-4 sm:px-6 lg:px-8 grid gap-8 lg:grid-cols-2">
+    <div class="reveal bg-ink/40 border border-steel/70 rounded-lg p-8">
+      <p class="text-xs font-bold tracking-[0.2em] text-gold">LOCATION &amp; HOURS</p>
+      <h2 class="mt-2 font-serif text-3xl text-cream">VISIT THE ATELIER</h2>
+      <ul class="mt-6 space-y-4 text-sm text-mist">
+        <li>123 Urban St, Metro City, 50010 — valet &amp; rear entrance available</li>
+        <li>MON–FRI: 9AM–8PM / SAT: 10AM–6PM / SUN: CLOSED</li>
+        <li><a href="tel:+15062336718" class="hover:text-gold">PHONE: 506-233-6718</a></li>
+        <li><a href="mailto:contact@gentlemansblade.com" class="hover:text-gold">EMAIL: contact@gentlemansblade.com</a></li>
+      </ul>
+    </div>
+    <div id="contact" class="reveal bg-ink/40 border border-steel/70 rounded-lg p-8 text-center scroll-mt-24">
+      <h3 class="font-serif text-xl text-cream">Urban Metro Studio</h3>
+      <p class="text-sm text-mut">123 Urban St, Metro City, 50010</p>
+      <a href="https://maps.google.com/?q=Kuala+Lumpur" target="_blank" rel="noopener noreferrer" class="mt-6 inline-block bg-bronze hover:bg-[#C68A60] text-ink font-bold text-sm tracking-[0.2em] px-8 py-3 rounded-md">GET DIRECTIONS</a>
+    </div>
+  </div>
+</section>
+```
+
+Footer (place after `</main>`):
+
+```html
+<footer class="border-t border-steel/60 bg-ink">
+  <div class="mx-auto max-w-shell px-4 py-12 text-center">
+    <p class="font-serif text-lg tracking-[0.15em] text-gold">GENTLEMAN&rsquo;S BLADE</p>
+    <p class="mt-2 text-sm text-mut">Classic craft, modern edge.</p>
+    <div class="mt-6 flex flex-wrap justify-center gap-6 text-xs tracking-[0.15em] text-mut">
+      <a href="#" class="hover:text-gold">PRIVACY POLICY</a><a href="#" class="hover:text-gold">TERMS OF RITUAL</a><a href="#" class="hover:text-gold">SANITATION</a><a href="#" class="hover:text-gold">PRESS</a>
+    </div>
+    <p class="mt-6 text-xs text-mut/70">&copy; <span id="year">2026</span> THE GENTLEMAN&rsquo;S BLADE. ALL RIGHTS RESERVED.</p>
+  </div>
+</footer>
+```
+
+- [ ] **Step 2: Verify all booking ids present**
+
+Run: `Select-String -LiteralPath "website\gentlemans-blade\index-v2.html" -Pattern 'bookingForm|serviceSelect|timeSlots|confirmationNotice|id="year"' | Select-Object Line`
+Expected: 5+ matches.
+
+- [ ] **Step 3: Commit**
+
+```bash
+git add website/gentlemans-blade/index-v2.html
+git commit -m "feat: add v2 booking visit footer markup"
+```
+
+---
+
+### Task 6: JS interactions + final verification
+
+**Files:**
+- Modify: `website/gentlemans-blade/index-v2.html` (append `<script>` before `</body>`)
+- Test: file checks + browser open
+
+**Interfaces:**
+- Consumes: all ids from Tasks 1–5
+- Produces: global fns `selectSlot(btn)`, `selectService(value)`, `handleBooking(e)`; observers for `[data-spy]`, `.reveal`, `[data-lightbox]`
+
+- [ ] **Step 1: Append interaction script before `</body>`**
+
+```html
+<script>
+(function () {
+  'use strict';
+  document.getElementById('year').textContent = new Date().getFullYear();
+  var menuBtn = document.getElementById('menu-btn');
+  var mobileMenu = document.getElementById('mobile-menu');
+  var iconOpen = document.getElementById('menu-icon-open');
+  var iconClose = document.getElementById('menu-icon-close');
+  function setMenu(open) {
+    mobileMenu.classList.toggle('hidden', !open);
+    iconOpen.classList.toggle('hidden', open);
+    iconClose.classList.toggle('hidden', !open);
+    menuBtn.setAttribute('aria-expanded', String(open));
+  }
+  menuBtn.addEventListener('click', function () { setMenu(mobileMenu.classList.contains('hidden')); });
+  mobileMenu.querySelectorAll('a').forEach(function (a) { a.addEventListener('click', function () { setMenu(false); }); });
+
+  window.selectSlot = function (btn) {
+    document.querySelectorAll('.time-slot-btn').forEach(function (b) {
+      b.className = 'time-slot-btn rounded bg-ink border border-steel text-mut py-3 text-xs';
+    });
+    btn.className = 'time-slot-btn rounded bg-bronze text-ink border border-bronze font-semibold py-3 text-xs';
+  };
+  window.selectService = function (value) {
+    var sel = document.getElementById('serviceSelect');
+    for (var i = 0; i < sel.options.length; i++) {
+      if (sel.options[i].value === value) { sel.selectedIndex = i; break; }
+    }
+  };
+  var form = document.getElementById('bookingForm');
+  form.addEventListener('submit', function (e) {
+    e.preventDefault();
+    var ok = document.getElementById('fullName').value.trim() !== ''
+      && document.getElementById('contactInfo').value.trim() !== ''
+      && document.getElementById('serviceSelect').value !== ''
+      && document.getElementById('bookingDate').value !== '';
+    document.getElementById('formError').classList.toggle('hidden', ok);
+    document.getElementById('confirmationNotice').classList.toggle('hidden', !ok);
+    if (ok) document.getElementById('confirmationNotice').scrollIntoView({ behavior: 'smooth', block: 'nearest' });
+  });
+  var dateInput = document.getElementById('bookingDate');
+  var today = new Date().toISOString().split('T')[0];
+  dateInput.min = today; dateInput.value = today;
+
+  if ('IntersectionObserver' in window) {
+    var spy = new IntersectionObserver(function (entries) {
+      entries.forEach(function (en) {
+        if (!en.isIntersecting) return;
+        document.querySelectorAll('.nav-link[data-spy]').forEach(function (l) {
+          l.classList.toggle('active', l.getAttribute('data-spy') === en.target.id);
+        });
+      });
+    }, { rootMargin: '-40% 0px -55% 0px' });
+    ['home', 'services', 'experience', 'gallery', 'booking', 'contact'].forEach(function (id) {
+      var el = document.getElementById(id); if (el) spy.observe(el);
+    });
+    var rev = new IntersectionObserver(function (entries) {
+      entries.forEach(function (en) { if (en.isIntersecting) { en.target.classList.add('in'); rev.unobserve(en.target); } });
+    }, { threshold: 0.12 });
+    document.querySelectorAll('.reveal').forEach(function (el) { rev.observe(el); });
+  } else {
+    document.querySelectorAll('.reveal').forEach(function (el) { el.classList.add('in'); });
+  }
+
+  var tiles = Array.prototype.slice.call(document.querySelectorAll('[data-lightbox]'));
+  var lb = document.getElementById('lightbox'), lbImg = document.getElementById('lb-img'), lbCap = document.getElementById('lb-cap');
+  var cur = 0, lastFocus = null;
+  function show(i) {
+    cur = (i + tiles.length) % tiles.length;
+    var img = tiles[cur].querySelector('img');
+    lbImg.src = img.src; lbImg.alt = img.alt; lbCap.textContent = img.alt.toUpperCase();
+  }
+  function openLb(i) { lastFocus = document.activeElement; show(i); lb.classList.remove('hidden'); lb.classList.add('flex'); document.body.style.overflow = 'hidden'; document.getElementById('lb-close').focus(); }
+  function closeLb() { lb.classList.add('hidden'); lb.classList.remove('flex'); document.body.style.overflow = ''; if (lastFocus) lastFocus.focus(); }
+  tiles.forEach(function (t, i) { t.addEventListener('click', function () { openLb(i); }); });
+  document.getElementById('lb-close').addEventListener('click', closeLb);
+  document.getElementById('lb-prev').addEventListener('click', function () { show(cur - 1); });
+  document.getElementById('lb-next').addEventListener('click', function () { show(cur + 1); });
+  lb.addEventListener('click', function (e) { if (e.target === lb) closeLb(); });
+  document.addEventListener('keydown', function (e) {
+    if (lb.classList.contains('hidden')) return;
+    if (e.key === 'Escape') closeLb();
+    if (e.key === 'ArrowLeft') show(cur - 1);
+    if (e.key === 'ArrowRight') show(cur + 1);
+  });
+})();
+</script>
+```
+
+- [ ] **Step 2: Run full verification checks**
+
+Run: `Test-Path -LiteralPath "website\gentlemans-blade\index.html"; Test-Path -LiteralPath "website\gentlemans-blade\index-v2.html"; Select-String -LiteralPath "website\gentlemans-blade\index-v2.html" -Pattern "googleusercontent|lh3\." | Measure-Object | Select-Object Count; Get-ChildItem -LiteralPath "website\gentlemans-blade\assets\images" | Measure-Object | Select-Object Count`
+Expected: old index still exists (True); v2 exists (True); external count 0; images count 12.
+
+- [ ] **Step 3: Open in browser and smoke-test**
+
+Run: open `website\gentlemans-blade\index-v2.html` in a browser; check console has no errors except Tailwind CDN warning; click each nav anchor; submit empty booking (error shows); fill and submit (success shows); open/close lightbox with ESC.
+Expected: all pass.
+
+- [ ] **Step 4: Commit**
+
+```bash
+git add website/gentlemans-blade/index-v2.html
+git commit -m "feat: wire v2 interactions and verify"
+```
