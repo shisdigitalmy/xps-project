@@ -1,0 +1,176 @@
+{
+  "version": "0.4",
+  "title": "The Gentleman’s Blade — Footer",
+  "type": "container",
+  "content": [
+    {
+      "id": "f000001",
+      "elType": "container",
+      "settings": {
+        "layout": "full-width",
+        "padding": { "unit": "px", "top": "56", "right": "24", "bottom": "28", "left": "24", "isLinked": false },
+        "background_background": "classic",
+        "background_color": "#14191F",
+        "border_border": "solid",
+        "border_width": { "unit": "px", "top": "1", "right": "0", "bottom": "0", "left": "0", "isLinked": false },
+        "border_color": "#2C3E50",
+        "flex_direction": "column",
+        "flex_gap": { "column": "40", "row": "40", "isLinked": true, "unit": "px", "size": 40, "sizes": [] }
+      },
+      "elements": [
+        {
+          "id": "f000002",
+          "elType": "container",
+          "settings": {
+            "layout": "boxed",
+            "content_width": { "unit": "px", "size": 1200, "sizes": [] },
+            "flex_direction": "row",
+            "flex_wrap": "wrap",
+            "flex_gap": { "column": "40", "row": "40", "isLinked": true, "unit": "px", "size": 40, "sizes": [] }
+          },
+          "elements": [
+            {
+              "id": "f000003",
+              "elType": "container",
+              "settings": {
+                "width": { "unit": "%", "size": 38, "sizes": [] },
+                "width_tablet": { "unit": "%", "size": 46, "sizes": [] },
+                "width_mobile": { "unit": "%", "size": 100, "sizes": [] },
+                "flex_direction": "column",
+                "flex_gap": { "column": "16", "row": "16", "isLinked": true, "unit": "px", "size": 16, "sizes": [] }
+              },
+              "elements": [
+                {
+                  "id": "f000004",
+                  "elType": "widget",
+                  "widgetType": "html",
+                  "settings": {
+                    "html": "<style>.gb-flogo{display:flex;align-items:center;gap:14px}.gb-flogo svg{width:52px;height:24px;color:#E5A962;flex-shrink:0}.gb-flogo svg path,.gb-flogo svg circle{fill:currentColor}.gb-flogo-name{display:block;font-family:Cinzel,Georgia,serif;font-weight:700;font-size:18px;letter-spacing:3px;color:#E5A962;line-height:1.2}.gb-flogo-est{display:block;font-family:Montserrat,Arial,sans-serif;font-size:8px;letter-spacing:5px;color:#B07851;margin-top:4px}.gb-ftag{margin:18px 0 0;font-family:Montserrat,Arial,sans-serif;font-size:14px;line-height:1.7;color:#94A3B8;max-width:280px}</style><div class=\"gb-flogo\"><svg viewBox=\"-45 -20 90 40\" aria-hidden=\"true\"><path d=\"M-25,-5 Q0,-15 25,-5 L15,2 Q0,-5 -15,2 Z\"></path><path d=\"M-28,-2 L-38,12 C-35,15 -30,12 -28,5 Z\" opacity=\".65\"></path><circle cx=\"0\" cy=\"-6\" r=\"3\"></circle></svg><span><span class=\"gb-flogo-name\">GENTLEMAN&rsquo;S BLADE</span><span class=\"gb-flogo-est\">EST. 2018 &bull; METRO BARBERSHOP</span></span></div><p class=\"gb-ftag\">Classic craft, modern edge.</p>"
+                  },
+                  "elements": [],
+                  "isInner": false
+                }
+              ],
+              "isInner": true
+            },
+            {
+              "id": "f000005",
+              "elType": "container",
+              "settings": {
+                "width": { "unit": "%", "size": 30, "sizes": [] },
+                "width_tablet": { "unit": "%", "size": 46, "sizes": [] },
+                "width_mobile": { "unit": "%", "size": 100, "sizes": [] },
+                "flex_direction": "column",
+                "flex_gap": { "column": "16", "row": "16", "isLinked": true, "unit": "px", "size": 16, "sizes": [] }
+              },
+              "elements": [
+                {
+                  "id": "f000006",
+                  "elType": "widget",
+                  "widgetType": "heading",
+                  "settings": {
+                    "title": "VISIT",
+                    "header_size": "h3",
+                    "align": "left",
+                    "title_color": "#F3EFE0",
+                    "typography_typography": "custom",
+                    "typography_font_family": "Cinzel",
+                    "typography_font_size": { "unit": "px", "size": 16, "sizes": [] },
+                    "typography_font_weight": "700",
+                    "typography_letter_spacing": { "unit": "px", "size": 4, "sizes": [] }
+                  },
+                  "elements": [],
+                  "isInner": false
+                },
+                {
+                  "id": "f000007",
+                  "elType": "widget",
+                  "widgetType": "text-editor",
+                  "settings": {
+                    "editor": "<p>123 Urban St, Metro City, 50010</p><p>MON–FRI: 9AM–8PM / SAT: 10AM–6PM / SUN: CLOSED</p><p><a style=\"color:#E2E8F0\" href=\"tel:+15062336718\">506-233-6718</a></p><p><a style=\"color:#E2E8F0\" href=\"mailto:contact@gentlemansblade.com\">contact@gentlemansblade.com</a></p>",
+                    "text_color": "#94A3B8",
+                    "typography_typography": "custom",
+                    "typography_font_family": "Montserrat",
+                    "typography_font_size": { "unit": "px", "size": 14, "sizes": [] }
+                  },
+                  "elements": [],
+                  "isInner": false
+                }
+              ],
+              "isInner": true
+            },
+            {
+              "id": "f000008",
+              "elType": "container",
+              "settings": {
+                "width": { "unit": "%", "size": 32, "sizes": [] },
+                "width_tablet": { "unit": "%", "size": 46, "sizes": [] },
+                "width_mobile": { "unit": "%", "size": 100, "sizes": [] },
+                "flex_direction": "column",
+                "flex_gap": { "column": "16", "row": "16", "isLinked": true, "unit": "px", "size": 16, "sizes": [] }
+              },
+              "elements": [
+                {
+                  "id": "f000009",
+                  "elType": "widget",
+                  "widgetType": "heading",
+                  "settings": {
+                    "title": "QUICK LINKS",
+                    "header_size": "h3",
+                    "align": "left",
+                    "title_color": "#F3EFE0",
+                    "typography_typography": "custom",
+                    "typography_font_family": "Cinzel",
+                    "typography_font_size": { "unit": "px", "size": 16, "sizes": [] },
+                    "typography_font_weight": "700",
+                    "typography_letter_spacing": { "unit": "px", "size": 4, "sizes": [] }
+                  },
+                  "elements": [],
+                  "isInner": false
+                },
+                {
+                  "id": "f000010",
+                  "elType": "widget",
+                  "widgetType": "text-editor",
+                  "settings": {
+                    "editor": "<p><a style=\"color:#94A3B8\" href=\"/\">Home</a></p><p><a style=\"color:#94A3B8\" href=\"/#services\">Services</a></p><p><a style=\"color:#94A3B8\" href=\"/#experience\">Experience</a></p><p><a style=\"color:#94A3B8\" href=\"/#gallery\">Gallery</a></p><p><a style=\"color:#94A3B8\" href=\"/#booking\">Booking</a></p><p><a style=\"color:#94A3B8\" href=\"/#visit\">Visit</a></p>",
+                    "text_color": "#94A3B8",
+                    "typography_typography": "custom",
+                    "typography_font_family": "Montserrat",
+                    "typography_font_size": { "unit": "px", "size": 14, "sizes": [] }
+                  },
+                  "elements": [],
+                  "isInner": false
+                }
+              ],
+              "isInner": true
+            }
+          ],
+          "isInner": true
+        },
+        {
+          "id": "f000011",
+          "elType": "container",
+          "settings": {
+            "padding": { "unit": "px", "top": "28", "right": "0", "bottom": "0", "left": "0", "isLinked": false }
+          },
+          "elements": [
+            {
+              "id": "f000012",
+              "elType": "widget",
+              "widgetType": "html",
+              "settings": {
+                "html": "<p style=\"text-align:center;font-family:Montserrat,Arial,sans-serif;font-size:12px;letter-spacing:2px;color:rgba(148,163,184,.7);margin:0\">&copy; 2026 THE GENTLEMAN&rsquo;S BLADE. ALL RIGHTS RESERVED.</p>"
+              },
+              "elements": [],
+              "isInner": false
+            }
+          ],
+          "isInner": true
+        }
+      ],
+      "isInner": false
+    }
+  ],
+  "page_settings": {}
+}
