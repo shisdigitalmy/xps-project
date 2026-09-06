@@ -1,0 +1,825 @@
+<!DOCTYPE html>
+<html lang="ms">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Propolis Spray Kelulut Asli RM35 — Lega Tekak & Sokong Imuniti | Botaney</title>
+<meta name="description" content="Spray propolis kelulut Malaysia 5ml. Sembur terus ke tekak, senang bawa travel. Setiap batch diuji makmal. Ada COD & jaminan 30 hari. Order di website atau WhatsApp admin.">
+<link rel="canonical" href="https://botaney.my/propolis-spray/">
+<meta property="og:title" content="Botaney Propolis Spray Kelulut — RM35">
+<meta property="og:description" content="Sembur terus ke tekak. Propolis kelulut asli Malaysia, diuji makmal setiap batch. Jaminan 30 hari.">
+<meta property="og:type" content="website">
+<meta property="og:image" content="assets/hero.webp">
+<meta name="theme-color" content="#1A3B18">
+<link rel="icon" type="image/webp" href="assets/logo.webp">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&family=Fraunces:ital,opsz,wght@0,9..144,600;0,9..144,700;1,9..144,600&display=swap" rel="stylesheet">
+<script src="https://cdn.tailwindcss.com"></script>
+<script>
+tailwind.config = {
+  theme: {
+    extend: {
+      colors: {
+        forest:  '#1A3B18',
+        leaf:    '#2D5A27',
+        gold:    '#C28216',
+        amber:   '#E5A93C',
+        cream:   '#FBF9F4',
+        linen:   '#F3EDE2',
+        ink:     '#1F241E',
+        herbal:  '#636B61',
+        line:    '#E6DECF',
+        wa:      '#25D366',
+        urgent:  '#B91C1C'
+      },
+      fontFamily: {
+        sans:  ['"Plus Jakarta Sans"', 'system-ui', 'sans-serif'],
+        serif: ['Fraunces', 'Georgia', 'serif']
+      },
+      boxShadow: {
+        card:   '0 4px 20px -2px rgba(26,59,24,.08)',
+        cta:    '0 6px 20px rgba(26,59,24,.30)',
+        sticky: '0 -4px 16px rgba(0,0,0,.10)'
+      }
+    }
+  }
+}
+</script>
+<style>
+  html { scroll-behavior: smooth; }
+  body { font-family: 'Plus Jakarta Sans', system-ui, sans-serif; }
+  section[id] { scroll-margin-top: 88px; }
+
+  /* ---- scroll reveal ---- */
+  .reveal { opacity: 0; transform: translateY(28px); transition: opacity .7s ease, transform .7s ease; }
+  .reveal.in { opacity: 1; transform: none; }
+  .reveal-d1 { transition-delay: .08s; } .reveal-d2 { transition-delay: .16s; }
+  .reveal-d3 { transition-delay: .24s; } .reveal-d4 { transition-delay: .32s; }
+
+  /* ---- hero float + mist ---- */
+  @keyframes floaty { 0%,100% { transform: translateY(0); } 50% { transform: translateY(-12px); } }
+  .floaty { animation: floaty 5s ease-in-out infinite; }
+  @keyframes mist {
+    0% { opacity: 0; transform: translateX(0) scale(.8); }
+    30% { opacity: .7; }
+    100% { opacity: 0; transform: translateX(46px) scale(1.4); }
+  }
+  .mist span { position: absolute; border-radius: 9999px; background: radial-gradient(circle, rgba(229,169,60,.55), transparent 70%); animation: mist 3.2s ease-out infinite; }
+  .mist span:nth-child(1) { width: 26px; height: 26px; top: 38%; left: 62%; }
+  .mist span:nth-child(2) { width: 18px; height: 18px; top: 46%; left: 64%; animation-delay: .5s; }
+  .mist span:nth-child(3) { width: 32px; height: 32px; top: 42%; left: 60%; animation-delay: 1s; }
+
+  /* ---- cards hover ---- */
+  .lift { transition: transform .3s ease, box-shadow .3s ease; }
+  .lift:hover { transform: translateY(-6px); box-shadow: 0 14px 34px -8px rgba(26,59,24,.22); }
+  .btn-cta { transition: transform .2s ease, box-shadow .2s ease, background-color .2s ease; }
+  .btn-cta:hover { transform: translateY(-2px); }
+  .btn-cta:active { transform: translateY(0) scale(.98); }
+  .pakej-card { transition: transform .3s ease, box-shadow .3s ease, border-color .3s ease; }
+  .pakej-card:hover { transform: translateY(-8px) scale(1.01); box-shadow: 0 18px 40px -10px rgba(26,59,24,.28); border-color: #C28216; }
+
+  /* ---- botanical divider ---- */
+  .leaf-divider { display: flex; align-items: center; gap: 12px; justify-content: center; }
+  .leaf-divider::before, .leaf-divider::after {
+    content: ""; height: 1px; width: min(120px, 28vw);
+    background: linear-gradient(90deg, transparent, #C28216);
+  }
+  .leaf-divider::after { background: linear-gradient(90deg, #C28216, transparent); }
+
+  /* ---- faq accordion ---- */
+  .faq-a { display: grid; grid-template-rows: 0fr; transition: grid-template-rows .35s ease; }
+  .faq-item[data-open="true"] .faq-a { grid-template-rows: 1fr; }
+  .faq-a > div { overflow: hidden; }
+  .faq-item .plus { transition: transform .3s ease; }
+  .faq-item[data-open="true"] .plus { transform: rotate(45deg); }
+
+  /* ---- nav active ---- */
+  .nav-link { position: relative; }
+  .nav-link.active { color: #1A3B18; }
+  .nav-link.active::after {
+    content: ""; position: absolute; left: 0; right: 0; bottom: -4px; height: 2px;
+    background: #C28216; border-radius: 2px;
+  }
+
+  /* ---- misc ---- */
+  #site-header.scrolled { box-shadow: 0 4px 18px rgba(26,59,24,.12); }
+  #mobile-bar { transform: translateY(110%); transition: transform .35s ease; }
+  #mobile-bar.show { transform: none; }
+  #to-top { opacity: 0; pointer-events: none; transition: opacity .3s ease; }
+  #to-top.show { opacity: 1; pointer-events: auto; }
+  .field-error { border-color: #B91C1C !important; }
+
+  @media (prefers-reduced-motion: reduce) {
+    html { scroll-behavior: auto; }
+    .reveal { opacity: 1; transform: none; transition: none; }
+    .floaty, .mist span { animation: none; }
+    .lift:hover, .pakej-card:hover, .btn-cta:hover { transform: none; }
+    #mobile-bar { transition: none; }
+  }
+  @media print {
+    #site-header, #mobile-bar, #to-top, .no-print { display: none !important; }
+  }
+</style>
+</head>
+
+<body class="bg-cream text-ink antialiased">
+<a href="#utama" class="sr-only focus:not-sr-only focus:absolute focus:top-2 focus:left-2 focus:z-[100] focus:bg-forest focus:text-white focus:px-4 focus:py-2 focus:rounded-lg">Langkau ke kandungan</a>
+
+<!-- Bar pengumuman -->
+<div class="bg-amber text-ink text-center text-[12px] sm:text-[13px] font-semibold tracking-wide px-3 py-2">
+  Penghantaran seluruh Malaysia &nbsp;•&nbsp; COD kawasan terpilih &nbsp;•&nbsp; Jaminan 30 hari — tak puas hati, wang dikembalikan
+</div>
+
+<!-- Header -->
+<header id="site-header" class="sticky top-0 z-50 bg-cream/95 backdrop-blur border-b border-line transition-shadow">
+  <div class="max-w-6xl mx-auto px-4 h-[68px] flex items-center justify-between gap-3">
+    <a href="#utama" class="flex items-center gap-2 shrink-0" aria-label="Botaney — ke atas">
+      <img src="assets/logo.webp" alt="Logo Botaney" class="h-10 w-auto" width="120" height="40">
+    </a>
+    <nav class="hidden md:flex items-center gap-7 text-[15px] font-semibold text-herbal" aria-label="Navigasi utama">
+      <a href="#kebaikan" class="nav-link hover:text-forest" data-nav="kebaikan">Manfaat</a>
+      <a href="#cara-guna" class="nav-link hover:text-forest" data-nav="cara-guna">Cara Guna</a>
+      <a href="#pakej" class="nav-link hover:text-forest" data-nav="pakej">Pakej</a>
+      <a href="#faq" class="nav-link hover:text-forest" data-nav="faq">FAQ</a>
+    </nav>
+    <div class="flex items-center gap-2">
+      <a href="#pakej" class="btn-cta hidden sm:inline-flex bg-forest text-white font-bold text-sm px-5 py-2.5 rounded-full shadow-cta hover:bg-leaf">Order RM35</a>
+      <button id="menu-btn" class="md:hidden p-2 rounded-lg hover:bg-linen" aria-label="Buka menu" aria-expanded="false" aria-controls="mobile-menu">
+        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M4 7h16M4 12h16M4 17h16"/></svg>
+      </button>
+    </div>
+  </div>
+  <div id="mobile-menu" class="md:hidden hidden border-t border-line bg-cream px-4 py-3">
+    <nav class="grid gap-1 text-[15px] font-semibold" aria-label="Navigasi mudah alih">
+      <a href="#kebaikan" class="px-2 py-2.5 rounded-lg hover:bg-linen">Manfaat</a>
+      <a href="#cara-guna" class="px-2 py-2.5 rounded-lg hover:bg-linen">Cara Guna</a>
+      <a href="#pakej" class="px-2 py-2.5 rounded-lg hover:bg-linen">Pakej</a>
+      <a href="#faq" class="px-2 py-2.5 rounded-lg hover:bg-linen">FAQ</a>
+      <a href="#pakej" class="btn-cta mt-1 text-center bg-forest text-white font-bold px-5 py-3 rounded-full">Order RM35</a>
+    </nav>
+  </div>
+</header>
+
+<main id="utama">
+
+  <!-- ============ 1. HERO ============ -->
+  <section class="relative overflow-hidden" aria-labelledby="hero-h1">
+    <div class="absolute inset-0 pointer-events-none" aria-hidden="true">
+      <div class="absolute -top-24 -right-24 w-96 h-96 rounded-full bg-amber/20 blur-3xl"></div>
+      <div class="absolute -bottom-32 -left-24 w-[28rem] h-[28rem] rounded-full bg-leaf/15 blur-3xl"></div>
+    </div>
+    <div class="relative max-w-6xl mx-auto px-4 pt-10 pb-14 md:pt-16 md:pb-20 grid md:grid-cols-2 gap-10 items-center">
+      <div>
+        <p class="reveal inline-flex items-center gap-2 text-[11px] sm:text-xs font-bold uppercase tracking-[0.12em] text-forest bg-white border border-line rounded-full px-4 py-1.5 shadow-card">
+          <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="#C28216" stroke-width="2.4" stroke-linecap="round"><path d="M12 22c5-2 8-6 8-11V5l-8-3-8 3v6c0 5 3 9 8 11z"/></svg>
+          100% dari hutan hujan tropika Malaysia
+        </p>
+        <h1 id="hero-h1" class="reveal reveal-d1 font-serif font-bold text-[30px] leading-[1.2] sm:text-4xl lg:text-[44px] mt-4">
+          Tekak Gatal, Batuk, Rasa Nak Selesema? <span class="text-leaf">Sembur Propolis Kelulut</span> — Terus Kena Pada Puncanya.
+        </h1>
+        <p class="reveal reveal-d2 text-herbal text-[15px] sm:text-base leading-relaxed mt-4">
+          Kelulut Bee Propolis Spray 5ml — propolis kelulut asli Malaysia dalam format semburan.
+          Tak perlu sukat titis, tak perlu bancuh. Sembur terus ke tekak, tutup, masuk poket.
+        </p>
+        <p class="reveal reveal-d2 mt-4 flex items-baseline gap-2">
+          <span class="text-3xl font-extrabold text-forest">RM35</span>
+          <span class="text-herbal text-sm">sebotol (5ml)</span>
+        </p>
+        <div class="reveal reveal-d3 mt-6 flex flex-col sm:flex-row gap-3 no-print">
+          <a href="https://botaney.my/product/kelulut-bee-propolis-spray-5ml/" class="btn-cta text-center bg-forest text-white font-bold px-7 py-3.5 rounded-full shadow-cta hover:bg-leaf">ORDER SEKARANG — RM35</a>
+          <a href="#cara-order-wasap" class="btn-cta text-center font-bold px-7 py-3.5 rounded-full border-2 border-forest text-forest hover:bg-forest hover:text-white">Tak pandai order? Wasap admin</a>
+        </div>
+        <ul class="reveal reveal-d4 mt-7 flex flex-wrap gap-2 text-[12px] font-semibold" aria-label="Jaminan kualiti">
+          <li class="bg-white border border-line rounded-full px-3.5 py-1.5 shadow-card">Diuji makmal setiap batch</li>
+          <li class="bg-white border border-line rounded-full px-3.5 py-1.5 shadow-card">15+ tahun pengalaman kelulut</li>
+          <li class="bg-white border border-line rounded-full px-3.5 py-1.5 shadow-card">SGS Japan Export Certified</li>
+          <li class="bg-white border border-line rounded-full px-3.5 py-1.5 shadow-card">Halal JAKIM dalam proses fasa akhir</li>
+        </ul>
+      </div>
+      <div class="reveal reveal-d2 relative">
+        <div class="floaty relative rounded-[20px] overflow-hidden shadow-card border border-line">
+          <img src="assets/hero.webp" alt="Botol spray propolis kelulut Botaney dengan latar hutan tropika" class="w-full h-auto object-cover" width="1280" height="860" fetchpriority="high">
+          <div class="mist" aria-hidden="true"><span></span><span></span><span></span></div>
+        </div>
+        <div class="absolute -bottom-4 left-4 right-4 sm:left-6 sm:right-auto bg-white rounded-2xl shadow-card border border-line px-4 py-3 flex items-center gap-3">
+          <span class="flex text-gold" aria-hidden="true">
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2l2.9 6.3 6.9.8-5.1 4.7 1.4 6.8L12 17.2 5.9 20.6l1.4-6.8L2.2 9.1l6.9-.8z"/></svg>
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2l2.9 6.3 6.9.8-5.1 4.7 1.4 6.8L12 17.2 5.9 20.6l1.4-6.8L2.2 9.1l6.9-.8z"/></svg>
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2l2.9 6.3 6.9.8-5.1 4.7 1.4 6.8L12 17.2 5.9 20.6l1.4-6.8L2.2 9.1l6.9-.8z"/></svg>
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2l2.9 6.3 6.9.8-5.1 4.7 1.4 6.8L12 17.2 5.9 20.6l1.4-6.8L2.2 9.1l6.9-.8z"/></svg>
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2l2.9 6.3 6.9.8-5.1 4.7 1.4 6.8L12 17.2 5.9 20.6l1.4-6.8L2.2 9.1l6.9-.8z"/></svg>
+          </span>
+          <p class="text-[13px] font-semibold">Format poket — senang konsisten setiap hari</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ 2. MASALAH ============ -->
+  <section id="masalah" class="bg-white border-y border-line" aria-labelledby="masalah-h2">
+    <div class="max-w-6xl mx-auto px-4 py-14 md:py-18">
+      <div class="text-center max-w-2xl mx-auto">
+        <div class="leaf-divider reveal" aria-hidden="true">
+          <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="#C28216" stroke-width="2" stroke-linecap="round"><path d="M12 21c-5 0-8-3-8-8 0-5 4-9 10-10-1 6-2 12-4 14"/><path d="M10 17c1-4 3-8 7-10"/></svg>
+        </div>
+        <h2 id="masalah-h2" class="reveal font-serif font-bold text-2xl sm:text-3xl mt-3">Bunyi Macam Anda?</h2>
+      </div>
+      <div class="grid sm:grid-cols-2 lg:grid-cols-4 gap-4 mt-8">
+        <article class="reveal lift bg-cream border border-line rounded-2xl p-5 shadow-card">
+          <div class="w-11 h-11 rounded-full bg-forest/10 flex items-center justify-center" aria-hidden="true">
+            <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="#1A3B18" stroke-width="2" stroke-linecap="round"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3 3"/></svg>
+          </div>
+          <h3 class="font-bold mt-3">Tekak gatal waktu pagi</h3>
+          <p class="text-herbal text-sm mt-1.5 leading-relaxed">Aircond office, habuk jalan, cuaca tak menentu. Telan air liur pun rasa tak selesa.</p>
+        </article>
+        <article class="reveal reveal-d1 lift bg-cream border border-line rounded-2xl p-5 shadow-card">
+          <div class="w-11 h-11 rounded-full bg-forest/10 flex items-center justify-center" aria-hidden="true">
+            <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="#1A3B18" stroke-width="2" stroke-linecap="round"><rect x="3" y="5" width="18" height="14" rx="2"/><path d="M3 10h18M8 5v14"/></svg>
+          </div>
+          <h3 class="font-bold mt-3">Batuk sikit, terus risau</h3>
+          <p class="text-herbal text-sm mt-1.5 leading-relaxed">Ada meeting, ada kelas anak, ada kenduri. Tak nak sampai kena cuti.</p>
+        </article>
+        <article class="reveal reveal-d2 lift bg-cream border border-line rounded-2xl p-5 shadow-card">
+          <div class="w-11 h-11 rounded-full bg-forest/10 flex items-center justify-center" aria-hidden="true">
+            <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="#1A3B18" stroke-width="2" stroke-linecap="round"><circle cx="9" cy="8" r="3.5"/><path d="M2.5 20c.8-3.5 3.4-5 6.5-5s5.7 1.5 6.5 5"/><circle cx="17" cy="9" r="2.6"/><path d="M15.5 14.6c2.9.2 5 1.7 5.7 4.4"/></svg>
+          </div>
+          <h3 class="font-bold mt-3">Anak balik sekolah bawa batuk</h3>
+          <p class="text-herbal text-sm mt-1.5 leading-relaxed">Seorang kena, seminggu kemudian adik pula kena. Satu rumah berjaga.</p>
+        </article>
+        <article class="reveal reveal-d3 lift bg-cream border border-line rounded-2xl p-5 shadow-card">
+          <div class="w-11 h-11 rounded-full bg-forest/10 flex items-center justify-center" aria-hidden="true">
+            <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="#1A3B18" stroke-width="2" stroke-linecap="round"><path d="M4 9h16l-1.5 10.5a1 1 0 01-1 .5h-11a1 1 0 01-1-.5z"/><path d="M8 9V7a4 4 0 018 0v2M9 13h.01M12 13h.01M15 13h.01"/></svg>
+          </div>
+          <h3 class="font-bold mt-3">Supplement bertimbun, konsisten ke laut</h3>
+          <p class="text-herbal text-sm mt-1.5 leading-relaxed">Botol besar, kena bancuh, kena sukat. Seminggu rajin, lepas tu tersadai.</p>
+        </article>
+      </div>
+      <p class="reveal text-center text-herbal mt-8 max-w-2xl mx-auto">Masalahnya bukan anda tak jaga kesihatan. Masalahnya kebanyakan produk susah nak konsisten — dan yang senang pula mahal atau meragukan sumbernya.</p>
+    </div>
+  </section>
+
+  <!-- ============ 3. APA ITU PROPOLIS ============ -->
+  <section id="propolis" aria-labelledby="propolis-h2">
+    <div class="max-w-6xl mx-auto px-4 py-14 md:py-18 grid md:grid-cols-2 gap-10 items-center">
+      <div class="reveal relative rounded-[20px] overflow-hidden shadow-card border border-line order-2 md:order-1">
+        <img src="assets/ladang.webp" alt="Ladang lebah kelulut di kawasan hutan tropika Malaysia" class="w-full h-auto object-cover" width="1280" height="860" loading="lazy">
+      </div>
+      <div class="order-1 md:order-2">
+        <h2 id="propolis-h2" class="reveal font-serif font-bold text-2xl sm:text-3xl">Lebah Kelulut Hasilkan Satu Benda Lagi Selain Madu — Ramai Tak Tahu</h2>
+        <p class="reveal reveal-d1 text-herbal mt-4 leading-relaxed">Propolis ialah resin semula jadi yang dikutip lebah kelulut dari pucuk pokok, daun dan bunga. Lebah guna propolis untuk tampal lubang sarang dan pastikan sarang bersih dari bakteria, virus dan kulat.</p>
+        <p class="reveal reveal-d1 text-herbal mt-3 leading-relaxed">Sarang kelulut gelap dan lembap — secara logik tempat terbaik untuk kuman membiak. Tapi koloni kekal sihat. Rahsianya: propolis.</p>
+        <ul class="mt-6 space-y-3">
+          <li class="reveal reveal-d2 flex gap-3 bg-white border border-line rounded-2xl p-4 shadow-card lift">
+            <span class="shrink-0 w-9 h-9 rounded-full bg-gold/15 flex items-center justify-center font-extrabold text-gold">1</span>
+            <div><strong>Melindungi sarang</strong><p class="text-herbal text-sm">Tampal setiap lubang, halang kuman masuk.</p></div>
+          </li>
+          <li class="reveal reveal-d3 flex gap-3 bg-white border border-line rounded-2xl p-4 shadow-card lift">
+            <span class="shrink-0 w-9 h-9 rounded-full bg-gold/15 flex items-center justify-center font-extrabold text-gold">2</span>
+            <div><strong>Membersihkan sarang</strong><p class="text-herbal text-sm">Disinfektan semula jadi kelulut.</p></div>
+          </li>
+          <li class="reveal reveal-d4 flex gap-3 bg-white border border-line rounded-2xl p-4 shadow-card lift">
+            <span class="shrink-0 w-9 h-9 rounded-full bg-gold/15 flex items-center justify-center font-extrabold text-gold">3</span>
+            <div><strong>Dikaji para saintis global</strong><p class="text-herbal text-sm">Sifat anti-bakteria, anti-radang & anti-oksidan.</p></div>
+          </li>
+        </ul>
+        <p class="reveal mt-6 font-semibold text-forest">Madu beri tenaga. Propolis beri pertahanan. Spray ini jadikan pertahanan itu semudah satu semburan.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ 4. KENAPA SPRAY ============ -->
+  <section id="kenapa-spray" class="bg-white border-y border-line" aria-labelledby="spray-h2">
+    <div class="max-w-4xl mx-auto px-4 py-14 md:py-18">
+      <div class="text-center">
+        <h2 id="spray-h2" class="reveal font-serif font-bold text-2xl sm:text-3xl">Kenapa Spray, Bukan Titis?</h2>
+        <p class="reveal reveal-d1 text-herbal mt-3">Situasi sebenar — bandingkan sendiri.</p>
+      </div>
+      <div class="reveal reveal-d1 mt-8 overflow-hidden rounded-2xl border border-line shadow-card">
+        <table class="w-full text-sm">
+          <caption class="sr-only">Perbandingan format spray dan titis</caption>
+          <thead>
+            <tr class="bg-forest text-white text-left">
+              <th scope="col" class="px-4 py-3.5 font-bold">Situasi</th>
+              <th scope="col" class="px-4 py-3.5 font-bold">Titis (drop)</th>
+              <th scope="col" class="px-4 py-3.5 font-bold bg-leaf">Spray ini</th>
+            </tr>
+          </thead>
+          <tbody class="divide-y divide-line">
+            <tr class="bg-white hover:bg-cream"><td class="px-4 py-3 font-semibold">Kena pada tekak</td><td class="px-4 py-3 text-herbal">Kena sukat, bancuh, telan</td><td class="px-4 py-3 font-semibold text-forest">Sembur terus ke tekak</td></tr>
+            <tr class="bg-cream hover:bg-linen"><td class="px-4 py-3 font-semibold">Di office / dalam kereta</td><td class="px-4 py-3 text-herbal">Leceh buka-botol-titis</td><td class="px-4 py-3 font-semibold text-forest">2 saat, tutup, simpan</td></tr>
+            <tr class="bg-white hover:bg-cream"><td class="px-4 py-3 font-semibold">Travel / bercuti</td><td class="px-4 py-3 text-herbal">Risiko tumpah</td><td class="px-4 py-3 font-semibold text-forest">Masuk poket / handbag</td></tr>
+            <tr class="bg-cream hover:bg-linen"><td class="px-4 py-3 font-semibold">Konsisten harian</td><td class="px-4 py-3 text-herbal">Ramai give up minggu ke-2</td><td class="px-4 py-3 font-semibold text-forest">Senang = konsisten</td></tr>
+          </tbody>
+        </table>
+      </div>
+      <div class="reveal mt-6 bg-linen border border-line rounded-2xl p-5 flex gap-3">
+        <svg class="shrink-0 mt-0.5" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="#C28216" stroke-width="2" stroke-linecap="round" aria-hidden="true"><circle cx="12" cy="12" r="9"/><path d="M12 8v5M12 16.5h.01"/></svg>
+        <p class="text-sm leading-relaxed"><strong>Ayat jujur kami:</strong> rasa propolis asli memang pahit. Itu tanda ia pekat dan murni, bukan perisa. Format spray kurangkan rasa pahit sebab terus ke tekak — kalau anda memang tak tahan pahit langsung, ambil versi softgel (kapsul).</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ 5. 7 KEBAIKAN ============ -->
+  <section id="kebaikan" aria-labelledby="kebaikan-h2">
+    <div class="max-w-6xl mx-auto px-4 py-14 md:py-18">
+      <div class="text-center max-w-2xl mx-auto">
+        <h2 id="kebaikan-h2" class="reveal font-serif font-bold text-2xl sm:text-3xl">7 Kebaikan Yang Dikaji Para Saintis</h2>
+        <p class="reveal reveal-d1 text-herbal mt-3">Setiap satu berserta rujukan jurnal — bukan claim kosong.</p>
+      </div>
+      <div class="grid sm:grid-cols-2 lg:grid-cols-3 gap-4 mt-8">
+        <article class="reveal lift bg-white border border-line rounded-2xl p-5 shadow-card"><h3 class="font-bold">Menyokong imuniti</h3><p class="text-herbal text-sm mt-1.5">Bantu sokong aktiviti sel imuniti badan.</p><p class="text-xs text-herbal/80 mt-2">Rujukan: PMC 2025</p></article>
+        <article class="reveal reveal-d1 lift bg-white border border-line rounded-2xl p-5 shadow-card"><h3 class="font-bold">Sifat anti-bakteria</h3><p class="text-herbal text-sm mt-1.5">Dikaji terhadap bakteria seperti S. aureus & E. coli.</p><p class="text-xs text-herbal/80 mt-2">Rujukan: Journal of Ethnopharmacology 2024</p></article>
+        <article class="reveal reveal-d2 lift bg-white border border-line rounded-2xl p-5 shadow-card"><h3 class="font-bold">Sifat anti-radang</h3><p class="text-herbal text-sm mt-1.5">Bantu melegakan keradangan.</p><p class="text-xs text-herbal/80 mt-2">Rujukan: Springer 2025</p></article>
+        <article class="reveal lift bg-white border border-line rounded-2xl p-5 shadow-card"><h3 class="font-bold">Anti-oksidan tinggi</h3><p class="text-herbal text-sm mt-1.5">Bantu neutralkan radikal bebas.</p><p class="text-xs text-herbal/80 mt-2">Rujukan: MDPI Antioxidants 2024</p></article>
+        <article class="reveal reveal-d1 lift bg-white border border-line rounded-2xl p-5 shadow-card"><h3 class="font-bold">Sokong penyembuhan luka</h3><p class="text-herbal text-sm mt-1.5">Dikaji untuk bantu luka sembuh lebih baik.</p><p class="text-xs text-herbal/80 mt-2">Rujukan: Wound Medicine 2025</p></article>
+        <article class="reveal reveal-d2 lift bg-white border border-line rounded-2xl p-5 shadow-card"><h3 class="font-bold">Melegakan batuk & tekak</h3><p class="text-herbal text-sm mt-1.5">Format spray kena terus pada tekak.</p><p class="text-xs text-herbal/80 mt-2">Rujukan: Journal of Biomedical Science 2025</p></article>
+        <article class="reveal lift bg-white border border-line rounded-2xl p-5 shadow-card sm:col-span-2 lg:col-span-1"><h3 class="font-bold">Kesihatan mulut</h3><p class="text-herbal text-sm mt-1.5">Dikaji untuk plak & gusi.</p><p class="text-xs text-herbal/80 mt-2">Rujukan: BMC Oral Health 2024</p></article>
+      </div>
+      <p class="reveal text-center text-xs text-herbal mt-6 max-w-2xl mx-auto">Produk semula jadi untuk sokongan kesihatan harian. Bukan ubat, bukan untuk diagnos, merawat atau mencegah penyakit. Kesan berbeza ikut individu.</p>
+    </div>
+  </section>
+
+  <!-- ============ 6. CARA GUNA ============ -->
+  <section id="cara-guna" class="bg-white border-y border-line" aria-labelledby="guna-h2">
+    <div class="max-w-6xl mx-auto px-4 py-14 md:py-18">
+      <div class="text-center">
+        <h2 id="guna-h2" class="reveal font-serif font-bold text-2xl sm:text-3xl">Cara Guna — 2 Saat Je</h2>
+      </div>
+      <div class="grid sm:grid-cols-3 gap-4 mt-8 max-w-4xl mx-auto">
+        <div class="reveal lift text-center bg-cream border border-line rounded-2xl p-6 shadow-card">
+          <span class="inline-flex w-11 h-11 rounded-full bg-forest text-white font-extrabold items-center justify-center">1</span>
+          <h3 class="font-bold mt-3">Goncang perlahan</h3><p class="text-herbal text-sm mt-1">Satu dua kali cukup.</p>
+        </div>
+        <div class="reveal reveal-d1 lift text-center bg-cream border border-line rounded-2xl p-6 shadow-card">
+          <span class="inline-flex w-11 h-11 rounded-full bg-forest text-white font-extrabold items-center justify-center">2</span>
+          <h3 class="font-bold mt-3">Sembur ke tekak</h3><p class="text-herbal text-sm mt-1">Hala muncung terus ke arah tekak.</p>
+        </div>
+        <div class="reveal reveal-d2 lift text-center bg-cream border border-line rounded-2xl p-6 shadow-card">
+          <span class="inline-flex w-11 h-11 rounded-full bg-forest text-white font-extrabold items-center justify-center">3</span>
+          <h3 class="font-bold mt-3">Tunggu 15 minit</h3><p class="text-herbal text-sm mt-1">Jangan makan/minum — bagi serapan penuh.</p>
+        </div>
+      </div>
+      <div class="grid md:grid-cols-2 gap-4 mt-8 items-stretch">
+        <div class="reveal relative rounded-[20px] overflow-hidden shadow-card border border-line min-h-[220px]">
+          <img src="assets/cara-guna.webp" alt="Ibu menggunakan spray propolis" class="absolute inset-0 w-full h-full object-cover" width="900" height="700" loading="lazy">
+        </div>
+        <div class="reveal reveal-d1 relative rounded-[20px] overflow-hidden shadow-card border border-line min-h-[220px]">
+          <img src="assets/cara-guna-anak.webp" alt="Bapa membantu anak menggunakan spray propolis" class="absolute inset-0 w-full h-full object-cover" width="900" height="700" loading="lazy">
+        </div>
+      </div>
+      <div class="reveal mt-8 overflow-hidden rounded-2xl border border-line shadow-card max-w-4xl mx-auto">
+        <table class="w-full text-sm">
+          <caption class="sr-only">Jadual dos ikut umur</caption>
+          <thead><tr class="bg-forest text-white text-left"><th scope="col" class="px-4 py-3.5">Siapa</th><th scope="col" class="px-4 py-3.5">Cadangan</th></tr></thead>
+          <tbody class="divide-y divide-line">
+            <tr class="bg-white"><td class="px-4 py-3 font-semibold">Dewasa</td><td class="px-4 py-3 text-herbal">2–4 semburan, 2x sehari (pagi & malam). Naikkan sedikit bila tekak mula gatal.</td></tr>
+            <tr class="bg-cream"><td class="px-4 py-3 font-semibold">Kanak-kanak 6–12</td><td class="px-4 py-3 text-herbal">1–2 semburan. Pantau dulu, mula rendah.</td></tr>
+            <tr class="bg-white"><td class="px-4 py-3 font-semibold">Kanak-kanak 2–6</td><td class="px-4 py-3 text-herbal">Dapatkan panduan admin atau rujuk doktor. Jangan bagi tanpa panduan.</td></tr>
+            <tr class="bg-cream"><td class="px-4 py-3 font-semibold">Bawah 2 tahun</td><td class="px-4 py-3 text-herbal">Rujuk doktor dulu. Wajib.</td></tr>
+          </tbody>
+        </table>
+      </div>
+      <ul class="reveal grid sm:grid-cols-2 gap-3 mt-6 max-w-4xl mx-auto text-sm">
+        <li class="flex gap-2.5 bg-linen border border-line rounded-xl px-4 py-3"><span class="text-gold font-extrabold" aria-hidden="true">✓</span>Konsisten minimum 4–6 minggu — propolis bukan ubat segera.</li>
+        <li class="flex gap-2.5 bg-linen border border-line rounded-xl px-4 py-3"><span class="text-gold font-extrabold" aria-hidden="true">✓</span>Mula dos rendah pada minggu pertama.</li>
+        <li class="flex gap-2.5 bg-linen border border-line rounded-xl px-4 py-3"><span class="text-gold font-extrabold" aria-hidden="true">✓</span>Simpan tempat sejuk & gelap, jauh dari matahari.</li>
+        <li class="flex gap-2.5 bg-linen border border-line rounded-xl px-4 py-3"><span class="text-gold font-extrabold" aria-hidden="true">✓</span>Yang alah pada produk lebah — test dos paling rendah dulu.</li>
+      </ul>
+    </div>
+  </section>
+
+  <!-- ============ 7. KENAPA BOTANEY ============ -->
+  <section id="kenapa-botaney" aria-labelledby="trust-h2">
+    <div class="max-w-6xl mx-auto px-4 py-14 md:py-18 grid md:grid-cols-5 gap-10 items-center">
+      <div class="md:col-span-2 reveal relative rounded-[20px] overflow-hidden shadow-card border border-line">
+        <img src="assets/pengasas.webp" alt="Pengasas Botaney di ladang kelulut" class="w-full h-auto object-cover" width="900" height="1000" loading="lazy">
+      </div>
+      <div class="md:col-span-3">
+        <h2 id="trust-h2" class="reveal font-serif font-bold text-2xl sm:text-3xl">Kenapa Boleh Percaya Dengan Botaney?</h2>
+        <ul class="mt-6 space-y-3.5 text-[15px]">
+          <li class="reveal flex gap-3"><span class="shrink-0 w-7 h-7 rounded-full bg-leaf text-white flex items-center justify-center text-sm font-bold" aria-hidden="true">✓</span><span><strong>Pengeluar tempatan, bukan import repack</strong> — dari ladang affiliate farms kelulut di seluruh Malaysia.</span></li>
+          <li class="reveal reveal-d1 flex gap-3"><span class="shrink-0 w-7 h-7 rounded-full bg-leaf text-white flex items-center justify-center text-sm font-bold" aria-hidden="true">✓</span><span><strong>Pengasas 15+ tahun dalam industri</strong> — Hj Zulkifli Zambri, bangunkan industri bersama MARDI & agensi kerajaan, eksport ke Jepun.</span></li>
+          <li class="reveal reveal-d2 flex gap-3"><span class="shrink-0 w-7 h-7 rounded-full bg-leaf text-white flex items-center justify-center text-sm font-bold" aria-hidden="true">✓</span><span><strong>Setiap batch diuji makmal</strong> — COA UNIPEQ UKM & ujian HALVEC untuk propolis.</span></li>
+          <li class="reveal reveal-d3 flex gap-3"><span class="shrink-0 w-7 h-7 rounded-full bg-leaf text-white flex items-center justify-center text-sm font-bold" aria-hidden="true">✓</span><span><strong>Standard eksport</strong> — madu kelulut Botaney diuji SGS untuk pasaran Jepun.</span></li>
+          <li class="reveal reveal-d4 flex gap-3"><span class="shrink-0 w-7 h-7 rounded-full bg-leaf text-white flex items-center justify-center text-sm font-bold" aria-hidden="true">✓</span><span><strong>Halal: telus, tak overclaim</strong> — pengeluaran ikut piawaian kebersihan & kualiti ketat, tiada bahan haram. Sijil Halal JAKIM dalam proses fasa akhir.</span></li>
+          <li class="reveal flex gap-3"><span class="shrink-0 w-7 h-7 rounded-full bg-leaf text-white flex items-center justify-center text-sm font-bold" aria-hidden="true">✓</span><span><strong>Syarikat berdaftar</strong> — Botaney Hub Sdn Bhd (1497365-P), HQ Bandar Puteri Bangi, Kajang. Facebook aktif sejak 2023.</span></li>
+        </ul>
+        <blockquote class="reveal mt-6 border-l-4 border-gold bg-white rounded-r-2xl p-5 shadow-card">
+          <p class="font-serif italic text-lg leading-relaxed">“Setiap botol propolis yang keluar dari Botaney adalah dari ladang affiliate kami. Saya boleh jamin kualitinya.”</p>
+          <cite class="not-italic text-sm text-herbal font-semibold">— Hj Zulkifli Zambri, Pengasas Botaney Hub Sdn Bhd</cite>
+        </blockquote>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ 8. PAKEJ ============ -->
+  <section id="pakej" class="bg-forest text-white relative overflow-hidden" aria-labelledby="pakej-h2">
+    <div class="absolute inset-0 pointer-events-none" aria-hidden="true">
+      <div class="absolute -top-20 left-1/4 w-80 h-80 rounded-full bg-gold/15 blur-3xl"></div>
+      <div class="absolute -bottom-24 right-1/4 w-96 h-96 rounded-full bg-amber/10 blur-3xl"></div>
+    </div>
+    <div class="relative max-w-6xl mx-auto px-4 py-14 md:py-18">
+      <div class="text-center">
+        <h2 id="pakej-h2" class="reveal font-serif font-bold text-2xl sm:text-3xl">Pilih Pakej Anda</h2>
+        <p class="reveal reveal-d1 text-white/70 mt-2">Fokus spray — tiga pilihan, ikut keperluan.</p>
+      </div>
+      <div class="grid md:grid-cols-3 gap-5 mt-9 items-stretch">
+        <!-- Pakej 1 -->
+        <article class="reveal pakej-card bg-white text-ink rounded-[20px] border-2 border-transparent p-6 flex flex-col shadow-card">
+          <img src="assets/pakej-1.webp" alt="Pakej 1 botol spray propolis" class="rounded-xl w-full h-44 object-cover" width="900" height="600" loading="lazy">
+          <h3 class="font-bold text-lg mt-4">Pakej 1 — Cuba Dulu</h3>
+          <p class="text-herbal text-sm">1 botol (5ml) — sesuai first-timer.</p>
+          <p class="mt-3"><span class="text-3xl font-extrabold text-forest">RM35</span></p>
+          <a href="https://botaney.my/product/kelulut-bee-propolis-spray-5ml/" class="btn-cta mt-4 text-center bg-forest text-white font-bold px-6 py-3 rounded-full hover:bg-leaf">ORDER 1 BOTOL</a>
+        </article>
+        <!-- Pakej 2 -->
+        <article class="reveal reveal-d1 pakej-card relative bg-white text-ink rounded-[20px] border-2 border-gold p-6 flex flex-col shadow-card">
+          <span class="absolute -top-3.5 left-1/2 -translate-x-1/2 bg-gold text-white text-xs font-extrabold uppercase tracking-wider px-4 py-1.5 rounded-full whitespace-nowrap">Paling Popular</span>
+          <img src="assets/pakej-2.webp" alt="Pakej 2 botol spray propolis" class="rounded-xl w-full h-44 object-cover mt-2" width="900" height="600" loading="lazy">
+          <h3 class="font-bold text-lg mt-4">Pakej 2 — Pasangan / Office</h3>
+          <p class="text-herbal text-sm">2 botol (5ml × 2) — satu di rumah, satu di handbag.</p>
+          <p class="mt-3"><span class="text-3xl font-extrabold text-forest">RM68</span></p>
+          <a href="https://botaney.my/product/kelulut-bee-propolis-spray-5ml/" class="btn-cta mt-4 text-center bg-forest text-white font-bold px-6 py-3 rounded-full hover:bg-leaf">ORDER 2 BOTOL</a>
+        </article>
+        <!-- Pakej 3 -->
+        <article class="reveal reveal-d2 pakej-card relative bg-white text-ink rounded-[20px] border-2 border-transparent p-6 flex flex-col shadow-card">
+          <span class="absolute -top-3.5 left-1/2 -translate-x-1/2 bg-urgent text-white text-xs font-extrabold uppercase tracking-wider px-4 py-1.5 rounded-full whitespace-nowrap">Paling Jimat</span>
+          <img src="assets/pakej-3.webp" alt="Pakej keluarga 5 botol spray propolis" class="rounded-xl w-full h-44 object-cover mt-2" width="900" height="600" loading="lazy">
+          <h3 class="font-bold text-lg mt-4">Pakej 3 — Keluarga (4 + 1 Percuma)</h3>
+          <p class="text-herbal text-sm">5 botol, bayar 4 — stok 1–2 bulan sekeluarga.</p>
+          <p class="mt-3"><span class="text-3xl font-extrabold text-forest">RM135</span> <span class="ml-1 text-xs font-bold bg-gold/15 text-gold px-2.5 py-1 rounded-full">Jimat RM40</span></p>
+          <a href="https://botaney.my/product/kelulut-bee-propolis-spray-5ml/" class="btn-cta mt-4 text-center bg-forest text-white font-bold px-6 py-3 rounded-full hover:bg-leaf">ORDER 4 FREE 1</a>
+        </article>
+      </div>
+      <p class="reveal text-center text-white/60 text-xs mt-6">Harga belum termasuk postage (dikira di checkout) • COD untuk kawasan terpilih • Bayaran online FPX</p>
+    </div>
+  </section>
+
+  <!-- ============ 9. CARA ORDER ============ -->
+  <section id="cara-order" aria-labelledby="order-h2">
+    <div class="max-w-4xl mx-auto px-4 py-14 md:py-18">
+      <div class="text-center">
+        <h2 id="order-h2" class="reveal font-serif font-bold text-2xl sm:text-3xl">Cara Order — Pilih Yang Senang Untuk Anda</h2>
+      </div>
+      <div class="grid md:grid-cols-2 gap-4 mt-8">
+        <div class="reveal lift bg-white border border-line rounded-2xl p-6 shadow-card">
+          <p class="text-xs font-extrabold uppercase tracking-wider text-leaf">Jalan A — Website</p>
+          <h3 class="font-bold text-lg mt-1">Pandai order di website</h3>
+          <ol class="text-sm text-herbal mt-3 space-y-2 list-decimal list-inside">
+            <li>Klik butang pakej di atas</li>
+            <li>Isi nama, alamat & bayar di checkout (FPX)</li>
+            <li>Kami pos / COD ikut kawasan</li>
+          </ol>
+          <a href="#pakej" class="btn-cta inline-block mt-4 bg-forest text-white font-bold text-sm px-6 py-2.5 rounded-full hover:bg-leaf">Lihat pakej</a>
+        </div>
+        <div class="reveal reveal-d1 lift bg-white border-2 border-wa/60 rounded-2xl p-6 shadow-card">
+          <p class="text-xs font-extrabold uppercase tracking-wider text-wa">Jalan B — WhatsApp</p>
+          <h3 class="font-bold text-lg mt-1">Tak pandai order di website?</h3>
+          <p class="text-sm text-herbal mt-2">Isi borang bawah, tekan butang — order terus masuk WhatsApp admin, kami bantu siapkan.</p>
+          <a href="#cara-order-wasap" class="btn-cta inline-block mt-4 bg-wa text-white font-bold text-sm px-6 py-2.5 rounded-full hover:brightness-95">Isi borang order</a>
+        </div>
+      </div>
+
+      <!-- Borang WhatsApp -->
+      <form id="cara-order-wasap" class="reveal mt-6 bg-white border border-line rounded-[20px] p-6 sm:p-8 shadow-card" novalidate aria-labelledby="borang-h3">
+        <h3 id="borang-h3" class="font-bold text-xl">Borang Order via WhatsApp</h3>
+        <p class="text-herbal text-sm mt-1">Lengkapkan — mesej order automatik dibina untuk anda.</p>
+        <div class="grid sm:grid-cols-2 gap-4 mt-5">
+          <div>
+            <label for="f-nama" class="block text-sm font-bold mb-1.5">Nama penuh <span class="text-urgent" aria-hidden="true">*</span></label>
+            <input id="f-nama" name="nama" type="text" autocomplete="name" placeholder="cth: Aina Razak" class="w-full border border-line rounded-[10px] px-4 py-3 text-[15px] focus:outline-none focus:ring-2 focus:ring-leaf bg-cream">
+            <p class="err hidden text-urgent text-xs mt-1">Sila isi nama penuh.</p>
+          </div>
+          <div>
+            <label for="f-tel" class="block text-sm font-bold mb-1.5">No. telefon <span class="text-urgent" aria-hidden="true">*</span></label>
+            <input id="f-tel" name="telefon" type="tel" autocomplete="tel" placeholder="cth: 012-3456789" class="w-full border border-line rounded-[10px] px-4 py-3 text-[15px] focus:outline-none focus:ring-2 focus:ring-leaf bg-cream">
+            <p class="err hidden text-urgent text-xs mt-1">Sila isi nombor telefon Malaysia yang sah (01X-XXXXXXX).</p>
+          </div>
+          <div>
+            <label for="f-pakej" class="block text-sm font-bold mb-1.5">Pakej <span class="text-urgent" aria-hidden="true">*</span></label>
+            <select id="f-pakej" name="pakej" class="w-full border border-line rounded-[10px] px-4 py-3 text-[15px] focus:outline-none focus:ring-2 focus:ring-leaf bg-cream">
+              <option value="1 botol — RM35">1 botol — RM35 (Cuba Dulu)</option>
+              <option value="2 botol — RM68">2 botol — RM68 (Paling Popular)</option>
+              <option value="4 + 1 PERCUMA — RM135">4 + 1 PERCUMA — RM135 (Paling Jimat)</option>
+            </select>
+          </div>
+          <div>
+            <label for="f-nota" class="block text-sm font-bold mb-1.5">Nota <span class="font-normal text-herbal">(pilihan)</span></label>
+            <input id="f-nota" name="nota" type="text" placeholder="cth: nak COD, soalan dos" class="w-full border border-line rounded-[10px] px-4 py-3 text-[15px] focus:outline-none focus:ring-2 focus:ring-leaf bg-cream">
+          </div>
+          <div class="sm:col-span-2">
+            <label for="f-alamat" class="block text-sm font-bold mb-1.5">Alamat penuh <span class="text-urgent" aria-hidden="true">*</span></label>
+            <textarea id="f-alamat" name="alamat" rows="3" autocomplete="street-address" placeholder="No. rumah, jalan, taman, poskod, bandar, negeri" class="w-full border border-line rounded-[10px] px-4 py-3 text-[15px] focus:outline-none focus:ring-2 focus:ring-leaf bg-cream"></textarea>
+            <p class="err hidden text-urgent text-xs mt-1">Sila isi alamat penuh untuk penghantaran.</p>
+          </div>
+        </div>
+        <button type="submit" class="btn-cta mt-5 w-full sm:w-auto inline-flex justify-center items-center gap-2 bg-wa text-white font-bold px-8 py-3.5 rounded-full hover:brightness-95">
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 2a10 10 0 00-8.6 15.1L2 22l5-1.3A10 10 0 1012 2zm5.2 14.2c-.2.6-1.3 1.2-1.8 1.2-.5.1-1 .2-3.4-.7-2.9-1.2-4.7-4.1-4.9-4.3-.1-.2-1.1-1.5-1.1-2.9s.7-2 1-2.3c.2-.3.5-.3.7-.3h.5c.2 0 .4 0 .6.5s.8 1.9.8 2c.1.1.1.3 0 .5l-.4.5c-.1.2-.3.3-.1.6.2.3.8 1.4 1.8 2.2 1.2 1.1 2.3 1.4 2.6 1.6.3.1.5.1.6-.1l.8-.9c.2-.3.4-.2.7-.1l2 1c.3.1.5.2.6.4 0 .1 0 .7-.5 1.1z"/></svg>
+          HANTAR ORDER KE WHATSAPP
+        </button>
+        <p class="text-xs text-herbal mt-3">Maklumat anda hanya untuk urusan order. Kami tak spam.</p>
+      </form>
+    </div>
+  </section>
+
+  <!-- ============ 10. KELUARGA STRIP ============ -->
+  <section class="relative overflow-hidden" aria-label="Untuk seisi keluarga">
+    <img src="assets/keluarga.webp" alt="Keluarga Malaysia bahagia di rumah" class="w-full h-64 sm:h-80 object-cover" width="900" height="500" loading="lazy">
+    <div class="absolute inset-0 bg-forest/70 flex items-center justify-center px-4">
+      <p class="reveal font-serif text-white text-xl sm:text-3xl font-bold text-center max-w-2xl leading-snug">Satu botol kecil di handbag — standby untuk seisi keluarga.</p>
+    </div>
+  </section>
+
+  <!-- ============ 11. FAQ ============ -->
+  <section id="faq" class="bg-white border-y border-line" aria-labelledby="faq-h2">
+    <div class="max-w-3xl mx-auto px-4 py-14 md:py-18">
+      <div class="text-center">
+        <h2 id="faq-h2" class="reveal font-serif font-bold text-2xl sm:text-3xl">Masih Ada Soalan? Ini Jawapan Jujur Kami.</h2>
+      </div>
+      <div class="mt-8 space-y-3" id="faq-list">
+        <div class="faq-item reveal bg-cream border border-line rounded-2xl" data-open="false">
+          <button class="faq-q w-full flex justify-between items-center gap-3 text-left font-bold px-5 py-4" aria-expanded="false">Rasa dia macam mana?<span class="plus shrink-0 w-8 h-8 rounded-full bg-forest text-white flex items-center justify-center text-xl leading-none" aria-hidden="true">+</span></button>
+          <div class="faq-a"><div><p class="px-5 pb-5 text-sm text-herbal leading-relaxed">Jujur: pahit. Pahit itu tanda propolis pekat & murni. Format spray kurangkan rasa sebab terus ke tekak. Tak tahan pahit langsung? Ambil softgel.</p></div></div>
+        </div>
+        <div class="faq-item reveal bg-cream border border-line rounded-2xl" data-open="false">
+          <button class="faq-q w-full flex justify-between items-center gap-3 text-left font-bold px-5 py-4" aria-expanded="false">Propolis Botaney ni halal ke?<span class="plus shrink-0 w-8 h-8 rounded-full bg-forest text-white flex items-center justify-center text-xl leading-none" aria-hidden="true">+</span></button>
+          <div class="faq-a"><div><p class="px-5 pb-5 text-sm text-herbal leading-relaxed">Pengeluaran ikut piawaian kebersihan & kualiti ketat, tiada bahan haram digunakan. Sijil Halal JAKIM sedang dalam proses fasa akhir — kami kemaskini sebaik sahaja lulus.</p></div></div>
+        </div>
+        <div class="faq-item reveal bg-cream border border-line rounded-2xl" data-open="false">
+          <button class="faq-q w-full flex justify-between items-center gap-3 text-left font-bold px-5 py-4" aria-expanded="false">Betul ke diuji makmal?<span class="plus shrink-0 w-8 h-8 rounded-full bg-forest text-white flex items-center justify-center text-xl leading-none" aria-hidden="true">+</span></button>
+          <div class="faq-a"><div><p class="px-5 pb-5 text-sm text-herbal leading-relaxed">Ya — setiap batch diuji makmal. Ada COA UNIPEQ UKM & ujian HALVEC untuk propolis spray. Madu kelulut kami pula diuji SGS untuk eksport Jepun.</p></div></div>
+        </div>
+        <div class="faq-item reveal bg-cream border border-line rounded-2xl" data-open="false">
+          <button class="faq-q w-full flex justify-between items-center gap-3 text-left font-bold px-5 py-4" aria-expanded="false">Berapa lama nak rasa kesan?<span class="plus shrink-0 w-8 h-8 rounded-full bg-forest text-white flex items-center justify-center text-xl leading-none" aria-hidden="true">+</span></button>
+          <div class="faq-a"><div><p class="px-5 pb-5 text-sm text-herbal leading-relaxed">Untuk tekak gatal — ada yang rasa lega dalam 3–5 hari konsisten. Untuk sokongan imuniti — minimum 4–6 minggu konsisten. Kesan berbeza ikut individu.</p></div></div>
+        </div>
+        <div class="faq-item reveal bg-cream border border-line rounded-2xl" data-open="false">
+          <button class="faq-q w-full flex justify-between items-center gap-3 text-left font-bold px-5 py-4" aria-expanded="false">Anak saya boleh guna?<span class="plus shrink-0 w-8 h-8 rounded-full bg-forest text-white flex items-center justify-center text-xl leading-none" aria-hidden="true">+</span></button>
+          <div class="faq-a"><div><p class="px-5 pb-5 text-sm text-herbal leading-relaxed">Boleh untuk 2 tahun ke atas dengan dos ikut umur (rujuk jadual cara guna di atas). Bawah 2 tahun — rujuk doktor dulu.</p></div></div>
+        </div>
+        <div class="faq-item reveal bg-cream border border-line rounded-2xl" data-open="false">
+          <button class="faq-q w-full flex justify-between items-center gap-3 text-left font-bold px-5 py-4" aria-expanded="false">Saya mengandung / menyusu — boleh?<span class="plus shrink-0 w-8 h-8 rounded-full bg-forest text-white flex items-center justify-center text-xl leading-none" aria-hidden="true">+</span></button>
+          <div class="faq-a"><div><p class="px-5 pb-5 text-sm text-herbal leading-relaxed">Rujuk doktor anda dulu sebelum ambil sebarang supplement, termasuk propolis.</p></div></div>
+        </div>
+        <div class="faq-item reveal bg-cream border border-line rounded-2xl" data-open="false">
+          <button class="faq-q w-full flex justify-between items-center gap-3 text-left font-bold px-5 py-4" aria-expanded="false">Ada kesan sampingan?<span class="plus shrink-0 w-8 h-8 rounded-full bg-forest text-white flex items-center justify-center text-xl leading-none" aria-hidden="true">+</span></button>
+          <div class="faq-a"><div><p class="px-5 pb-5 text-sm text-herbal leading-relaxed">Propolis semula jadi & umumnya selamat. Tapi yang alah pada produk lebah — test dos paling rendah dulu. Berhenti & rujuk profesional jika gatal, bengkak atau sesak.</p></div></div>
+        </div>
+        <div class="faq-item reveal bg-cream border border-line rounded-2xl" data-open="false">
+          <button class="faq-q w-full flex justify-between items-center gap-3 text-left font-bold px-5 py-4" aria-expanded="false">Kalau tak berkesan macam mana?<span class="plus shrink-0 w-8 h-8 rounded-full bg-forest text-white flex items-center justify-center text-xl leading-none" aria-hidden="true">+</span></button>
+          <div class="faq-a"><div><p class="px-5 pb-5 text-sm text-herbal leading-relaxed">Ada Jaminan 30 Hari — hubungi kami dalam 30 hari, kami pulangkan bayaran penuh. Tiada soalan leceh.</p></div></div>
+        </div>
+        <div class="faq-item reveal bg-cream border border-line rounded-2xl" data-open="false">
+          <button class="faq-q w-full flex justify-between items-center gap-3 text-left font-bold px-5 py-4" aria-expanded="false">Macam mana nak percaya beli online?<span class="plus shrink-0 w-8 h-8 rounded-full bg-forest text-white flex items-center justify-center text-xl leading-none" aria-hidden="true">+</span></button>
+          <div class="faq-a"><div><p class="px-5 pb-5 text-sm text-herbal leading-relaxed">Botaney Hub Sdn Bhd (1497365-P) — syarikat berdaftar, HQ di Kajang, ladang affiliate di seluruh Malaysia, Facebook aktif sejak 2023, beribu testimoni dari beberapa negara. Bukan kedai semalam buka.</p></div></div>
+        </div>
+        <div class="faq-item reveal bg-cream border border-line rounded-2xl" data-open="false">
+          <button class="faq-q w-full flex justify-between items-center gap-3 text-left font-bold px-5 py-4" aria-expanded="false">Ada COD? Berapa lama sampai?<span class="plus shrink-0 w-8 h-8 rounded-full bg-forest text-white flex items-center justify-center text-xl leading-none" aria-hidden="true">+</span></button>
+          <div class="faq-a"><div><p class="px-5 pb-5 text-sm text-herbal leading-relaxed">Ya, COD untuk kawasan terpilih. Pos ke seluruh Malaysia — tempoh ikut kawasan, admin akan maklumkan masa order.</p></div></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ 12. JAMINAN + FINAL CTA ============ -->
+  <section id="jaminan" class="bg-forest text-white relative overflow-hidden" aria-labelledby="jaminan-h2">
+    <div class="absolute inset-0 pointer-events-none" aria-hidden="true">
+      <div class="absolute top-0 left-1/3 w-96 h-96 rounded-full bg-gold/15 blur-3xl"></div>
+    </div>
+    <div class="relative max-w-3xl mx-auto px-4 py-14 md:py-18 text-center">
+      <div class="reveal inline-flex w-16 h-16 rounded-full bg-gold/20 items-center justify-center" aria-hidden="true">
+        <svg width="30" height="30" viewBox="0 0 24 24" fill="none" stroke="#E5A93C" stroke-width="2" stroke-linecap="round"><path d="M12 22c5-2 8-6 8-11V5l-8-3-8 3v6c0 5 3 9 8 11z"/><path d="M9 12l2 2 4-4"/></svg>
+      </div>
+      <h2 id="jaminan-h2" class="reveal font-serif font-bold text-2xl sm:text-3xl mt-4">Cuba Tanpa Risiko — Jaminan 30 Hari</h2>
+      <p class="reveal reveal-d1 text-white/75 mt-4 leading-relaxed">Kami berani bagi jaminan sebab kami yakin dengan kualiti. Guna konsisten 30 hari — kalau tak puas hati, hubungi kami, wang anda kami pulangkan. Tiada soalan, tiada tekanan.</p>
+      <div class="reveal reveal-d2 mt-7 flex flex-col sm:flex-row gap-3 justify-center no-print">
+        <a href="https://botaney.my/product/kelulut-bee-propolis-spray-5ml/" class="btn-cta bg-amber text-ink font-extrabold px-8 py-3.5 rounded-full hover:brightness-105">YA, SAYA NAK CUBA — RM35</a>
+        <a href="#cara-order-wasap" class="btn-cta font-bold px-8 py-3.5 rounded-full border-2 border-white/70 hover:bg-white hover:text-forest">Tak pandai order? Wasap admin</a>
+      </div>
+      <div class="reveal mt-8 grid grid-cols-3 gap-3 max-w-md mx-auto text-center">
+        <div><p class="text-2xl font-extrabold text-amber"><span class="count" data-target="15">0</span>+</p><p class="text-xs text-white/60">Tahun pengalaman</p></div>
+        <div><p class="text-2xl font-extrabold text-amber"><span class="count" data-target="30">0</span></p><p class="text-xs text-white/60">Hari jaminan</p></div>
+        <div><p class="text-2xl font-extrabold text-amber"><span class="count" data-target="100">0</span>%</p><p class="text-xs text-white/60">Asli Malaysia</p></div>
+      </div>
+    </div>
+  </section>
+
+</main>
+
+<!-- ============ FOOTER ============ -->
+<footer class="bg-[#141B13] text-white/70" aria-label="Maklumat syarikat">
+  <div class="max-w-6xl mx-auto px-4 py-12 grid gap-8 md:grid-cols-3">
+    <div>
+      <img src="assets/logo.webp" alt="Logo Botaney" class="h-10 w-auto brightness-0 invert" width="120" height="40" loading="lazy">
+      <p class="text-sm mt-3 leading-relaxed">Botaney Hub Sdn Bhd (1497365-P)<br>13-1, Jalan Puteri 3A/1, Bandar Puteri Bangi,<br>43000 Kajang, Selangor, Malaysia</p>
+      <p class="text-sm mt-2">Tel: <a href="tel:+60148496724" class="text-amber hover:underline">+60 14-849 6724</a></p>
+    </div>
+    <nav aria-label="Pautan pantas">
+      <p class="text-white font-bold text-sm uppercase tracking-wider">Pantas</p>
+      <ul class="mt-3 space-y-2 text-sm">
+        <li><a href="#kebaikan" class="hover:text-amber">Manfaat</a></li>
+        <li><a href="#cara-guna" class="hover:text-amber">Cara Guna</a></li>
+        <li><a href="#pakej" class="hover:text-amber">Pakej</a></li>
+        <li><a href="#faq" class="hover:text-amber">FAQ</a></li>
+        <li><a href="https://botaney.my/" class="hover:text-amber">Laman utama Botaney</a></li>
+        <li><a href="https://botaney.my/produk/" class="hover:text-amber">Semua produk</a></li>
+      </ul>
+    </nav>
+    <nav aria-label="Pautan dasar">
+      <p class="text-white font-bold text-sm uppercase tracking-wider">Dasar & Bantuan</p>
+      <ul class="mt-3 space-y-2 text-sm">
+        <li><a href="https://botaney.my/privasi-policy/" class="hover:text-amber">Privacy Policy</a></li>
+        <li><a href="https://botaney.my/terms-and-condition/" class="hover:text-amber">Terms & Condition</a></li>
+        <li><a href="#cara-order-wasap" class="hover:text-amber">Order via WhatsApp</a></li>
+      </ul>
+    </nav>
+  </div>
+  <div class="border-t border-white/10">
+    <div class="max-w-6xl mx-auto px-4 py-5 text-xs leading-relaxed text-white/50">
+      <p>Produk ini bukan untuk diagnos, merawat, menyembuh atau mencegah sebarang penyakit. Kesan berbeza ikut individu. Yang alah pada produk lebah, ibu mengandung/menyusu dan kanak-kanak bawah 2 tahun — rujuk doktor dulu.</p>
+      <p class="mt-2">© 2026 Botaney Hub Sdn Bhd. Hak cipta terpelihara.</p>
+    </div>
+  </div>
+</footer>
+
+<!-- Sticky mobile bar -->
+<div id="mobile-bar" class="no-print fixed bottom-0 inset-x-0 z-50 md:hidden bg-white/97 backdrop-blur border-t border-line shadow-sticky px-4 py-2.5 flex gap-2" role="navigation" aria-label="Belian pantas">
+  <a href="#pakej" class="btn-cta flex-1 text-center bg-forest text-white font-bold text-sm px-4 py-3 rounded-full">Order RM35</a>
+  <a href="#cara-order-wasap" class="btn-cta flex-1 text-center bg-wa text-white font-bold text-sm px-4 py-3 rounded-full">Wasap Admin</a>
+</div>
+
+<!-- Back to top -->
+<button id="to-top" class="no-print fixed bottom-20 md:bottom-6 right-4 z-50 w-11 h-11 rounded-full bg-forest text-white shadow-cta flex items-center justify-center hover:bg-leaf" aria-label="Ke atas">
+  <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round"><path d="M12 19V5M5 12l7-7 7 7"/></svg>
+</button>
+
+<script>
+(function () {
+  'use strict';
+
+  /* ===== Tetapan — OWNER: sahkan sebelum publish ===== */
+  var WA_NUMBER = '60148496724'; // [SAHKAN] Nombor WhatsApp admin (format: kod negara + nombor, tanpa +)
+  var CHECKOUT_URL = 'https://botaney.my/product/kelulut-bee-propolis-spray-5ml/'; // [SAHKAN] Link checkout setiap pakej
+
+  var reduceMotion = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+
+  /* ===== Header shadow ===== */
+  var header = document.getElementById('site-header');
+  var toTop = document.getElementById('to-top');
+  var mobileBar = document.getElementById('mobile-bar');
+  function onScroll() {
+    var y = window.scrollY || window.pageYOffset;
+    header.classList.toggle('scrolled', y > 8);
+    toTop.classList.toggle('show', y > 600);
+    mobileBar.classList.toggle('show', y > 520);
+  }
+  window.addEventListener('scroll', onScroll, { passive: true });
+  onScroll();
+  toTop.addEventListener('click', function () {
+    if (reduceMotion) { window.scrollTo(0, 0); }
+    else { window.scrollTo({ top: 0, behavior: 'smooth' }); }
+  });
+
+  /* ===== Menu mudah alih ===== */
+  var menuBtn = document.getElementById('menu-btn');
+  var mobileMenu = document.getElementById('mobile-menu');
+  menuBtn.addEventListener('click', function () {
+    var open = mobileMenu.classList.toggle('hidden');
+    menuBtn.setAttribute('aria-expanded', String(!open));
+    menuBtn.setAttribute('aria-label', open ? 'Buka menu' : 'Tutup menu');
+  });
+  mobileMenu.querySelectorAll('a').forEach(function (a) {
+    a.addEventListener('click', function () {
+      mobileMenu.classList.add('hidden');
+      menuBtn.setAttribute('aria-expanded', 'false');
+    });
+  });
+
+  /* ===== Scroll reveal ===== */
+  var revealEls = document.querySelectorAll('.reveal');
+  if ('IntersectionObserver' in window && !reduceMotion) {
+    var io = new IntersectionObserver(function (entries) {
+      entries.forEach(function (e) {
+        if (e.isIntersecting) { e.target.classList.add('in'); io.unobserve(e.target); }
+      });
+    }, { threshold: 0.12, rootMargin: '0px 0px -40px 0px' });
+    revealEls.forEach(function (el) { io.observe(el); });
+  } else {
+    revealEls.forEach(function (el) { el.classList.add('in'); });
+  }
+
+  /* ===== Nav aktif ikut section ===== */
+  var navMap = {};
+  document.querySelectorAll('[data-nav]').forEach(function (a) { navMap[a.getAttribute('data-nav')] = a; });
+  var watched = ['kebaikan', 'cara-guna', 'pakej', 'faq'];
+  if ('IntersectionObserver' in window) {
+    var nio = new IntersectionObserver(function (entries) {
+      entries.forEach(function (e) {
+        if (e.isIntersecting && navMap[e.target.id]) {
+          Object.keys(navMap).forEach(function (k) { navMap[k].classList.remove('active'); });
+          navMap[e.target.id].classList.add('active');
+        }
+      });
+    }, { rootMargin: '-40% 0px -55% 0px' });
+    watched.forEach(function (id) {
+      var s = document.getElementById(id);
+      if (s) { nio.observe(s); }
+    });
+  }
+
+  /* ===== FAQ accordion ===== */
+  document.querySelectorAll('.faq-item').forEach(function (item) {
+    var btn = item.querySelector('.faq-q');
+    btn.addEventListener('click', function () {
+      var open = item.getAttribute('data-open') === 'true';
+      document.querySelectorAll('.faq-item[data-open="true"]').forEach(function (other) {
+        other.setAttribute('data-open', 'false');
+        other.querySelector('.faq-q').setAttribute('aria-expanded', 'false');
+      });
+      item.setAttribute('data-open', String(!open));
+      btn.setAttribute('aria-expanded', String(!open));
+    });
+  });
+
+  /* ===== Count-up (hormat reduced motion) ===== */
+  var counters = document.querySelectorAll('.count');
+  function animateCount(el) {
+    var target = parseInt(el.getAttribute('data-target'), 10) || 0;
+    if (reduceMotion) { el.textContent = String(target); return; }
+    var start = null, dur = 1200;
+    function step(ts) {
+      if (!start) { start = ts; }
+      var p = Math.min((ts - start) / dur, 1);
+      el.textContent = String(Math.round(target * (1 - Math.pow(1 - p, 3))));
+      if (p < 1) { requestAnimationFrame(step); }
+    }
+    requestAnimationFrame(step);
+  }
+  if ('IntersectionObserver' in window) {
+    var cio = new IntersectionObserver(function (entries) {
+      entries.forEach(function (e) {
+        if (e.isIntersecting) { animateCount(e.target); cio.unobserve(e.target); }
+      });
+    }, { threshold: 0.5 });
+    counters.forEach(function (c) { cio.observe(c); });
+  } else {
+    counters.forEach(animateCount);
+  }
+
+  /* ===== Pakej → preset dropdown borang ===== */
+  var pakejSelect = document.getElementById('f-pakej');
+  document.querySelectorAll('#pakej .pakej-card a').forEach(function (link, idx) {
+    link.addEventListener('click', function () {
+      if (pakejSelect && pakejSelect.options[idx]) { pakejSelect.selectedIndex = idx; }
+    });
+  });
+
+  /* ===== Borang → WhatsApp ===== */
+  var form = document.querySelector('form[novalidate]');
+  function setErr(input, bad) {
+    input.classList.toggle('field-error', bad);
+    var wrap = input.closest('div');
+    var msg = wrap ? wrap.querySelector('.err') : null;
+    if (msg) { msg.classList.toggle('hidden', !bad); }
+    return !bad;
+  }
+  form.addEventListener('submit', function (ev) {
+    ev.preventDefault();
+    var nama = document.getElementById('f-nama');
+    var tel = document.getElementById('f-tel');
+    var alamat = document.getElementById('f-alamat');
+    var nota = document.getElementById('f-nota');
+    var okNama = setErr(nama, nama.value.trim().length < 3);
+    var digits = tel.value.replace(/\D/g, '');
+    if (digits.indexOf('60') === 0) { digits = '0' + digits.slice(2); }
+    var okTel = setErr(tel, !/^01\d{7,9}$/.test(digits));
+    var okAlamat = setErr(alamat, alamat.value.trim().length < 10);
+    if (!(okNama && okTel && okAlamat)) {
+      var firstBad = !okNama ? nama : (!okTel ? tel : alamat);
+      firstBad.focus();
+      return;
+    }
+    var lines = [
+      'Salam admin Botaney, saya nak order Propolis Spray:',
+      'Nama: ' + nama.value.trim(),
+      'Telefon: ' + tel.value.trim(),
+      'Pakej: ' + pakejSelect.value,
+      'Alamat: ' + alamat.value.trim()
+    ];
+    if (nota.value.trim()) { lines.push('Nota: ' + nota.value.trim()); }
+    var url = 'https://wa.me/' + WA_NUMBER + '?text=' + encodeURIComponent(lines.join('\n'));
+    window.open(url, '_blank', 'noopener');
+  });
+  ['f-nama', 'f-tel', 'f-alamat'].forEach(function (id) {
+    document.getElementById(id).addEventListener('input', function (e) {
+      e.target.classList.remove('field-error');
+      var wrap = e.target.closest('div');
+      var msg = wrap ? wrap.querySelector('.err') : null;
+      if (msg) { msg.classList.add('hidden'); }
+    });
+  });
+})();
+</script>
+</body>
+</html>
